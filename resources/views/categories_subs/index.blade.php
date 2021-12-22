@@ -1,0 +1,44 @@
+@extends('layouts.default')
+
+@section('title', 'Subs')
+
+@section('content')
+
+<div class="card">
+
+  <div class="card-header">
+    <a href=" {{ route('categories_subs.create') }} " class="btn btn-primary">
+      ADD DATA
+    </a>
+  </div>
+
+  <div class="card-body">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Category</th>
+          <th>image</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach ($category_subs as $sub)
+        <tr>
+          <td> {{ $loop->iteration }} </td>
+          <td> {{ $sub->category->name }} </td>
+          <td> {{ $sub->images }} </td>
+          <td> {{ $sub->name }} </td>
+          <td> {{ $sub->description }} </td>
+          <td>
+          </td>
+        </tr>
+        @endforeach
+      </tbody>
+     
+  </div>
+</div>
+
+@endsection
