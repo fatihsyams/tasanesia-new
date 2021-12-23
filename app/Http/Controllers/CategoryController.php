@@ -16,7 +16,7 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
-        return view ('categories.index', compact('categories'));
+        return view('categories.index', compact('categories'));
     }
 
     /**
@@ -26,7 +26,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view ('categories.create');
+        return view('categories.create');
     }
 
     /**
@@ -37,11 +37,21 @@ class CategoryController extends Controller
      */
     public function store(StoreCategoryRequest $request)
     {
-      $a =  Category::create([
+
+        $request->validate([
+            'images' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $file_name = $request->images->getClientOriginalName();
+        $image = $request->images->move('img', $file_name);
+
+        
+        Category::create([
             'name' => $request->name,
-            'images' => $request->images,
+            'images' => $image,
             'description' => $request->description,
         ]);
+
         return redirect()->route('categories.index');
     }
 

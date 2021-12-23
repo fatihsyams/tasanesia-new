@@ -21,15 +21,15 @@
           <th>Quantity</th>
           <th>Status</th>
           <th>Description</th>
-         
+
           <th>Action</th>
         </tr>
       </thead>
       <tbody>
-        @foreach ($product as $item)  
-      <tr>
+        @foreach ($product as $item)
+        <tr>
           <td> {{ $loop->iteration }} </td>
-                    <td> {{ $item->images }} </td>
+          <td><img src="{{$item['images']}}" class="card-img-top ms-auto" alt="..." style="width: 80px; height: 30%;" /></td>
           <td> {{ $item->name }} </td>
 
           <td> {{ $item->category->name }} </td>
@@ -38,11 +38,11 @@
           <td>{{ $item->quantity }}</td>
           <td>{{ $item->status }}</td>
           <td>{{ $item->description }}</td>
-        
+
         </tr>
         @endforeach
       </tbody>
-      
+
     </table>
   </div>
 </div>

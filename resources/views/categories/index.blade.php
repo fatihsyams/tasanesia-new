@@ -23,7 +23,12 @@
       <tbody>
         <tr>
           <td>{{ $loop->iteration }}</td>
-          <td>{{ $category->images }}</td>
+          <td><img
+            src="{{$category['images']}}"
+            class="card-img-top ms-auto"
+            alt="..."
+            style="width: 80px; height: 30%;"
+            /></td>
           <td>{{ $category->name }}</td>
           <td>{{ $category->description }}</td>
           <td>

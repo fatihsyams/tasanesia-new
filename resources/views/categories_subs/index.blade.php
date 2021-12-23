@@ -29,7 +29,12 @@
         <tr>
           <td> {{ $loop->iteration }} </td>
           <td> {{ $sub->category->name }} </td>
-          <td> {{ $sub->images }} </td>
+          <td><img
+            src="{{$sub['images']}}"
+            class="card-img-top ms-auto"
+            alt="..."
+            style="width: 80px; height: 30%;"
+            /></td>
           <td> {{ $sub->name }} </td>
           <td> {{ $sub->description }} </td>
           <td>

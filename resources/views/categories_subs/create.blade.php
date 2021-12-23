@@ -6,8 +6,8 @@
 
 <div class="card">
     <div class="card-body">
-        <form action="{{ route('categories_subs.store') }} " method="POST">
-            @csrf
+        <form action="{{ route('categories_subs.store') }} " method="POST"  enctype="multipart/form-data">
+            {{ csrf_field()}}
             <div class="row mb-3">
                 <label class="col-md-2 col-form-select" for="">
                     Category
@@ -32,7 +32,7 @@
                 <label class="col-md-2 col-form-select" for="">
                     Images Sub Category
                 </label>
-                <input type="text" name="images" class="col-md form-control">
+                <input type="file" name="images" id="images" class="col-md form-control">
             </div>
 
              <div class="row mb-3">

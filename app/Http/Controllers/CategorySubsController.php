@@ -39,14 +39,21 @@ class CategorySubsController extends Controller
      */
     public function store(StoreCategorySubsRequest $request)
     {
-    CategorySubs::query()->create([
-      'category_id' => $request->category_id,
-      'name'  => $request->name,
-      'images'  => $request->images,
-      'description'  => $request->description
-    ]);
 
-    return redirect()->route('categories_subs.index');
+        $request->validate([
+            'images' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $file_name = $request->images->getClientOriginalName();
+        $image = $request->images->move('img', $file_name);
+        CategorySubs::query()->create([
+            'category_id' => $request->category_id,
+            'name'  => $request->name,
+            'images'  => $image,
+            'description'  => $request->description
+        ]);
+
+        return redirect()->route('categories_subs.index');
     }
 
     /**
