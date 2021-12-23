@@ -13,13 +13,10 @@ class CategorySubs extends Model
     'name', 'images', 'description'
   ];
 
-  // public function category()
-  // {
-  //   return $this->belongsTo(Category::class);
-  // }
-
-  public function categories()
+  public function category()
   {
-    return $this->belongsToMany(Category::class);
+    return $this->belongsTo(Category::class);
   }
+
+  
 }

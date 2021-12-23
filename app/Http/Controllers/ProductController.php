@@ -17,7 +17,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('product.index');
+        $product = Product::all();
+        return view('product.index', compact('product'));
     }
 
     /**
@@ -40,7 +41,18 @@ class ProductController extends Controller
      */
     public function store(StoreProductRequest $request)
     {
-        //
+         Product::query()->create([
+            'category_id' => $request->category_id,
+            'category_sub_id' => $request->category_sub_id,
+            'name' => $request->name,
+            'images' => $request->images,
+            'price' => $request->price,
+            'quantity' => $request->quantity,
+            'description' => $request->description,
+            'status' => $request->status,
+        ]);
+    return redirect()->route('product.index');
+        // dd($a);
     }
 
     /**

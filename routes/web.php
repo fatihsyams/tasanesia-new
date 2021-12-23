@@ -24,3 +24,8 @@ Route::get('/', function () {
 Route::resource('categories', CategoryController::class);
 Route::resource('categories_subs', CategorySubsController::class);
 Route::resource('product', ProductController::class);
+
+Route::get('getCourse/{id}', function ($id) {
+  $category_sub = CategorySubs::where('category_id',$id)->get();
+  return response()->json($category_sub);
+});

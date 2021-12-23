@@ -21,11 +21,27 @@
           <th>Quantity</th>
           <th>Status</th>
           <th>Description</th>
-          <th>Status</th>
+         
           <th>Action</th>
         </tr>
       </thead>
-      
+      <tbody>
+        @foreach ($product as $item)  
+      <tr>
+          <td> {{ $loop->iteration }} </td>
+                    <td> {{ $item->images }} </td>
+          <td> {{ $item->name }} </td>
+
+          <td> {{ $item->category->name }} </td>
+          <td> {{ $item->category_sub->name }} </td>
+          <td>{{ $item->price }}</td>
+          <td>{{ $item->quantity }}</td>
+          <td>{{ $item->status }}</td>
+          <td>{{ $item->description }}</td>
+        
+        </tr>
+        @endforeach
+      </tbody>
       
     </table>
   </div>

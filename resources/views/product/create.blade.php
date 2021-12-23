@@ -4,43 +4,51 @@
 
 @section('content')
 
-<form action="" method="POST">
+<form action="{{ route('product.store') }}" method="POST">
     @csrf
     <div class="card">
         <div class="card-body">
             <div class="col m-3">
-                <label for="" class="">Name Category</label>
-                <select name="category_id" id="" class="col-md form-select">
-                    @foreach ($categories as $category)
-                    <option value="{{ $category->id }}">
-                        {{ $category->name }}
-                    </option>
-                    @endforeach
-                </select>
+               <div class="row mb-3">
+    <label for="category" class="col-md-2 col-form-control">Category</label>
+    <div class="col-md-2">
+      <select class="form-select" name="category_id" id="category">
+        <option hidden>Choose Category</option>
+        @foreach ($categories as $category)
+        <option value="{{ $category->id }}">
+          {{ $category->name }}
+        </option>
+        @endforeach
+      </select>
+    </div>
+  </div>
 
-                <label for="" class="">Name Sub Category</label>
-                <select name="category_id" id="" class="col-md form-select">
-                    @foreach ($category_subs->categories as $sub)
-                    <option value="{{ $category->id }}">
-                        {{ $sub->name }}
-                    </option>
-                    @endforeach
-                </select>
+  <div class="row mb-3">
+    <label for="" class="col-md-2 col-form-control">
+      Category Sub
+    </label>
+    <div class="col-md">
+      <select class="form-control" name="category_sub_id" id="course"></select>
+    </div>
+  </div>
 
                 <label for="" class="">Name Product</label>
-                <input type="text" name="description" id="description" class="form-control">
+                <input type="text" name="name" id="name" class="form-control">
 
                 <label for="" class="">Image Product</label>
-                <input type="text" name="description" id="description" class="form-control">
+                <input type="text" name="images" id="images" class="form-control">
 
                 <label for="" class="">Price Product</label>
-                <input type="text" name="description" id="description" class="form-control">
+                <input type="text" name="price" id="price" class="form-control">
+
+                 <label for="" class="">Quantity Product</label>
+                <input type="text" name="quantity" id="quantity" class="form-control">
 
                 <label for="" class="">Description Product</label>
                 <input type="text" name="description" id="description" class="form-control">
 
                 <label for="" class="">Status</label>
-                <input type="text" name="description" id="description" class="form-control">
+                <input type="text" name="status" id="status" class="form-control">
             </div>
             <div class="card-footer">
                 <button type="submit">
