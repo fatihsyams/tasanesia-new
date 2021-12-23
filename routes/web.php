@@ -18,15 +18,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Route::resource('home', HomeController::class);
-Route::resource('categories', CategoryController::class);
-Route::resource('categories_subs', CategorySubsController::class);
-Route::resource('product', ProductController::class);
 
 Route::get('getCourse/{id}', function ($id) {
   $category_sub = CategorySubs::where('category_id',$id)->get();
   return response()->json($category_sub);
+});
+Auth::routes();
+
+Route::group(['middleware' => ['admin']], function () {
+  Route::get('/admin', function () {
+    return view('admin.index');
+  });
+  Route::resource('categories', CategoryController::class);
+  Route::resource('categories_subs', CategorySubsController::class);
+  Route::resource('product', ProductController::class);
+});
+
+Route::group(['middleware' => ['member']], function () {
+
 });

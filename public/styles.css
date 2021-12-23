@@ -1,0 +1,261 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+}
+.navbar {
+    border-bottom-style: solid;
+    border-bottom-color: #28a745;
+    width: 100%;
+    border-bottom-width: 3px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #28a745 !important;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: #28a745 !important;
+    cursor: pointer;
+}
+
+.account-auth-login {
+    border: 1px solid #28a745;
+    border-radius: 6px;
+    padding: 7px;
+}
+
+.account-auth-login:hover {
+    border: 1px solid #28a745;
+    background-color: #28a745;
+    color: white !important;
+    border-radius: 6px;
+    padding: 7px;
+}
+
+.account-auth-register {
+    background-color: #28a745;
+    border-radius: 6px;
+    padding: 7px;
+}
+
+.account-auth-register:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 7px;
+}
+
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.nav-link {
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+.menu-contact-us {
+    margin-right: 140px;
+}
+
+.our-campaign {
+    font-weight: 500;
+    color: white !important;
+    font-family:'EB Garamond', serif;;
+}
+
+.hero {
+    margin-top: 100px;
+}
+
+.nav-item {
+    text-align: left;
+    background-color: white;
+}
+
+.carousel-control.right,
+.carousel-control.left,
+.carousel .item,
+.carousel-inner,
+.carousel-inner > .item > img {
+    border-radius: 12px;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 55%;
+    left: 23%;
+    z-index: 20;
+    font-size: 3vw;
+    text-align: center;
+    color: #28a745;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    transform: translate(-50%, -50%);
+  }
+
+  /* @media only screen and (max-width: 1400px) {
+    #responsive-product-menu {
+        flex: 0 0 auto;
+        width: 33.3333333333%;
+    }
+
+    @media only screen and (max-width: 992px) {
+        #responsive-product-menu {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #responsive-product-menu {
+                flex: 0 0 auto;
+                width: 100%;
+            } */
+
+hr {
+    margin: 0px;
+}
+
+#id {
+    margin-bottom: 65px;
+}
+
+/* hero */
+
+@media (max-width: 991px) {
+    #our-campaign {
+        display: none;
+    }
+}
+
+/* footer */
+footer {
+    background-color: #ecf0f1;
+    padding-top: 100x;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.footer-title {
+    font-weight: 600;
+    color: #28a745 !important;
+    text-decoration: none;
+    font-size: 55px;
+}
+
+/* .our-campaign */
+.img-penulis {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    margin-left: 0px !important;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.img-our-partner {
+    max-width: 150px;
+    max-height: 100px;
+}
+
+.p-text {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.title-text {
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.img-header-campaign {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.horizontal-scrollable > .row {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.horizontal-scrollable > .row::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-scrollable > .row > .col-lg-4 {
+    display: inline-block;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.border-right {
+    border-right: 1px solid #b1b1b1;
+}
+
+.img-border {
+    border-radius: 5px;
+}
+
+.adv-border {
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.normal-anchor {
+    color: black;
+    text-decoration: none;
+}
+
+/* contact */
+
+.img-header-contact {
+    width: 100%;
+    height: 450px;
+}
+
+input {
+    font-size: 14px !important;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+:-moz-placeholder {
+    font-size: 14px;
+}
+
+::-moz-placeholder {
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+    #home-carrousel-responsive {
+        height: 460px;
+    }
+}

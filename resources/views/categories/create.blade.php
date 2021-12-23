@@ -1,5 +1,7 @@
 @extends('layouts.default')
 
+@extends('admin.index')
+
 @section('title', 'Categories')
 
 @section('content')

@@ -8,6 +8,8 @@ use App\Http\Requests\UpdateHomeRequest;
 use App\Models\Category;
 use App\Models\CategorySubs;
 use App\Models\Product;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -19,7 +21,15 @@ class HomeController extends Controller
     public function index()
     {
         $category = Category::all();
-        return view('home.index', compact('category'));
+        $role = Auth::user()->role;
+
+        if($role == 'admin'){
+             return view('admin.index');   
+        } 
+
+        if($role == 'member'){
+            return view('home.index', compact('category'));
+        } 
     }
 
 
@@ -93,4 +103,14 @@ class HomeController extends Controller
     {
         //
     }
+    
+    /**
+    * Create a new controller instance.
+    *
+    * @return void
+    */
+   public function __construct()
+   {
+       $this->middleware('auth');
+   }
 }
