@@ -1,15 +1,16 @@
-@extends('layouts.default')
-
-@section('title', 'Tasanesia')
-
-@section('content')
-
-    @foreach ($category_sub as $sub)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+@foreach ($data as $sub)
         <p>{{ $sub->name }}</p>
     @endforeach
-
-    @foreach ($product as $item)
-       <a href="">{{ $item->name }}</a>
-    @endforeach
-
-@endsection
+    
+</body>
+</html>

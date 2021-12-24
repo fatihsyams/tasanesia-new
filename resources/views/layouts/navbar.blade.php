@@ -1,6 +1,4 @@
-@extends('layouts.default')  
-  
-  <!-- Navbar -->
+<!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-light fixed-top p-3"
       style="background-color: white"

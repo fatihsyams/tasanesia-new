@@ -63,12 +63,14 @@ class HomeController extends Controller
      */
     public function show($id)
     {
-        $data = Category::find($id);
-        $category_sub = CategorySubs::all();
-        $product = Product::all();
-        return view('home.detail', compact('data', 'category_sub', 'product'));
+        $data = Category::find($id)->category_subs;
+        // $product = CategorySubs::all()->product;
+        // dd($data);
+        // dd($product);
+        return view('home.detail', compact('data'));
+        // $category_sub = CategorySubs::all()->products;
+        // return view('home.detail')->with(compact('data'))->with(compact('category_sub'))->with(compact('product'));
     }
-
     
     /**
      * Show the form for editing the specified resource.

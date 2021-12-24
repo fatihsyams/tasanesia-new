@@ -18,5 +18,8 @@ class CategorySubs extends Model
     return $this->belongsTo(Category::class);
   }
 
-  
+  public function product()
+  {
+    return $this->belongsTo('App\Models\Product');
+}
 }

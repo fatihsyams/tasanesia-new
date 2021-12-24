@@ -16,6 +16,6 @@ class Category extends Model
 
   public function category_subs()
   {
-    return $this->hasMany(CategorySub::class);
+    return $this->hasMany('App\Models\CategorySubs');
   }
 }

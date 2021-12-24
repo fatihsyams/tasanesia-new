@@ -2,6 +2,8 @@
 
 @section('title', 'Home')
 
+@extends('layouts.default')  
+
 @section('content')
 
 <!-- <div class="card">
@@ -20,27 +22,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
-      rel="stylesheet"/>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 
     <title>Home - Tasanesia</title>
   </head>
@@ -203,7 +184,7 @@
               @foreach($category as $item)
                 <div class="col-lg-4 col-md-6 p-3">
                   <div class="shadow card py-3 px-3" style="width: 17rem; max-height: 394px; min-height: 394px">
-                  <a href="/home/{{$item->id}}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
+                  <a href="{{ route('home.show', $item->id) }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
                   <img
                     class="img-fluid img-border"
                     src="{{$item['images']}}"
