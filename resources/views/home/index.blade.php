@@ -184,7 +184,7 @@
               @foreach($category as $item)
                 <div class="col-lg-4 col-md-6 p-3">
                   <div class="shadow card py-3 px-3" style="width: 17rem; max-height: 394px; min-height: 394px">
-                  <a href="{{ route('home.show', $item->id) }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
+                  <a href="/detail-category/{{ $item->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
                   <img
                     class="img-fluid img-border"
                     src="{{$item['images']}}"

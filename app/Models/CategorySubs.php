@@ -12,14 +12,10 @@ class CategorySubs extends Model
     'category_id',
     'name', 'images', 'description'
   ];
-
-  public function category()
-  {
-    return $this->belongsTo(Category::class);
-  }
+  protected $with = ['product'];
 
   public function product()
   {
-    return $this->belongsTo('App\Models\Product');
-}
+    return $this->hasMany(Product::class);
+  }
 }

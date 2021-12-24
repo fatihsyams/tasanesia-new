@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
+use App\Models\CategorySubs;
+use App\Models\Product;
 
 class CategoryController extends Controller
 {
@@ -99,5 +101,20 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         //
+    }
+
+    // controller detail category
+    public function getDetailCategory ($id)
+    {
+        $category = Category::where('id', $id)->first();
+        $subCategory = CategorySubs::where('category_id', $category->id)->get();
+        
+        $data = [
+            'category' => $category,
+            'sub_category' => $subCategory,
+        ];
+
+        return view('test', $data);
+
     }
 }

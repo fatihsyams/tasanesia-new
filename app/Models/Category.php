@@ -13,9 +13,4 @@ class Category extends Model
   [
     'name', 'images', 'description'
   ];
-
-  public function category_subs()
-  {
-    return $this->hasMany('App\Models\CategorySubs');
-  }
 }

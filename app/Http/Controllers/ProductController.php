@@ -50,7 +50,7 @@ class ProductController extends Controller
         
          Product::create([
             'category_id' => $request->category_id,
-            'category_sub_id' => $request->category_sub_id,
+            'category_subs_id' => $request->category_sub_id,
             'name' => $request->name,
             'images' => $image,
             'price' => $request->price,
@@ -105,5 +105,22 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         //
+    }
+
+    // controller detail product
+    public function getDetailProduct ($id)
+    {
+        $product = Product::where('id', $id)->first();
+        $category = Category::where('id', $product->category_id)->first();
+        $subCategory = CategorySubs::where('id', $product->category_subs_id)->first();
+        
+        $data = [
+            'category' => $category,
+            'subCategory' => $subCategory,
+            'product' => $product,
+        ];
+
+        return view('testProduct', $data);
+
     }
 }

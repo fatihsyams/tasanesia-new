@@ -11,7 +11,7 @@ class Product extends Model
 
     protected $fillable = [
         'category_id',
-        'category_sub_id',
+        'category_subs_id',
         'name',
         'images',
         'price',
@@ -19,11 +19,7 @@ class Product extends Model
         'description',
         'status',     
     ];
-
-    public function category()
-    {
-        return $this->belongsTo(Category::class);
-    }
+    protected $with = ['category_sub'];
 
     public function category_sub()
     {

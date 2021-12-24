@@ -40,3 +40,6 @@ Route::group(['middleware' => ['admin']], function () {
 Route::group(['middleware' => ['member']], function () {
 
 });
+
+Route::get('/detail-category/{id}', [CategoryController::class, 'getDetailCategory']);
+Route::get('/detail-product/{id}', [ProductController::class, 'getDetailProduct']);
