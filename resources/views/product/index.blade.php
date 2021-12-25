@@ -38,7 +38,15 @@
           <td>{{ $item->quantity }}</td>
           <td>{{ $item->status }}</td>
           <td>{{ $item->description }}</td>
-
+          <td>
+          <form action="{{ route('product.destroy', $item->id) }}" method="POST">
+              @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')">
+            DELETE
+            </button>
+          </form>
+          </td>
         </tr>
         @endforeach
       </tbody>

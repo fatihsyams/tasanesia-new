@@ -7,6 +7,8 @@ use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
 use App\Models\CategorySubs;
 use App\Models\Product;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class CategoryController extends Controller
 {
@@ -53,6 +55,7 @@ class CategoryController extends Controller
             'images' => $image,
             'description' => $request->description,
         ]);
+        Alert::success('Success', 'Data Category sudah di tambahkan');
 
         return redirect()->route('categories.index');
     }

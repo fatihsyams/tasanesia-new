@@ -7,6 +7,7 @@ use App\Http\Requests\StoreOrderRequest;
 use App\Http\Requests\UpdateOrderRequest;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
+use Symfony\Component\HttpFoundation\Request;
 
 class OrderController extends Controller
 {
@@ -17,7 +18,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        
+        $orders = Order::all();
+        return view('order.index-dashboard', compact('orders'));
     }
 
     /**
@@ -38,7 +40,16 @@ class OrderController extends Controller
      */
     public function store(StoreOrderRequest $request)
     {
-        //
+        Order::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'no_handphone' => $request->no_handphone,
+            'name_product' => $request->name_product,
+            'quantity_product' => $request->quantity_product,
+            'address_product' => $request->address_product,
+            'description_product' => $request->description_product,
+        ]);
+        return redirect()->route('order.index');
     }
 
     /**
@@ -60,7 +71,7 @@ class OrderController extends Controller
      */
     public function edit(Order $order)
     {
-        //
+        return view('order.edit', compact('order'));
     }
 
     /**
@@ -72,7 +83,29 @@ class OrderController extends Controller
      */
     public function update(UpdateOrderRequest $request, Order $order)
     {
-        //
+        // $data = Order::find($request->id);
+        // $data->name = $request->name;
+        // $data->email = $request->email;
+        // $data->no_handphone = $request->no_handphone;
+        // $data->name_product = $request->name_product;
+        // $data->quantity_product = $request->quantity_product;
+        // $data->address_product = $request->address_product;
+        // $data->description_product = $request->description_product;
+
+        // $data->save();
+
+        Order::where('id', $order->id)
+            ->update([
+                'name' => $request->name,
+                'email' => $request->email,
+                'no_handphone' => $request->no_handphone,
+                'name_product' => $request->name_product,
+                'quantity_product' => $request->quantity_product,
+                'address_product' => $request->address_product,
+                'description_product' => $request->description_product,
+            ]);
+
+        return redirect('order');
     }
 
     /**
@@ -81,15 +114,19 @@ class OrderController extends Controller
      * @param  \App\Models\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Order $order)
+    public function destroy(Order $order, Request $request)
     {
-        //
+        $order = $request->get('id', $order->id);
+        // TODO: Check for validation
+        $orderDelete = DB::select('select ' . $order . ' from orders');
+        $orderDelete->delete();
+        return redirect('order');
     }
 
     public function getDataOrder($id)
     {
         $user = Auth::user();
         $product = Product::find($id);
-        return view('order.index', compact('user', 'product'));
+        return view('order.index-home', compact('user', 'product'));
     }
 }

@@ -7,6 +7,8 @@ use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Category;
 use App\Models\CategorySubs;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class ProductController extends Controller
 {
@@ -58,6 +60,8 @@ class ProductController extends Controller
             'description' => $request->description,
             'status' => $request->status,
         ]);
+        Alert::success('Success', 'Data Product sudah di tambahkan');
+
     return redirect()->route('product.index');
         // dd($a);
     }
@@ -104,7 +108,9 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+        Alert::success('Success', 'Data Product sudah di hapus');
+        return back();
     }
 
     // controller detail product

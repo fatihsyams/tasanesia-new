@@ -79,7 +79,7 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item active" style="background-color: #1c7531;">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{ route('order.index') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Orders</span></a>
             </li>
