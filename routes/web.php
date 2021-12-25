@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CategorySubsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Models\CategorySubs;
 use Illuminate\Support\Facades\Route;
@@ -21,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('home', HomeController::class);
+Route::resource('order', OrderController::class);
 
 Route::get('getCourse/{id}', function ($id) {
   $category_sub = CategorySubs::where('category_id',$id)->get();
@@ -43,3 +45,5 @@ Route::group(['middleware' => ['member']], function () {
 
 Route::get('/detail-category/{id}', [CategoryController::class, 'getDetailCategory']);
 Route::get('/detail-product/{id}', [ProductController::class, 'getDetailProduct']);
+Route::get('/order-product/{id}', [OrderController::class, 'getDataOrder']);
+

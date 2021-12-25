@@ -34,7 +34,10 @@
         <li>{{ $product->quantity }}</li>
         <li>{{ $product->descriptions }}</li>
         <li>{{ $product->status }}</li>
+            <a href="/order-product/{{ $product->id }}">Order</a>
+
     </ul>
+
     
 </body>
 </html>
