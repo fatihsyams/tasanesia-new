@@ -1,3 +1,11 @@
+@extends('layouts.navbar')
+
+@section('title', 'Detail Category')
+
+@extends('layouts.default')
+
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,37 +15,32 @@
     <title>Test Page</title>
 </head>
 <body>
+    <div class="container hero">
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="/{{ $product->images }}"
+              alt=""
+              style="width: 100%; border-radius: 10px"
+            />
+          </div>
+          <div class="col-lg-6 mt-5">
+            <h2 style="color: #28a745">{{  $product->name }}</h2>
+            <p class="mt-4">Stock : {{  $product->quantity }}</p>
+            <p>Price : Rp. {{  $product->price }}</p>
+            <p>Category : {{ $product->status }}</p>
 
-    <h1>Data Category</h1>
-    <ul>
-        <li>{{ $category->name }}</li>
-        <li>
-            <img src="/{{ $category->images }}" alt="" width="30px">
-        </li>
-        <li>{{ $category->description }}</li>
-    </ul>
-    <h1>Data Sub Category</h1>    
-    <ul>
-        <li>{{ $subCategory->name }}</li>
-        <li>
-            <img src="/{{ $subCategory->images }}" alt="" width="30px">
-        </li>
-        <li>{{ $subCategory->description }}</li>
-    </ul>
-    h1>Data Product</h1>
-    <ul>
-        <li>{{ $product->name }}</li>
-        <li>
-            <img src="/{{ $product->images }}" alt="" width="30px">
-        </li>
-        <li>{{ $product->price }}</li>
-        <li>{{ $product->quantity }}</li>
-        <li>{{ $product->descriptions }}</li>
-        <li>{{ $product->status }}</li>
-            <a href="/order-product/{{ $product->id }}">Order</a>
-
-    </ul>
-
-    
+            <a href="/order-product/{{ $product->id }}" class="btn" style="background-color: #28a745; color:white" >Order Now</a>
+          </div>
+          <h2 style="color: #28a745" class="mt-4">Description</h2>
+          <hr style="width: 13%;" class="ms-3">
+          <p class="mt-2">{{ $product->description }}</p>
+        </div>
+      </div>
+<!-- Navbar -->
+@include('layouts.footer')
+<!-- End Navbar -->
 </body>
 </html>
+
+@endsection

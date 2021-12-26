@@ -1,5 +1,3 @@
-@extends('layouts.default')
-
 @extends('layouts.navbar')
 
 <!DOCTYPE html>

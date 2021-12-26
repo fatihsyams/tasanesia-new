@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Models\CategorySubs;
+use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +21,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', function() {
+  $category = Category::all();
+  $data = Product::all();
+  return view('home.index', compact('category', 'data'));
+});
 
 Route::resource('home', HomeController::class);
 Route::resource('order', OrderController::class);

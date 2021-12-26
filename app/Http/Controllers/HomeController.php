@@ -21,6 +21,7 @@ class HomeController extends Controller
     public function index()
     {
         $category = Category::all();
+        $data = Product::all();
         $role = Auth::user()->role;
 
         if($role == 'admin'){
