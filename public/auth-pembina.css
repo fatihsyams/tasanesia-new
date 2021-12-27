@@ -1,0 +1,106 @@
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+   }
+  .navbar {
+    border-bottom-style: solid;
+    border-bottom-color: #28a745;
+    width: 100%;
+    border-bottom-width: 3px;
+
+  }
+  
+  .navbar-brand {
+    font-weight: 600;
+    color: #28a745 !important;
+    padding: 10px;
+  }
+  
+  .nav-link:hover {
+    color: #28a745 !important;
+    cursor: pointer;
+  }
+  
+  .account-auth-login {
+    border: 1px solid #28a745;
+    border-radius: 6px;
+    padding: 7px;
+  }
+  
+  .account-auth-login:hover {
+    border: 1px solid #28a745;
+    background-color: #28a745;
+    color: white !important;
+    border-radius: 6px;
+    padding: 7px;
+  }
+  
+  .account-auth-register {
+    background-color: #28a745;
+    border-radius: 6px;
+    padding: 7px;
+  }
+  
+  .account-auth-register:hover {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 7px;
+  }
+  
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  .nav-link {
+    margin-right: 15px;
+    font-size: 17px;
+  }
+  
+  .menu-contact-us {
+    margin-right: 140px;
+  }
+  
+  .our-campaign {
+    font-weight: 500;
+    color: #28a745 !important;
+  }
+  
+  .hero {
+    margin-top: 100px;
+  }
+  
+  .nav-item {
+    text-align: left;
+    background-color: white;
+  }
+
+  .container {
+     
+  }
+  .card {
+      padding: 20px;
+      width: 50%;
+      height: 6
+      0%;
+  }
+
+  @media (max-width: 767.98px) { 
+    .main {
+      height: 100%;
+    }
+    .col-6 {
+      width: 100%;
+    }
+    .card-body {
+      padding: 10px;
+    }
+   }
+
+   @media (min-width: 768px) { 
+     .main {
+       width: 100%;
+     }
+   }
+
+

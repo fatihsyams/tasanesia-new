@@ -43,6 +43,10 @@ Route::get('menu-categories/{id}', function ($id) {
   return view('product.menu', compact('data'));
 });
 
+Route::get('/contact', function () {
+  return view('contact.index');
+});
+
 Route::resource('home', HomeController::class);
 Route::resource('order', OrderController::class);
 
