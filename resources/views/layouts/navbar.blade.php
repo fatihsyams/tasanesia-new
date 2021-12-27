@@ -25,7 +25,7 @@
               <a class="nav-link p-text" href="#">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-text" href="">Product</a>
+              <a class="nav-link p-text" href="/menu-products">Product</a>
             </li>
             <li class="nav-item">
               <a class="nav-link p-text" href="/campaign-menu">Our Campaign</a>

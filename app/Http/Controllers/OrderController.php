@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateOrderRequest;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class OrderController extends Controller
 {
@@ -49,7 +50,9 @@ class OrderController extends Controller
             'address_product' => $request->address_product,
             'description_product' => $request->description_product,
         ]);
-        return redirect()->route('order.index');
+        Alert::success('Success', 'Your order will we confirm 2x24, please check your email');
+
+        return view('home.index');
     }
 
     /**

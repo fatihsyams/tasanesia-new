@@ -74,7 +74,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        
     }
 
     /**
@@ -127,6 +127,5 @@ class ProductController extends Controller
         ];
 
         return view('testProduct', $data);
-
     }
 }

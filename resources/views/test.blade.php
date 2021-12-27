@@ -48,7 +48,7 @@
                     @endif
                     @endforeach
                     <div class="shadow card col-lg-2 col-md-3 col-sm-6 py-3 mx-1 mt-2 text-center">    
-                    <a href="/detail-product/{{ $prd->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
+                    <a href="/menu-categories/{{ $item->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
                     <i
                         class="fas fa-arrow-circle-right">
                     </i>

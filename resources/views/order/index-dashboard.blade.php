@@ -1,8 +1,6 @@
-@extends('layouts.default')
+@extends('admin.index')
 
-
-
-@section('title', 'Categories')
+@section('title', 'Orders')
 
 @section('content')
 
@@ -27,20 +25,21 @@
       </thead>
       <tbody>
         @foreach ($orders as $ord)
-        <td>{{ $loop->iteration }}</td>
-        <td>{{ $ord->name }}</td>
-        <td>{{ $ord->email }}</td>
-        <td>{{ $ord->no_handphone }}</td>
-        <td>{{ $ord->name_product }}</td>
-        <td>{{ $ord->quantity_product }}</td>
-        <td>{{ $ord->address_product }}</td>
-        <td>{{ $ord->description_product }}</td>
-        <td>
-          <a href="{{ route('order.edit', $ord->id) }}" class="btn btn-primary">Update</a>
-        </td>
+        <tr>
+          <td>{{ $loop->iteration }}</td>
+          <td>{{ $ord->name }}</td>
+          <td>{{ $ord->email }}</td>
+          <td>{{ $ord->no_handphone }}</td>
+          <td>{{ $ord->name_product }}</td>
+          <td>{{ $ord->quantity_product }}</td>
+          <td>{{ $ord->address_product }}</td>
+          <td>{{ $ord->description_product }}</td>
+          <td>
+            <a href="{{ route('order.edit', $ord->id) }}" class="btn btn-primary">Update</a>
+          </td>
+        </tr>
         @endforeach
       </tbody>
-
     </table>
   </div>
 </div>

@@ -28,13 +28,24 @@ Route::get('/', function() {
   return view('home.index', compact('category', 'data'));
 });
 
-Route::resource('home', HomeController::class);
-Route::resource('order', OrderController::class);
+Route::get('/menu-products', function() {
+  $data = Product::all();
+  return view('product.menu', compact('data'));
+});
 
 Route::get('getCourse/{id}', function ($id) {
   $category_sub = CategorySubs::where('category_id',$id)->get();
   return response()->json($category_sub);
 });
+
+Route::get('menu-categories/{id}', function ($id) {
+  $data = Product::where('category_subs_id',$id)->get();
+  return view('product.menu', compact('data'));
+});
+
+Route::resource('home', HomeController::class);
+Route::resource('order', OrderController::class);
+
 Auth::routes();
 
 Route::group(['middleware' => ['admin']], function () {

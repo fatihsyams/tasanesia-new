@@ -29,7 +29,7 @@ class HomeController extends Controller
         } 
 
         if($role == 'member'){
-            return view('home.index', compact('category'));
+            return view('home.index', compact('category', 'data'));
         } 
     }
 

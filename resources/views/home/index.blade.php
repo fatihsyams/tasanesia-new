@@ -289,27 +289,29 @@
             @foreach($data as $product)
             @if($loop->index < 12)
             <div class="col-lg-4 col-xl-3 col-md-6 col-12 col mt-md-3 mt-sm-3 mt-3">
-              <div class="shadow card" style="width: 18rem; border: 2px solid #28a745; min-height: 280px">
-                <img
-                src="{{$product->images}}"
-                class=" img-fluid card-img-top p-3"
-                alt="..."
-                style="width: 100%; max-height: 188px; min-height: 188px; border-radius: 1.25rem"
-                />
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                         <h5 style="color: #28a745">{{$product->name}}</h5>
-                       </div>
-                       <div class="col-12 text-center">
-                         <p style="color: #28a745">Rp. {{$product->price}}</p>
-                       </div>
-                       <div class="col-12 text-center">
-                         <p style="color: #28a745">{{$product->status}}</p>
-                       </div>
+              <a href="detail-product/{{$product->id}}" style="text-decoration: none">
+                  <div class="shadow card" style="width: 18rem; border: 2px solid #28a745; min-height: 280px">
+                    <img
+                    src="{{$product->images}}"
+                    class=" img-fluid card-img-top p-3"
+                    alt="..."
+                    style="width: 100%; max-height: 188px; min-height: 188px; border-radius: 1.25rem"
+                    />
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                            <h5 style="color: #28a745">{{$product->name}}</h5>
+                          </div>
+                          <div class="col-12 text-center">
+                            <p style="color: #28a745">Rp. {{$product->price}}</p>
+                          </div>
+                          <div class="col-12 text-center">
+                            <p style="color: #28a745">{{$product->status}}</p>
+                          </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                  </div>
+              </a>
         </div>    
             @endif
          @endforeach

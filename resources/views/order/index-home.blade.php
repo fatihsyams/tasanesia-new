@@ -36,7 +36,7 @@
           
 
             <div class="card-footer">
-                <button type="submit btn btn-warning" class="btn btn-success  text-white">
+                <button type="submit btn btn-warning" class="btn btn-success  text-white" onclick="return confirm('Are you sure for order this product?')">
                     SUBMIT
                 </button>
             </div>
