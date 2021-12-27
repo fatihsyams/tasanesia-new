@@ -78,6 +78,14 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item active" style="background-color: #1c7531;">
+                <a class="nav-link" href="{{ route('campaign.index') }}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Campaign</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <li class="nav-item active" style="background-color: #1c7531;">
                 <a class="nav-link" href="{{ route('order.index') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Orders</span></a>

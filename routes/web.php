@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CampaignController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CategorySubsController;
 use App\Http\Controllers\HomeController;
@@ -46,7 +47,7 @@ Route::get('menu-categories/{id}', function ($id) {
 Route::get('/contact', function () {
   return view('contact.index');
 });
-
+Route::resource('campaign', CampaignController::class);
 Route::resource('home', HomeController::class);
 Route::resource('order', OrderController::class);
 
