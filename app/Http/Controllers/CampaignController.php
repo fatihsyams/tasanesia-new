@@ -42,7 +42,7 @@ class CampaignController extends Controller
      */
     public function store(StoreCampaignRequest $request)
     {
-
+        $campaign = Campaign::all();
         $request->validate([
             'images' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
@@ -51,13 +51,14 @@ class CampaignController extends Controller
         $image = $request->images->move('img', $file_name);
         Campaign::create([
             'user_id' => $request->user_id,
-            'name' => $request->name,
+            'title' => $request->title,
+            'author' => $request->author,
             'images' => $image,
             'description' => $request->description,
 
         ]);
          Alert::success('Success', 'Data Campaign sudah di tambahkan');
-        return view('campaign.index');
+        return redirect()->route('campaign.index');
     }
 
     /**

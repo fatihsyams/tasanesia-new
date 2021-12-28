@@ -26,9 +26,9 @@
           </div>
           <div class="col-lg-6 mt-5">
             <h2 style="color: #28a745">{{  $product->name }}</h2>
-            <p class="mt-4">Stock : {{  $product->quantity }}</p>
-            <p>Price : Rp. {{  $product->price }}</p>
-            <p>Category : {{ $product->status }}</p>
+            <p class="mt-4" style="margin-bottom: 10px">Stock : {{  $product->quantity }}</p>
+            <p style="margin-bottom: 10px; margin-top: 10px">Price : Rp. {{  $product->price }}</p>
+            <p style="margin-bottom: 10px; margin-top: 10px">Category : {{ $product->status }}</p>
 
             <a href="/order-product/{{ $product->id }}" class="btn" style="background-color: #28a745; color:white" >Order Now</a>
           </div>

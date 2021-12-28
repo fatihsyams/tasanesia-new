@@ -25,7 +25,6 @@
               Our Product
             </h2>
             @foreach($data as $product)
-            @if($loop->index < 12)
             <div class="col-lg-4 col-xl-3 col-md-6 col-12 col mt-md-3 mt-sm-3 mt-3">
               <a href="detail-product/{{$product->id}}" style="text-decoration: none">
                   <div class="shadow card" style="width: 18rem; border: 2px solid #28a745; min-height: 280px">
@@ -51,7 +50,6 @@
                   </div>
               </a>
         </div>    
-            @endif
          @endforeach
           </div>
         </div>

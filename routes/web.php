@@ -36,6 +36,16 @@ Route::get('/menu-products', function() {
   return view('product.menu', compact('data'));
 });
 
+Route::get('/menu-campaign', function() {
+  $data = Campaign::all();
+  return view('campaign.menu', compact('data'));
+});
+
+Route::get('detail-campaign/{id}', function ($id) {
+  $data = Campaign::where('id', $id)->first();
+  return view('campaign.detail-menu', compact('data'));
+});
+
 Route::get('getCourse/{id}', function ($id) {
   $category_sub = CategorySubs::where('category_id',$id)->get();
   return response()->json($category_sub);

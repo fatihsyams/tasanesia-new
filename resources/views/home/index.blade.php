@@ -354,10 +354,10 @@
                     style="width: 100%; max-height: 200px"
                   />
                   <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
-                      {{$dataCampaign->name}}
+                      {{$dataCampaign->title}}
                   </h4>
                   <p class="p-text" style="text-align: start">
-                      {{$dataCampaign->description}} <a href="/campaign2" style="color: #28a745">Read more</a>
+                      {{$dataCampaign->description}} <a href="detail-campaign/{{$dataCampaign->id}}" style="color: #28a745">Read more</a>
                   </p>
                 </div>
                   @endif

@@ -11,7 +11,6 @@
 
 
             <div class="row mb-3">
-
                 <input type="hidden" name="user_id" id="user_id" class="col-md form-control" value="{{ $user->id }}">
             </div>
 
@@ -26,14 +25,14 @@
                 <label class="col-md-2 col-form-select" for="">
                     Author
                 </label>
-                <input type="text" name="name" class="col-md form-control" value="{{ $user->name }}">
+                <input type="text" name="author" class="col-md form-control" value="{{ $user->name }}">
             </div>
 
             <div class="row mb-3">
                 <label class="col-md-2 col-form-select" for="">
                     Title Campaign
                 </label>
-                <input type="text" name="name" class="col-md form-control">
+                <input type="text" name="title" class="col-md form-control">
             </div>
 
             <div class="mb-3">
