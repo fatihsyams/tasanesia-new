@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateHomeRequest;
 use App\Models\Category;
 use App\Models\CategorySubs;
 use App\Models\Product;
+use App\Models\Campaign;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,6 +23,7 @@ class HomeController extends Controller
     {
         $category = Category::all();
         $data = Product::all();
+        $campaign = Campaign::all();
         $role = Auth::user()->role;
 
         if($role == 'admin'){
@@ -29,7 +31,7 @@ class HomeController extends Controller
         } 
 
         if($role == 'member'){
-            return view('home.index', compact('category', 'data'));
+            return view('home.index', compact('category', 'data', 'campaign'));
         } 
     }
 

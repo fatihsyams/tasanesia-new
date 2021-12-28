@@ -9,6 +9,7 @@ use App\Http\Controllers\ProductController;
 use App\Models\CategorySubs;
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\Campaign;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,7 +27,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function() {
   $category = Category::all();
   $data = Product::all();
-  return view('home.index', compact('category', 'data'));
+  $campaign = Campaign::all();
+  return view('home.index', compact('category', 'data', 'campaign'));
 });
 
 Route::get('/menu-products', function() {

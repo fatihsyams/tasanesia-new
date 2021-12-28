@@ -344,88 +344,24 @@
           </div>
           <div class="col-lg-10">
             <div class="row">
+            @foreach($campaign as $dataCampaign)
+              @if($loop->index < 4)
                 <div class="col-lg-6 col-md-6 p-3 col-sm-6 text-center m-0">
                   <img
                     class="img-fluid img-border"
-                    src="/assets/img/sexy-pink.jpeg"
+                    src="{{$dataCampaign->images}}"
                     alt=""
                     style="width: 100%; max-height: 200px"
                   />
                   <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
-                    Ornamental Plants by Community
+                      {{$dataCampaign->name}}
                   </h4>
                   <p class="p-text" style="text-align: start">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec nec nunc ultrices est suscipit ullamcorper id vitae
-                    nulla. Proin efficitur nisi vel pulvinar pretium. Quisque eu
-                    pretium ipsum. Sed venenatis id turpis et placerat. Morbi
-                    vulputate rhoncus magna, eu mattis risus dapibus a. Fusce
-                    placerat dictum nulla ac venenatis. Sed dapibus et erat et
-                    pharetra. Duis et ultrices lorem. <a href="/campaign2" style="color: #28a745">Read more</a>
+                      {{$dataCampaign->description}} <a href="/campaign2" style="color: #28a745">Read more</a>
                   </p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 p-3 text-center">
-                  <img
-                    class="img-fluid img-border"
-                    src="/assets/img/halal-food.jpeg"
-                    alt=""
-                    style="width: 100%; max-height: 200px"
-                  />
-                  <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
-                    Halal Food goes to America
-                  </h4>
-                  <p class="p-text" style="text-align: start">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec nec nunc ultrices est suscipit ullamcorper id vitae
-                    nulla. Proin efficitur nisi vel pulvinar pretium. Quisque eu
-                    pretium ipsum. Sed venenatis id turpis et placerat. Morbi
-                    vulputate rhoncus magna, eu mattis risus dapibus a. Fusce
-                    placerat dictum nulla ac venenatis. Sed dapibus et erat et
-                    pharetra. Duis et ultrices lorem. <a href="/campaign" style="color: #28a745">Read more</a>
-                  </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-6 p-3 col-sm-6 text-center m-0">
-                  <img
-                    class="img-fluid img-border"
-                    src="/assets/img/sexy-pink.jpeg"
-                    alt=""
-                    style="width: 100%; max-height: 200px"
-                  />
-                  <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
-                    Ornamental Plants by Community
-                  </h4>
-                  <p class="p-text" style="text-align: start">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec nec nunc ultrices est suscipit ullamcorper id vitae
-                    nulla. Proin efficitur nisi vel pulvinar pretium. Quisque eu
-                    pretium ipsum. Sed venenatis id turpis et placerat. Morbi
-                    vulputate rhoncus magna, eu mattis risus dapibus a. Fusce
-                    placerat dictum nulla ac venenatis. Sed dapibus et erat et
-                    pharetra. Duis et ultrices lorem. <a href="/campaign2" style="color:#28a745">Read more</a>
-                  </p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 p-3 text-center">
-                  <img
-                    class="img-fluid img-border"
-                    src="/assets/img/halal-food.jpeg"
-                    alt=""
-                    style="width: 100%; max-height: 200px"
-                  />
-                  <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
-                    Halal Food goes to America
-                  </h4>
-                  <p class="p-text" style="text-align: start">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec nec nunc ultrices est suscipit ullamcorper id vitae
-                    nulla. Proin efficitur nisi vel pulvinar pretium. Quisque eu
-                    pretium ipsum. Sed venenatis id turpis et placerat. Morbi
-                    vulputate rhoncus magna, eu mattis risus dapibus a. Fusce
-                    placerat dictum nulla ac venenatis. Sed dapibus et erat et
-                    pharetra. Duis et ultrices lorem. <a href="/campaign" style="color: #28a745">Read more</a>
-                  </p>
-                </div>
+                  @endif
+                @endforeach
               </div>
           </div>
         </div>
