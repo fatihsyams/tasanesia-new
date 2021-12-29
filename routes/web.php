@@ -41,6 +41,10 @@ Route::get('/menu-campaign', function() {
   return view('campaign.menu', compact('data'));
 });
 
+Route::get('/about-us', function() {
+  return view('about-us.index');
+});
+
 Route::get('detail-campaign/{id}', function ($id) {
   $data = Campaign::where('id', $id)->first();
   return view('campaign.detail-menu', compact('data'));

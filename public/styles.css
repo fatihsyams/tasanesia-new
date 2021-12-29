@@ -63,8 +63,9 @@ p {
 .our-campaign {
     font-weight: 500;
     color: white !important;
-    font-family:'EB Garamond', serif;;
+   
 }
+
 
 .hero {
     margin-top: 100px;
@@ -127,7 +128,7 @@ hr {
 
 @media (max-width: 991px) {
     #our-campaign {
-        display: none;
+        
     }
 }
 
@@ -173,12 +174,27 @@ footer a {
 .p-text {
     font-size: 13px;
     margin-bottom: 2px;
+    color: black;
+}
+.p-text:hover {
+    text-decoration: underline;
+    color: white;
+}
+.p-teks {
+    font-size: 18px;
+    margin-bottom: 2px;
+    
 }
 
 .title-text {
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 20px;
     font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+.title-text:hover {
+    text-decoration: underline;
     color: white;
 }
 
@@ -253,6 +269,63 @@ input {
 ::-moz-placeholder {
     font-size: 14px;
 }
+.our-partners {
+    margin-left: 2.33333333%;
+    
+}
+.lazismu {
+    width: 17.4%;
+}
+.our-product {
+    margin-top: 30px !important;
+}
+
+@media (max-width: 767.98px) { 
+    .logo {
+        width: 47%;
+    }
+    .d-block {
+        height: 280px !important;
+    }
+    .carousel-caption {
+        font-size: 11px;
+        margin-left: -30px !important
+    }
+    .our-partners {
+        margin-left: 0 !important;
+    }
+    
+    .footer-title {
+        font-size: 10vw !important;
+    }
+    .company {
+        margin-top: 10px;
+        color: #28a745;
+    }
+    #our-campaign {
+        width: 95%;
+        margin: 10px;
+    }
+    .our-product {
+        margin: 10px !important;
+        width: 95%;
+    }
+    .lazismu {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .about-us1{
+        width: 382px !important;
+        margin-bottom: 20px;
+    }
+    .about-us2 {
+        font-size: 30px !important;
+    }
+ }
+
+
+
 
 @media only screen and (min-width: 768px) {
     #home-carrousel-responsive {

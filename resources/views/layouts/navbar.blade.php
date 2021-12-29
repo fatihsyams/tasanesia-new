@@ -1,10 +1,10 @@
 <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top p-3"
+      class="navbar navbar-expand-lg navbar-light fixed-top "
       style="background-color: white"
     >
       <div class="container">
-        <a class="navbar-brand" href="/">Tasanesia</a>
+        <img class="logo" src="assets/img/logo.png" width="13%" alt="">
         <button
           class="navbar-toggler"
           type="button"
@@ -19,19 +19,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto me-auto">
             <li class="nav-item">
-              <a class="nav-link p-text" href="/">Home</a>
+              <a class="nav-link p-teks" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-text" href="#">About Us</a>
+              <a class="nav-link p-teks" href="/about-us">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-text" href="/menu-products">Product</a>
+              <a class="nav-link p-teks" href="/menu-products">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-text" href="/menu-campaign">Our Campaign</a>
+              <a class="nav-link p-teks" href="/menu-campaign">Our Campaign</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-text menu-contact-us" href="/contact">Contact Us</a>
+              <a class="nav-link p-teks menu-contact-us" href="/contact">Contact Us</a>
             </li>
   </ul>
 
@@ -50,8 +50,8 @@
 
     @else
      <li class="nav-item dropdown " style="list-style-type: none;">
-        <a class="p-text" id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="text-decoration: none; color: black" >
-        <img src="{{ URL::to('/') }}/assets/img/user-icon.png" alt="" style="width: 20px">
+        <a class="p-text" id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="text-decoration: none; color: black; font-size:16px" >
+        <img src="{{ URL::to('/') }}/assets/img/user-icon.png" alt="" style="width: 27px">
           {{ Auth::user()->name }}
         </a>
 

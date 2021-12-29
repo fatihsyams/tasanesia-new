@@ -37,12 +37,9 @@
               border: 1px solid #bdc3c7;
               background-color:#28a745;
               border-radius: 5px;
-              padding: 10px;
+              padding: 20px;
               max-height: 473px;
-              overflow: scroll;
               -ms-overflow-style: none;
-
-              overflow-x: hidden;
             "
             id="our-campaign"
           >
@@ -50,30 +47,70 @@
             <hr />
 
             <a href="/campaign2" 
-              ><h4 class="title-text" >Oriental Plant by Comunity</h4></a
-            >
-
-            <p class="p-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-
+              class="title-text" >Oriental Plant by Comunity <p class="p-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting read more
+              </p></a
+              >
+      
             <!-- <hr class="ms-auto me-auto" style="max-width: 50%" /> -->
 
-            <a href="/campaign">
-              <h4 class="title-text">Halal food goes to america</h4></a
+            <a href="/campaign2" 
+              class="title-text" >Oriental Plant by Comunity <p class="p-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting read more
+              </p></a
+             >
+            <a href="/campaign2" 
+              class="title-text" >Oriental Plant by Comunity <p class="p-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting read more
+              </p></a
             >
-            <p class="p-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+
+            
           </div>
           <div class="col-lg-10">
-            <div
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="max-height: 473px">
+                <img src="assets/img/daun.png" class="d-block " style="width:100%" alt="...">
+                <div class="carousel-caption  d-md-block" style="text-align: left; margin-left : -100px">
+                  <h5>Ornamental Plants</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-height: 473px">
+                <img src="assets/img/halal-food.jpeg" class="d-block" style="width:100%" alt="...">
+                <div class="carousel-caption d-md-block" style="text-align: left; margin-left : -100px">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptates nisi quae, ipsam delectus earum quas placeat laboriosam quasi voluptas dignissimos distinctio saepe perferendis!</p>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-height: 473px">
+                <img src="assets/img/daun.png" class="d-block " style="width:100%" alt="...">
+                <div class="carousel-caption d-md-block" style="text-align: left; responsive-font-size: 10px; margin-left : -100px">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+            <!-- <div
               id="carouselExampleIndicators"
               class="carousel slide carousel-custom"
               data-bs-ride="carousel"
-            >
+             >
               <div class="carousel-indicators">
                 <button
                   type="button"
@@ -156,7 +193,7 @@
                 ></span>
                 <span class="visually-hidden">Next</span>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -165,14 +202,14 @@
     <!-- start section 2 -->
     <section>
       <div
-        class="container-fluid p-2 mt-4 mb-0 pb-5"
+        class="container p-2 mt-4 mb-0 pb-5 " id="our-campaign"
         style="background-color: #28a745; margin-bottom: 100px"
       >
         <div class="container mt-3">
           <div class="row no-gutters">
             <h2
               class="text-center mt-3 mb-4"
-              style="font-weight: 500; color: white; font-family: 'EB Garamond', serif;"
+              style="font-weight: 500; color: white; "
             >
               Our Product Category
             </h2>
@@ -182,7 +219,7 @@
             >
               <div class="row mx-2">
               @foreach($category as $item)
-                <div class="col-lg-4 col-md-6 p-3">
+                <div class="col-lg-3 col-md-6 p-3">
                   <div class="shadow card py-3 px-3" style="width: 17rem; max-height: 394px; min-height: 394px">
                   <a href="/detail-category/{{ $item->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
                   <img
@@ -202,73 +239,7 @@
               @endforeach
             </div>
               </div>
-              <div
-              class="shadow col-lg-2 mt-sm-4 mt-lg-0 text-center"
-              style="
-                border: 1px solid #bdc3c7;
-                border-radius: 10px;
-                padding: 10px;
-                max-height: 473px;
-                overflow: scroll;
-                -ms-overflow-style: none;
-                overflow-x: hidden;
-                background-color: white;
-              "
-              id="our-campaign"
-            >
-              <h3 class="our-campaign" style="color: #28a745 !important">OUR PARTNERS</h3>
-              <hr />
-              <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/skillage.png"
-                alt=""
-              />
-              <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/bale-jentera.png"
-                alt=""
-              />
-              <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/bprs-botani.png"
-                alt=""
-              />
-              <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/lazis-mu.png"
-                alt=""
-              />
-              <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/bio-hutanea.png"
-                alt=""
-              />
-              <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/permata-desa-indonesia.jpeg"
-                alt=""
-              />
-              <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/umsida.png"
-                alt=""
-              />
-              <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/um-kotabumi.png"
-                alt=""
-              />
-              <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/um-lampung.jpeg"
-                alt=""
-              />
-              <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/um-sidoarjo.jpeg"
-                alt=""
-              />
-            </div>
+             
             </div>
           </div>
         </div>
@@ -277,12 +248,12 @@
     <!-- end section 2 -->
     <!-- section 3 -->
     <section>
-      <div class="container-fluid p-2 my-0 pb-5"  style="margin-bottom: 100px; background-color: #f1f2f6;">
-        <div class="container mt-3 px-5 pb-4">
+      <div class="container p-2 my-0 pb-5 our-product"  style="margin-bottom: 100px; ">
+        <div class="container mt-3 px-5 pb-4 ">
           <div class="row no-gutters">
           <h2
               class="text-center mt-3 mb-4"
-              style="font-weight: 700; color: #28a745; font-family: 'EB Garamond', serif;"
+              style="font-weight: 700; color: #28a745; "
             >
               Our Product
             </h2>
@@ -320,13 +291,14 @@
       </div>
     </section>
     <!-- end section 3 -->
+    <!-- section 4 -->
     <section>
-      <div class="container-fluid p-2 my-4 pb-5">
-      <div class="container mt-3">
+      <div class="container-fluid  my-4 pb-5" >
+      <div class="container mt-3 p-2" style="background-color: #28a745; ">
         <div class="row no-gutters">
         <h2
               class="text-center mt-3 mb-4"
-              style="font-weight: 700; color: #28a745; font-family: 'EB Garamond', serif;"
+              style="font-weight: 700; color: white;"
             >
               Community Development Program
             </h2>
@@ -353,17 +325,133 @@
                     alt=""
                     style="width: 100%; max-height: 200px"
                   />
-                  <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
+                  <h4 class="text-wrap mt-2 mb-3" style="text-align: center; color: white">
                       {{$dataCampaign->title}}
                   </h4>
-                  <p class="p-text" style="text-align: start">
-                      {{$dataCampaign->description}} <a href="detail-campaign/{{$dataCampaign->id}}" style="color: #28a745">Read more</a>
+                  <p class="p-text" style="text-align: start; color: white">
+                      {{$dataCampaign->description}} <a href="detail-campaign/{{$dataCampaign->id}}" style="color: white">Read more</a>
                   </p>
                 </div>
                   @endif
                 @endforeach
               </div>
           </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid p-2 my-4 pb-5">
+      <div class="container mt-3 ">
+        <div class="row no-gutters">
+        <h2
+              class="text-center mt-3 mb-4"
+              style="font-weight: 700; color: #28a745;"
+            >
+              Our Partners
+        </h2>
+        <!-- <div
+              class="shadow col-lg-2 mt-sm-4 mt-lg-0 text-center"
+              style="
+                border: 1px solid #bdc3c7;
+                border-radius: 10px;
+                padding: 10px;
+                max-height: 473px;
+                overflow: scroll;
+                -ms-overflow-style: none;
+                overflow-x: hidden;
+                background-color: white;
+              "
+              id="our-campaign" >
+            
+              <h3 class="our-campaign" style="color: #28a745 !important">OUR PARTNERS</h3>
+              <hr />
+
+            </div>  -->
+          <div class="row d-flex justify-content-center our-partners">
+          <div class="col-lg-2 col-sm-3 lazismu">
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/um-lampung.jpeg"
+                alt=""
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/lazis-mu.png"
+                alt=""
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/bale-jentera.png"
+                alt=""
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/bio-hutanea.png"
+                alt=""
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/um-sidoarjo.jpeg"
+                alt=""
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/permata-desa-indonesia.jpeg"
+                alt=""
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/bprs-botani.png"
+                alt=""
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/umsida.png"
+                alt=""
+              />
+         
+         
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/skillage.png"
+                alt=""
+              />
+         
+          
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/um-kotabumi.png"
+                alt=""
+              />
+            
+             
+          </div>
+          </div>
+         
+          <div class="row d-flex justify-content-center our-partners">
+          
+          </div>
+          
         </div>
       </div>
       </div>
