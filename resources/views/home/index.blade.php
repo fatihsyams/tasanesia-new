@@ -214,7 +214,7 @@
               Our Product Category
             </h2>
             <div
-              class="col-lg-10 horizontal-scrollable"
+              class="col-lg-12 horizontal-scrollable"
               style="max-height: 1000px"
             >
               <div class="row mx-2">
