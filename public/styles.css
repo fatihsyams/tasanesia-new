@@ -4,38 +4,38 @@ body {
 }
 .navbar {
     border-bottom-style: solid;
-    border-bottom-color: #28a745;
+    border-bottom-color: #315343;
     width: 100%;
     border-bottom-width: 3px;
 }
 
 .navbar-brand {
     font-weight: 600;
-    color: #28a745 !important;
+    color: #315343 !important;
     padding: 10px;
 }
 
 .nav-link:hover {
-    color: #28a745 !important;
+    color: #315343 !important;
     cursor: pointer;
 }
 
 .account-auth-login {
-    border: 1px solid #28a745;
+    border: 1px solid #315343;
     border-radius: 6px;
     padding: 7px;
 }
 
 .account-auth-login:hover {
-    border: 1px solid #28a745;
-    background-color: #28a745;
+    border: 1px solid #315343;
+    background-color: #315343;
     color: white !important;
     border-radius: 6px;
     padding: 7px;
 }
 
 .account-auth-register {
-    background-color: #28a745;
+    background-color: #315343;
     border-radius: 6px;
     padding: 7px;
 }
@@ -81,7 +81,7 @@ p {
 .carousel .item,
 .carousel-inner,
 .carousel-inner > .item > img {
-    border-radius: 12px;
+    
 }
 
 .carousel-content {
@@ -289,7 +289,8 @@ input {
     }
     .carousel-caption {
         font-size: 11px;
-        margin-left: -30px !important
+        margin-left: -30px !important;
+        top: 50% !important;
     }
     .our-partners {
         margin-left: 0 !important;

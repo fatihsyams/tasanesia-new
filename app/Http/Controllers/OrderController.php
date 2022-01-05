@@ -52,7 +52,7 @@ class OrderController extends Controller
         ]);
         Alert::success('Success', 'Your order will we confirm 2x24, please check your email');
 
-        return view('home.index');
+        return redirect()->route('home.index');
     }
 
     /**

@@ -4,6 +4,8 @@
 
 @extends('layouts.default')
 
+@extends('layouts.order')
+
 @section('content')
 
 <!DOCTYPE html>
@@ -30,7 +32,7 @@
             <p style="margin-bottom: 10px; margin-top: 10px">Price : Rp. {{  $product->price }}</p>
             <p style="margin-bottom: 10px; margin-top: 10px">Category : {{ $product->status }}</p>
 
-            <a href="/order-product/{{ $product->id }}" class="btn" style="background-color: #28a745; color:white" >Order Now</a>
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn" style="background-color: #28a745; color:white" >Order Now</a>
           </div>
           <h2 style="color: #28a745" class="mt-4">Description</h2>
           <hr style="width: 13%;" class="ms-3">

@@ -4,6 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class IsUser
 {
@@ -18,8 +20,11 @@ class IsUser
     {
         if (Auth::user() &&  Auth::user()->role == 'member') {
             return $next($request);
+        } elseif (Auth::user() &&  Auth::user()->role == 'admin') {
+            return $next($request);
         } else {
+            Alert::error('Error', 'Please login to your account first');
             return redirect('login');
-        }    
+        }
     }
 }

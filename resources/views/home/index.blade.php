@@ -29,45 +29,9 @@
 
     <!-- hero -->
     <section class="id">
-      <div class="container hero">
-        <div class="row no-gutters flex-column-reverse flex-lg-row">
-          <div
-            class="col-lg-2 mt-sm-4 mt-lg-0"
-            style="
-              border: 1px solid #bdc3c7;
-              background-color:#28a745;
-              border-radius: 5px;
-              padding: 20px;
-              max-height: 473px;
-              -ms-overflow-style: none;
-            "
-            id="our-campaign"
-          >
-            <h3 class="our-campaign" style= "">OUR CAMPAIGN</h3>
-            <hr />
-
-            <a href="/campaign2" 
-              class="title-text" >Oriental Plant by Comunity <p class="p-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting read more
-              </p></a
-              >
-      
-            <!-- <hr class="ms-auto me-auto" style="max-width: 50%" /> -->
-
-            <a href="/campaign2" 
-              class="title-text" >Oriental Plant by Comunity <p class="p-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting read more
-              </p></a
-             >
-            <a href="/campaign2" 
-              class="title-text" >Oriental Plant by Comunity <p class="p-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting read more
-              </p></a
-            >
-
-            
-          </div>
-          <div class="col-lg-10">
+      <div class="container-fluid">
+        <div class="row flex-column-reverse flex-lg-row">
+          <div class="col-lg-12 p-0">
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -75,36 +39,36 @@
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active" style="max-height: 473px">
-                <img src="assets/img/daun.png" class="d-block " style="width:100%" alt="...">
-                <div class="carousel-caption  d-md-block" style="text-align: left; margin-left : -100px">
-                  <h5>Ornamental Plants</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+              <div class="carousel-item active" style="height: 100%">
+                <img src="assets/img/daun.png" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill; filter: brightness(50%)" alt="...">
+                <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 50%">
+                  <span style="font-size: 5vw">Ornamental Plants</span>
+                  <p class="px-4 py-3" style="border: 2px solid white; display: table; cursor: pointer">Start shopping now</p>
                 </div>
               </div>
-              <div class="carousel-item" style="max-height: 473px">
-                <img src="assets/img/halal-food.jpeg" class="d-block" style="width:100%" alt="...">
-                <div class="carousel-caption d-md-block" style="text-align: left; margin-left : -100px">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptates nisi quae, ipsam delectus earum quas placeat laboriosam quasi voluptas dignissimos distinctio saepe perferendis!</p>
+              <div class="carousel-item" style="height: 100%">
+                <img src="assets/img/halal-food.jpeg" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill; filter: brightness(50%)" alt="...">
+                <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 50%">
+                  <span style="font-size: 5vw">Halal Food</span>
+                  <p class="px-4 py-3" style="border: 2px solid white; display: table; cursor: pointer">Start shopping now</p>
                 </div>
               </div>
-              <div class="carousel-item" style="max-height: 473px">
-                <img src="assets/img/daun.png" class="d-block " style="width:100%" alt="...">
-                <div class="carousel-caption d-md-block" style="text-align: left; responsive-font-size: 10px; margin-left : -100px">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+              <div class="carousel-item" style="height: 100%">
+                <img src="assets/img/daun.png" class="d-block " style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill; filter: brightness(50%)" alt="...">
+                <div class="carousel-caption d-md-block pt-0" style="text-align: left; responsive-font-size: 10px; margin-left : -100px; top: 50%">
+                  <span style="font-size: 5vw">Fresh Fruits</span>
+                  <p class="px-4 py-3" style="border: 2px solid white; display: table; cursor: pointer">Start shopping now</p>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
           </div>
             <!-- <div
               id="carouselExampleIndicators"
@@ -203,13 +167,13 @@
     <section>
       <div
         class="container p-2 mt-4 mb-0 pb-5 " id="our-campaign"
-        style="background-color: #28a745; margin-bottom: 100px"
+        style="margin-bottom: 100px"
       >
         <div class="container mt-3">
           <div class="row no-gutters">
             <h2
               class="text-center mt-3 mb-4"
-              style="font-weight: 500; color: white; "
+              style="font-weight: 500; color: black; "
             >
               Our Product Category
             </h2>
@@ -217,29 +181,28 @@
               class="col-lg-12 horizontal-scrollable"
               style="max-height: 1000px"
             >
-              <div class="row mx-2">
+              <div class="row mx-2 justify-content-center">
               @foreach($category as $item)
-                <div class="col-lg-3 col-md-6 p-3">
-                  <div class="shadow card py-3 px-3" style="width: 17rem; max-height: 394px; min-height: 394px">
-                  <a href="/detail-category/{{ $item->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
+                <div class="col-lg-4 col-md-6 p-3">
+                  <div class="shadow pb-3" style="width: 17rem; max-height: 380px; min-height: 380px; width: 325px; background-color: #315343;">
+                  <a href="/detail-category/{{ $item->id }}" style="text-decoration: none; color: white;">
                   <img
-                    class="img-fluid img-border"
                     src="{{$item['images']}}"
                     alt=""
                     style="max-width: 100%"
                   />
-                  <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
+                  <h4 class="text-wrap mt-4 mb-3 px-3 pl-4" style="text-align: left">
                    {{$item->name}}
                   </h4>
-                  <p class="hide-scrollbar text-wrap p-text">
-                    {{ $item->description}} <a href="">Read more</a>
+                  <p class="hide-scrollbar text-wrap p-text px-3 pl-4" style="text-decoration: none;font-size: 1.1rem; color: white; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;">
+                    {{ $item->description}}
                   </p>
+                  <span class="px-3 pl-4">Read more <i class="fas fa-angle-right"></i> </span>
+                  </a>
                 </div>
               </div>
               @endforeach
-            </div>
               </div>
-             
             </div>
           </div>
         </div>

@@ -6,56 +6,46 @@
 
 @section('content')
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<section>
-      <div class="container-fluid p-2 my-0 pb-5"  style="margin-bottom: 100px; background-color: #f1f2f6;">
-        <div class="container mt-3 px-5 pb-4">
-          <div class="row no-gutters" style="margin-top: 100px">
-          <h2
-              class="text-center mt-3 mb-4"
-              style="font-weight: 700; color: #28a745; font-family: 'EB Garamond', serif;"
-            >
-              Our Product
-            </h2>
-            @foreach($data as $product)
-            <div class="col-lg-4 col-xl-3 col-md-6 col-12 col mt-md-3 mt-sm-3 mt-3">
-              <a href="detail-product/{{$product->id}}" style="text-decoration: none">
-                  <div class="shadow card" style="width: 18rem; border: 2px solid #28a745; min-height: 280px">
+<div class="container hero">
+    <div class="row">
+            @foreach ($category as $item)
+                <h1 class="mt-5">{{ $item->name }}</h1>
+                <h6 class="mb-3">{{ $item->description }}</h4>
+                    @foreach ($item->product as $prd)
+                    @if($loop->index < 4)
+                    <div class="shadow card col-lg-2 col-md-3 col-sm-6 py-3 mx-1 mt-2 text-center">    
+                    <a href="/detail-product/{{ $prd->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
                     <img
-                    src="{{$product->images}}"
-                    class=" img-fluid card-img-top p-3"
-                    alt="..."
-                    style="width: 100%; max-height: 188px; min-height: 188px; border-radius: 1.25rem"
+                        class="img-fluid img-border"
+                        src="/{{ $prd->images }}"
+                        alt=""
+                        style="max-height: 194px !important; min-height: 90px"
                     />
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                            <h5 style="color: #28a745">{{$product->name}}</h5>
-                          </div>
-                          <div class="col-12 text-center">
-                            <p style="color: #28a745">Rp. {{$product->price}}</p>
-                          </div>
-                          <div class="col-12 text-center">
-                            <p style="color: #28a745">{{$product->status}}</p>
-                          </div>
-                        </div>
+                    <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
+                        {{ $prd->name }}
+                    </h4>
+                        <h6 class="p-text">Price : Rp. {{ $prd->price }}</h6>
+                        <h6 class="p-text">Stock : {{ $prd->quantity }}</h6>
+                        <h6 class="p-text">{{ $prd->descriptions }}</h6>
+                        <h6 class="p-text">{{ $prd->status }} typed products</h6>
+                    </a>
                     </div>
-                  </div>
-              </a>
-        </div>    
-         @endforeach
-          </div>
-        </div>
-      </div>
-    </section>
-</body>
-</html>
+                    @endif
+                    @endforeach
+                    <div class="shadow card col-lg-2 col-md-3 col-sm-6 py-3 mx-1 mt-2 text-center" style="padding-top: 100px !important">    
+                    <a href="/all-products/{{ $item->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
+                    <i
+                        class="fas fa-arrow-circle-right">
+                    </i>
+                    <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
+                        See more
+                    </h4>
+                    </a>
+                    </div>
+            @endforeach
+    </div>
+</div>
+
+@include('layouts.footer')
 
 @endsection

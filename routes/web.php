@@ -32,8 +32,8 @@ Route::get('/', function() {
 });
 
 Route::get('/menu-products', function() {
-  $data = Product::all();
-  return view('product.menu', compact('data'));
+  $category = Category::all();
+  return view('product.menu', compact('category'));
 });
 
 Route::get('/menu-campaign', function() {
@@ -55,9 +55,14 @@ Route::get('getCourse/{id}', function ($id) {
   return response()->json($category_sub);
 });
 
-Route::get('menu-categories/{id}', function ($id) {
+Route::get('all-products/category/{id}', function ($id) {
   $data = Product::where('category_subs_id',$id)->get();
-  return view('product.menu', compact('data'));
+  return view('product.all-product', compact('data'));
+});
+
+Route::get('all-products/{id}', function ($id) {
+  $data = Product::where('category_id',$id)->get();
+  return view('product.all-product', compact('data'));
 });
 
 Route::get('/contact', function () {
@@ -79,10 +84,12 @@ Route::group(['middleware' => ['admin']], function () {
 });
 
 Route::group(['middleware' => ['member']], function () {
-
+  Route::get('/detail-product/{id}', [ProductController::class, 'getDetailProduct']);
 });
 
 Route::get('/detail-category/{id}', [CategoryController::class, 'getDetailCategory']);
-Route::get('/detail-product/{id}', [ProductController::class, 'getDetailProduct']);
+// Route::get('/detail-product/{id}', [ProductController::class, 'getDetailProduct']);
 Route::get('/order-product/{id}', [OrderController::class, 'getDataOrder']);
+Route::get('/detail-category-new', [ProductController::class, 'getDetailProductVTwo']);
+
 

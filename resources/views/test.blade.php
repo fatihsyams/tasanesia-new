@@ -34,7 +34,7 @@
                         class="img-fluid img-border"
                         src="/{{ $prd->images }}"
                         alt=""
-                        style="max-height: auto; min-height: 90px"
+                        style="max-height: 194px !important; min-height: 90px"
                     />
                     <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
                         {{ $prd->name }}
@@ -47,8 +47,8 @@
                     </div>
                     @endif
                     @endforeach
-                    <div class="shadow card col-lg-2 col-md-3 col-sm-6 py-3 mx-1 mt-2 text-center">    
-                    <a href="/menu-categories/{{ $item->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
+                    <div class="shadow card col-lg-2 col-md-3 col-sm-6 py-3 mx-1 mt-2 text-center" style="padding-top: 100px !important">    
+                    <a href="/all-products/category/{{ $item->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
                     <i
                         class="fas fa-arrow-circle-right">
                     </i>

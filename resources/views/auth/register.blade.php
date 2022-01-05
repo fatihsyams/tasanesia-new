@@ -62,8 +62,8 @@
 
                         <div class="mb-1" style="margin-top: -17px !important;">
                           <label for="exampleFormControlInput1" class="form-label"></label>
-                          <input id="no_hp" type="number" class="form-control @error('no_hp') is-invalid @enderror" name="no_hp" value="{{ old('no_hp') }}" placeholder="Phone number" required autocomplete="no_hp">
-                          @error('no_hp')
+                          <input id="phone" type="number" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" placeholder="Phone number" required autocomplete="phone">
+                          @error('phone')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

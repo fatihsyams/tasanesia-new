@@ -7,6 +7,7 @@ use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Category;
 use App\Models\CategorySubs;
+use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
 
 
@@ -116,11 +117,13 @@ class ProductController extends Controller
     // controller detail product
     public function getDetailProduct ($id)
     {
+        $user = Auth::user();
         $product = Product::where('id', $id)->first();
         $category = Category::where('id', $product->category_id)->first();
         $subCategory = CategorySubs::where('id', $product->category_subs_id)->first();
         
         $data = [
+            'user' => $user,
             'category' => $category,
             'subCategory' => $subCategory,
             'product' => $product,
@@ -128,4 +131,11 @@ class ProductController extends Controller
 
         return view('testProduct', $data);
     }
+
+    public function getDetailProductVTwo()
+    {
+        $category = Category::all();
+        return view('testProductNew', compact('category'));
+    }
+
 }

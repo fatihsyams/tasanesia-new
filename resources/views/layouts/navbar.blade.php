@@ -4,7 +4,7 @@
       style="background-color: white"
     >
       <div class="container">
-        <img class="logo" src="assets/img/logo.png" width="13%" alt="">
+        <img class="logo" src="{{ asset('/assets/logos/permata-desa-indonesia.jpeg') }}" width="3.5%" alt="">
         <button
           class="navbar-toggler"
           type="button"
@@ -31,20 +31,20 @@
               <a class="nav-link p-teks" href="/menu-campaign">Our Campaign</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-teks menu-contact-us" href="/contact">Contact Us</a>
+              <a class="nav-link p-teks" href="/contact">Contact Us</a>
             </li>
   </ul>
 
     @guest
     @if (Route::has('login'))
     <li class="nav-item " style="list-style-type: none;">
-      <a href="{{ route('login') }}" class="nav-link p-text account-auth-login" style="color:#28a745">Login</a>
+      <a href="{{ route('login') }}" class="nav-link account-auth-login" style="color:#315343; font-size: 15px">Login</a>
     </li>
     @endif
 
     @if (Route::has('register'))
     <li class="nav-item" style="list-style-type: none;">
-      <a href="{{ route('register') }}" class="nav-link p-text account-auth-register text-white">Register</a>
+      <a href="{{ route('register') }}" class="nav-link account-auth-register text-white" style="font-size: 15px">Register</a>
     </li>
     @endif
 
