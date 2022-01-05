@@ -9,11 +9,62 @@
 <div class="container hero">
     <div class="row">
             @foreach ($category as $item)
-                <h1 class="mt-5">{{ $item->name }}</h1>
-                <h6 class="mb-3">{{ $item->description }}</h4>
-                    @foreach ($item->product as $prd)
+                <h1 class="mt-5" style="text-align: center; font-weight: 700; font-size: 40px">{{ $item->name }}</h1>
+                <h6 class="mb-3" style="text-align: center; font-size: 18px; font-weight: 500; color: rgba(68, 68, 68, 1); margin-top: 15px" >{{ $item->description }}</h6>
+                <div class="row" style="margin-top: 35px">
+                     <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link1" aria-current="page" href="#nav-category">All Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link1" href="#" style="">Plants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link1" href="#">Fruits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link1">Halal Foods</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row" style="position: relative">
+                        <div class="col-lg-4 col-md-6 col-sm-12 row_image ">
+                            <img class="image" src="assets/img/plants.jpg" style=" width: 340px; height: 448px"alt="" srcset="">
+                            <div class="overlay">
+                                <div class="text1">Hello World</div>
+                            </div>
+                            <!-- <div class="image_content"> ini biarin aja jgn di delete dulu
+                                <h1 style="font-size: 34px">Monstera Deliciosa</h1>
+                                <p> Rp350.000 .</p>
+                            </div> -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12  row_image">
+                            <img class="image" src="assets/img/plants.jpg" style=" width: 340px; height: 448px"alt="" srcset="">
+                            <div class="overlay">
+                                <div class="text1">Hello World</div>
+                            </div>
+                            <!-- <div class="image_content"> ini biarin aja jgn di delete dulu
+                                <h1 style="font-size: 34px">Monstera Deliciosa</h1>
+                                <p> Rp350.000 .</p>
+                            </div> -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12  row_image">
+                            <img class="image" src="assets/img/plants.jpg" style=" width: 340px; height: 448px"alt="" srcset="">
+                            <div class="overlay">
+                                <div class="text1">Hello World</div>
+                            </div>
+                            <!-- <div class="image_content"> ini biarin aja jgn di delete dulu
+                                <h1 style="font-size: 34px">Monstera Deliciosa</h1>
+                                <p> Rp350.000 .</p>
+                            </div> -->
+                        </div>
+                    </div> 
+                    <!-- @foreach ($item->product as $prd)
+                    
                     @if($loop->index < 4)
-                    <div class="shadow card col-lg-2 col-md-3 col-sm-6 py-3 mx-1 mt-2 text-center">    
+                   
+                    <div class="shadow card col-lg-2 col-md-3 col-sm-6 py-3 mx-1 mt-2 text-center">
+                      
                     <a href="/detail-product/{{ $prd->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
                     <img
                         class="img-fluid img-border"
@@ -31,7 +82,7 @@
                     </a>
                     </div>
                     @endif
-                    @endforeach
+                    @endforeach -->
                     <div class="shadow card col-lg-2 col-md-3 col-sm-6 py-3 mx-1 mt-2 text-center" style="padding-top: 100px !important">    
                     <a href="/all-products/{{ $item->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
                     <i

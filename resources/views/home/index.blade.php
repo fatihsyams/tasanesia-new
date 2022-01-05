@@ -218,7 +218,7 @@
               class="text-center mt-3 mb-4"
               style="font-weight: 700; color: #28a745; "
             >
-              Our Product
+              Our Products
             </h2>
             @foreach($data as $product)
             @if($loop->index < 12)
@@ -254,6 +254,132 @@
       </div>
     </section>
     <!-- end section 3 -->
+    <section>
+      <div class="container-fluid p-2 my-4 pb-5">
+      <div class="container mt-3 ">
+        <div class="row no-gutters">
+        <h2
+              class="text-center mt-3 mb-4"
+              style="font-weight: 700; color: #28a745; Font-family: Plus Jakarta Sans"
+            >
+              Our Partners
+        </h2>
+        <!-- <div
+              class="shadow col-lg-2 mt-sm-4 mt-lg-0 text-center"
+              style="
+                border: 1px solid #bdc3c7;
+                border-radius: 10px;
+                padding: 10px;
+                max-height: 473px;
+                overflow: scroll;
+                -ms-overflow-style: none;
+                overflow-x: hidden;
+                background-color: white;
+              "
+              id="our-campaign" >
+            
+              <h3 class="our-campaign" style="color: #28a745 !important">OUR PARTNERS</h3>
+              <hr />
+
+            </div>  -->
+          <div class="row d-flex justify-content-center our-partners">
+          <div class="col-lg-2 col-sm-3 lazismu">
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/um-lampung.jpeg"
+                alt=""
+                style=" filter: grayscale(100%);"
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/lazis-mu.png"
+                alt=""
+                style=" filter: grayscale(100%);"
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/bale-jentera.png"
+                alt=""
+                style=" filter: grayscale(100%);"
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/bio-hutanea.png"
+                alt=""
+                style=" filter: grayscale(100%);"
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/um-sidoarjo.jpeg"
+                alt=""
+                style=" filter: grayscale(100%);"
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/permata-desa-indonesia.jpeg"
+                alt=""
+                style=" filter: grayscale(100%);"
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/bprs-botani.png"
+                alt=""
+                style=" filter: grayscale(100%);"
+              />
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/umsida.png"
+                alt=""
+                style=" filter: grayscale(100%);"
+              />
+         
+         
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/skillage.png"
+                alt=""
+                style=" filter: grayscale(100%);"
+              />
+         
+          
+          </div>
+          <div class="col-lg-2 col-sm-3 lazismu" >
+          <img
+                class="mb-2 mt-2 img-fluid img-our-partner"
+                src="/assets/logos/um-kotabumi.png"
+                alt=""
+                style=" filter: grayscale(100%);"
+              />
+            
+             
+          </div>
+          </div>
+         
+          <div class="row d-flex justify-content-center our-partners">
+          
+          </div>
+          
+        </div>
+      </div>
+      </div>
+    </section>
     <!-- section 4 -->
     <section>
       <div class="container-fluid  my-4 pb-5" >
@@ -303,122 +429,7 @@
       </div>
       </div>
     </section>
-    <section>
-      <div class="container-fluid p-2 my-4 pb-5">
-      <div class="container mt-3 ">
-        <div class="row no-gutters">
-        <h2
-              class="text-center mt-3 mb-4"
-              style="font-weight: 700; color: #28a745;"
-            >
-              Our Partners
-        </h2>
-        <!-- <div
-              class="shadow col-lg-2 mt-sm-4 mt-lg-0 text-center"
-              style="
-                border: 1px solid #bdc3c7;
-                border-radius: 10px;
-                padding: 10px;
-                max-height: 473px;
-                overflow: scroll;
-                -ms-overflow-style: none;
-                overflow-x: hidden;
-                background-color: white;
-              "
-              id="our-campaign" >
-            
-              <h3 class="our-campaign" style="color: #28a745 !important">OUR PARTNERS</h3>
-              <hr />
-
-            </div>  -->
-          <div class="row d-flex justify-content-center our-partners">
-          <div class="col-lg-2 col-sm-3 lazismu">
-          <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/um-lampung.jpeg"
-                alt=""
-              />
-          </div>
-          <div class="col-lg-2 col-sm-3 lazismu" >
-          <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/lazis-mu.png"
-                alt=""
-              />
-          </div>
-          <div class="col-lg-2 col-sm-3 lazismu" >
-          <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/bale-jentera.png"
-                alt=""
-              />
-          </div>
-          <div class="col-lg-2 col-sm-3 lazismu" >
-          <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/bio-hutanea.png"
-                alt=""
-              />
-          </div>
-          <div class="col-lg-2 col-sm-3 lazismu" >
-
-          <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/um-sidoarjo.jpeg"
-                alt=""
-              />
-          </div>
-          <div class="col-lg-2 col-sm-3 lazismu" >
-          <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/permata-desa-indonesia.jpeg"
-                alt=""
-              />
-          </div>
-          <div class="col-lg-2 col-sm-3 lazismu" >
-          <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/bprs-botani.png"
-                alt=""
-              />
-          </div>
-          <div class="col-lg-2 col-sm-3 lazismu" >
-          <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/umsida.png"
-                alt=""
-              />
-         
-         
-          </div>
-          <div class="col-lg-2 col-sm-3 lazismu" >
-          <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/skillage.png"
-                alt=""
-              />
-         
-          
-          </div>
-          <div class="col-lg-2 col-sm-3 lazismu" >
-          <img
-                class="mb-2 mt-2 img-fluid img-our-partner"
-                src="/assets/logos/um-kotabumi.png"
-                alt=""
-              />
-            
-             
-          </div>
-          </div>
-         
-          <div class="row d-flex justify-content-center our-partners">
-          
-          </div>
-          
-        </div>
-      </div>
-      </div>
-    </section>
+   
     <!-- Navbar -->
     @include('layouts.footer')
     <!-- End Navbar -->

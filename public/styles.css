@@ -50,6 +50,20 @@ p {
     margin-bottom: 0;
     margin-top: 0;
 }
+.nav-link1 {
+    color: rgba(136, 136, 136, 1);
+}
+.nav-link1:hover{
+    color: #315343;
+}
+.nav-link1:hover::after{
+    content:'';
+    display: block;
+    border-bottom: 7px solid #315343;
+    width: 7px;
+    margin: auto;
+    
+}
 
 .nav-link {
     margin-right: 15px;
@@ -279,6 +293,55 @@ input {
 .our-product {
     margin-top: 30px !important;
 }
+ .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 24px;
+    right: 0;
+    height: 448px;
+    width: 340px;
+    opacity: 0;
+    transition: .5s ease;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54));
+  }
+.row_image:hover .overlay {
+    opacity: 1;
+}
+.text1 {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 320px;
+    left: 55%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  } 
+ /* .image_content{ ini keep aja dulu klas jgn di delete
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.54); 
+  color: #f1f1f1;
+  width: 340px;
+  padding: 20px;
+  padding-top: 320px;
+  
+} 
+.image_content:hover{
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.54); 
+  color: #f1f1f1;
+  width: 340px;
+  padding: 20px;
+  padding-top: 320px;
+}  */
 
 @media (max-width: 767.98px) { 
     .logo {
