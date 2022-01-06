@@ -216,10 +216,116 @@
           <div class="row no-gutters">
           <h2
               class="text-center mt-3 mb-4"
-              style="font-weight: 700; color: #28a745; "
+              style="font-weight: 500; color: black;font-family: poppins; font-size: 40px "
             >
               Our Products
             </h2>
+            <div class="row justify-content-center" style="position: relative; margin-top:60px">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="semua">
+                  <img class="image" src="assets/img/plants.jpg">
+                  <div class="info">
+                    <div class="over">
+                      <p style="font-size: 34px">Monstera Deliciosa</p>
+                      <p>Rp350.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="semua">
+                  <img class="image" src="assets/img/plants.jpg">
+                  <div class="info">
+                    <div class="over">
+                      <p style="font-size: 34px">Monstera Deliciosa</p>
+                      <p>Rp350.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="semua">
+                  <img class="image" src="assets/img/plants.jpg">
+                  <div class="info">
+                    <div class="over">
+                      <p style="font-size: 34px">Monstera Deliciosa</p>
+                      <p>Rp350.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="semua">
+                  <img class="image" src="assets/img/plants.jpg">
+                  <div class="info">
+                    <div class="over">
+                      <p style="font-size: 34px">Monstera Deliciosa</p>
+                      <p>Rp350.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="semua">
+                  <img class="image" src="assets/img/plants.jpg">
+                  <div class="info">
+                    <div class="over">
+                      <p style="font-size: 34px">Monstera Deliciosa</p>
+                      <p>Rp350.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="semua">
+                  <img class="image" src="assets/img/plants.jpg">
+                  <div class="info">
+                    <div class="over">
+                      <p style="font-size: 34px">Monstera Deliciosa</p>
+                      <p>Rp350.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="semua">
+                  <img class="image" src="assets/img/plants.jpg">
+                  <div class="info">
+                    <div class="over">
+                      <p style="font-size: 34px">Monstera Deliciosa</p>
+                      <p>Rp350.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="semua">
+                  <img class="image" src="assets/img/plants.jpg">
+                  <div class="info">
+                    <div class="over">
+                      <p style="font-size: 34px">Monstera Deliciosa</p>
+                      <p>Rp350.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="semua">
+                  <img class="image" src="assets/img/plants.jpg">
+                  <div class="info">
+                    <div class="over">
+                     <p style="font-size: 34px">Monstera Deliciosa</p>
+                     <p>Rp350.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="row d-flex justify-content-center mx-auto" style="margin-top:60px">
+                <button class="btn " type="button" style="color:#315343; font-size: 15px; border: 2px solid #315343; width: 200px">See Other Products</button>
+              </div>  
+            </div>
+
             @foreach($data as $product)
             @if($loop->index < 12)
             <div class="col-lg-4 col-xl-3 col-md-6 col-12 col mt-md-3 mt-sm-3 mt-3">
@@ -254,16 +360,17 @@
       </div>
     </section>
     <!-- end section 3 -->
+    <!-- section 4 -->
     <section>
-      <div class="container-fluid p-2 my-4 pb-5">
+      <div class="container-fluid p-2 my-4 pb-5" >
       <div class="container mt-3 ">
         <div class="row no-gutters">
         <h2
               class="text-center mt-3 mb-4"
-              style="font-weight: 700; color: #28a745; Font-family: Plus Jakarta Sans"
+              style="font-weight: 500; color: black;font-family: poppins; font-size: 40px "
             >
               Our Partners
-        </h2>
+            </h2>
         <!-- <div
               class="shadow col-lg-2 mt-sm-4 mt-lg-0 text-center"
               style="
@@ -282,7 +389,7 @@
               <hr />
 
             </div>  -->
-          <div class="row d-flex justify-content-center our-partners">
+          <div class="row d-flex justify-content-center our-partners" style="margin-top:60px">
           <div class="col-lg-2 col-sm-3 lazismu">
           <img
                 class="mb-2 mt-2 img-fluid img-our-partner"
@@ -347,8 +454,6 @@
                 alt=""
                 style=" filter: grayscale(100%);"
               />
-         
-         
           </div>
           <div class="col-lg-2 col-sm-3 lazismu" >
           <img
@@ -357,8 +462,6 @@
                 alt=""
                 style=" filter: grayscale(100%);"
               />
-         
-          
           </div>
           <div class="col-lg-2 col-sm-3 lazismu" >
           <img
@@ -367,43 +470,32 @@
                 alt=""
                 style=" filter: grayscale(100%);"
               />
-            
-             
           </div>
           </div>
-         
-          <div class="row d-flex justify-content-center our-partners">
-          
-          </div>
-          
         </div>
       </div>
       </div>
     </section>
-    <!-- section 4 -->
+    <!-- section 5 -->
     <section>
       <div class="container-fluid  my-4 pb-5" >
-      <div class="container mt-3 p-2" style="background-color: #28a745; ">
+      <div class="container mt-3 p-2" style="background-color: ; ">
         <div class="row no-gutters">
         <h2
               class="text-center mt-3 mb-4"
-              style="font-weight: 700; color: white;"
+              style="font-weight: 500; color: black;font-family: poppins; font-size: 40px "
             >
-              Community Development Program
+              Our Campaign
             </h2>
-          <div class="col-lg-2" id="our-campaign">
-            <img
-              class="img-fluid adv-border"
-              src="/assets/img/nanas-adv.jpg"
-              alt=""
-            />
-            <img
-              class="img-fluid adv-border"
-              src="/assets/img/plants.jpg"
-              alt=""
-            />
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/img/daun.png" class="card-img-top" alt="...">
+              <div class="card-body">
+               <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typeset...</p>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-10">
+          <!-- <div class="col-lg-10">
             <div class="row">
             @foreach($campaign as $dataCampaign)
               @if($loop->index < 4)
@@ -424,7 +516,7 @@
                   @endif
                 @endforeach
               </div>
-          </div>
+          </div> -->
         </div>
       </div>
       </div>
