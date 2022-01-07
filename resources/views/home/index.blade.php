@@ -362,7 +362,7 @@
     <!-- end section 3 -->
     <!-- section 4 -->
     <section>
-      <div class="container-fluid p-2 my-4 pb-5" >
+      <div class="container-fluid p-2 pb-5" style="margin-top:100px" >
       <div class="container mt-3 ">
         <div class="row no-gutters">
         <h2
@@ -478,20 +478,39 @@
     </section>
     <!-- section 5 -->
     <section>
-      <div class="container-fluid  my-4 pb-5" >
-      <div class="container mt-3 p-2" style="background-color: ; ">
+      <div class="container-fluid pb-5" style="margin-top:100px; margin-bottom:151px">
+      <div class="container  p-2" >
         <div class="row no-gutters">
         <h2
-              class="text-center mt-3 mb-4"
-              style="font-weight: 500; color: black;font-family: poppins; font-size: 40px "
+              class="text-center mt-3"
+              style="font-weight: 500; color: black;font-family: poppins; font-size: 40px; margin-bottom: 69px "
             >
               Our Campaign
             </h2>
           <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 25rem;border: none">
               <img src="assets/img/daun.png" class="card-img-top" alt="...">
               <div class="card-body">
-               <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typeset...</p>
+                <p class="card-caption">By Admin |  03 March 2019</p>
+               <p class="card-text" >Lorem Ipsum is simply dummy text of the printing and typeset...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card" style="width: 25rem;border: none">
+              <img src="assets/img/daun.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-caption">By Admin |  03 March 2019</p>
+               <p class="card-text" >Lorem Ipsum is simply dummy text of the printing and typeset...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card" style="width: 25rem;border: none">
+              <img src="assets/img/daun.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-caption">By Admin |  03 March 2019</p>
+               <p class="card-text" >Lorem Ipsum is simply dummy text of the printing and typeset...</p>
               </div>
             </div>
           </div>

@@ -61,9 +61,13 @@ p {
     display: block;
     border-bottom: 7px solid #315343;
     width: 7px;
-    margin: auto;
-    
+    margin: auto;  
 }
+
+.nav-link2 {
+    color: black;
+}
+
 
 .nav-link {
     margin-right: 15px;
@@ -148,7 +152,6 @@ hr {
 
 /* footer */
 footer {
-    background-color: #ecf0f1;
     padding-top: 100x;
 }
 
@@ -353,6 +356,30 @@ input {
 .semua .image { width: 340px; height: 448px}
 .semua:hover .info {transform: translateY(-448px);}
 .semua:hover .over {display: block;}
+
+.card-text {
+    font-size: 24px;
+    font-weight: 700px !important;
+    margin-top: 12px;
+}
+.card-caption{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(68, 68, 68, 1);
+    margin-top: 24px;
+}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+
     
 
 @media (max-width: 767.98px) { 

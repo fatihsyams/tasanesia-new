@@ -6,6 +6,18 @@
 
 @section('content')
 <section>
+<div class="container-fluid">
+    <div class="row flex-column-reverse flex-lg-row">
+        <div class="col-lg-12">
+            <img src="/assets/img/daun.png" alt="" srcset="">
+            <div class="content">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 " style="text-align: center; margin-top: 40px">
