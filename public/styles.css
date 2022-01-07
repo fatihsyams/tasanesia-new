@@ -316,15 +316,65 @@ input {
     margin-top: 24px;
 }
 
-.container .content {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-  }
+/* contact-us */
+.heading{
+    font-weight: 400; 
+    color: #517061;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading1{
+    font-size:20px;
+    color:#4e4e4e;
+    font-weight: 100;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading2{
+    font-weight: 500; 
+    color: #517061;
+    font-size: 3.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading3{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icon1{
+    font-size: 40px;
+    color:#517061;
+   
+}
+.heading4{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-size: 1.75rem;
+    color:#517061;
+}
+
+/* about us */
+.image_row{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/daun.png);
+    height: 700px;
+    background-size: cover;
+    position: relative;
+}
+.display-4{
+    color: white;
+}
+.image_row .display-4 {
+    text-align: center;
+    margin-top: 355px;
+    text-shadow: 1px rgba(0, 0, 0, 0.6);
+}
+.image_row::after{
+
+}
+.img-fluid{
+
+}
 
 
     

@@ -19,11 +19,9 @@
 <body>
     <div class="container hero">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6" style="padding:30px">
             <img
-              src="/{{ $product->images }}"
-              alt=""
-              style="width: 100%; border-radius: 10px"
+              src="/{{ $product->images }}" alt="" style="width: 100%; border-radius: 10px"
             />
           </div>
           <div class="col-lg-6 mt-5">
