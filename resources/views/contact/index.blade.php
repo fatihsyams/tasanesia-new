@@ -9,7 +9,78 @@
 <section class="ftco-section">
       <div class="container hero">
         <div class="row justify-content-center ">
-          <div class="col-md-12 ">
+          <div class="col-lg-6 col-md-6 col-sm-12 ">
+            <div class="row">
+              <h1>Contact Details</h1>
+              <h5>TXT or CALL for a free estimate</h5>
+              <h1>1-800-700-600</h1>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="" class="button"
+                ><i class="fas fa-map-marker-alt"></i></a>
+                <h1>Location</h1>
+                <p>60 East 65th Street
+                New York City, NY 10065</p>
+              </div>
+              <div class="col-md-6">
+                <a href="" class="button"
+                ><i class="fas fa-map-marker-alt"></i></a>
+                <h1>Location</h1>
+                <p>60 East 65th Street
+                New York City, NY 10065</p>
+              </div>
+              <div class="col-md-6">
+                <a href="" class="button"
+                ><i class="fas fa-map-marker-alt"></i></a>
+                <h1>Location</h1>
+                <p>60 East 65th Street
+                New York City, NY 10065</p>
+              </div>
+              <div class="col-md-6">
+                <a href="" class="button"
+                ><i class="fas fa-map-marker-alt"></i></a>
+                <h1>Location</h1>
+                <p>60 East 65th Street
+                New York City, NY 10065</p>
+              </div>
+              <div class="col-md-6">
+                <a href="" class="button"
+                ><i class="fas fa-map-marker-alt"></i></a>
+                <h1>Location</h1>
+                <p>60 East 65th Street
+                New York City, NY 10065</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 c0l-sm-12">
+            <div class="row">
+              <h1>Have a question?</h1>
+            </div>
+            <div class="row">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
             <div class="wrapper">
               <div class="row no-gutters ">
                 <div
@@ -176,7 +247,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          
         </div>
         <div class="row row1 justify-content-center" style="margin-top:8rem">
           <div class="col-md-12 ">

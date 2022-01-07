@@ -61,9 +61,13 @@ p {
     display: block;
     border-bottom: 7px solid #315343;
     width: 7px;
-    margin: auto;
-    
+    margin: auto;  
 }
+
+.nav-link2 {
+    color: black;
+}
+
 
 .nav-link {
     margin-right: 15px;
@@ -148,7 +152,6 @@ hr {
 
 /* footer */
 footer {
-    background-color: #ecf0f1;
     padding-top: 100x;
 }
 
@@ -293,57 +296,6 @@ input {
 .our-product {
     margin-top: 30px !important;
 }
- .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 24px;
-    right: 0;
-    height: 448px;
-    width: 340px;
-    opacity: 0;
-    transition: .5s ease;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54));
-  }
-.row_image:hover .overlay {
-    opacity: 1;
-}
-.text1 {
-    color: white;
-    font-size: 20px;
-    position: relative;
-    top: 320px;
-    left: 55%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: left;
-  } 
- /* .image_content{ ini keep aja dulu klas jgn di delete
-  position: absolute;
-  bottom: 0;
-  height: 100%;
-  background: rgb(0, 0, 0); 
-  background: rgba(0, 0, 0, 0.54); 
-  color: #f1f1f1;
-  width: 340px;
-  padding: 20px;
-  padding-top: 320px;
-  
-} 
-.image_content:hover{
-  position: absolute;
-  bottom: 0;
-  height: 100%;
-  background: rgb(0, 0, 0); 
-  background: rgba(0, 0, 0, 0.54); 
-  color: #f1f1f1;
-  width: 340px;
-  padding: 20px;
-  padding-top: 320px;
-}  */
-
-
       
 .info {height: 448px; width: 340px; background: black; opacity: 0.6; color: #fff; font-weight: normal; transition: transform 0.5s; position: relative;padding: 20px; padding-top: 130px;}
 .over {position: absolute; margin-top:100px; text-align: left; display: none;}
@@ -351,6 +303,30 @@ input {
 .semua .image { width: 340px; height: 448px}
 .semua:hover .info {transform: translateY(-448px);}
 .semua:hover .over {display: block;}
+
+.card-text {
+    font-size: 24px;
+    font-weight: 700px !important;
+    margin-top: 12px;
+}
+.card-caption{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(68, 68, 68, 1);
+    margin-top: 24px;
+}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+
     
 
 @media (max-width: 767.98px) { 
