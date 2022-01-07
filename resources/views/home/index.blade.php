@@ -371,24 +371,6 @@
             >
               Our Partners
             </h2>
-        <!-- <div
-              class="shadow col-lg-2 mt-sm-4 mt-lg-0 text-center"
-              style="
-                border: 1px solid #bdc3c7;
-                border-radius: 10px;
-                padding: 10px;
-                max-height: 473px;
-                overflow: scroll;
-                -ms-overflow-style: none;
-                overflow-x: hidden;
-                background-color: white;
-              "
-              id="our-campaign" >
-            
-              <h3 class="our-campaign" style="color: #28a745 !important">OUR PARTNERS</h3>
-              <hr />
-
-            </div>  -->
           <div class="row d-flex justify-content-center our-partners" style="margin-top:60px">
           <div class="col-lg-2 col-sm-3 lazismu">
           <img

@@ -1,19 +1,10 @@
-@extends('layouts.navbar')
-
-@section('title', 'Detail Category')
-
-@extends('layouts.default')
-
-@extends('layouts.order')
-
-@section('content')
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Test Page</title>
 
 
@@ -160,7 +151,8 @@ img.hover-shadow {
     <div class="container hero">
         <div class="row">
           <div class="col-lg-6" style="padding:30px">
-            <img src="ssets/img/plants.jpg" alt="" srcset="">
+            <img src="/assets/img/plants.jpg" alt="" srcset="">
+
             <div class="row">
               <div class="column">
                 <img src="img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
@@ -371,5 +363,3 @@ function showSlides(n) {
 </script>
 </body>
 </html>
-
-@endsection
