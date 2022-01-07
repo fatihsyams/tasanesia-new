@@ -71,6 +71,7 @@ Route::get('/contact', function () {
 Route::resource('campaign', CampaignController::class);
 Route::resource('home', HomeController::class);
 Route::resource('order', OrderController::class);
+Route::resource('product', ProductController::class);
 
 Auth::routes();
 

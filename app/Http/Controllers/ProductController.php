@@ -131,11 +131,4 @@ class ProductController extends Controller
 
         return view('testProduct', $data);
     }
-
-    public function getDetailProductVTwo()
-    {
-        $category = Category::all();
-        return view('testProductNew', compact('category'));
-    }
-
 }

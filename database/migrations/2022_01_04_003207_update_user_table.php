@@ -18,7 +18,7 @@ class UpdateUserTable extends Migration
             $table->string('place_of_birth')->after('date_of_birth')->nullable();
             $table->string('phone')->after('place_of_birth');
             $table->string('address')->after('password')->nullable();
-            $table->string('img_profile')->after('address')->default('/assets/img/img_profile');
+            $table->string('img_profile')->after('address')->default('/assets/img/img_profile.png');
             $table->string('notes')->after('img_profile')->nullable();
         });
     }

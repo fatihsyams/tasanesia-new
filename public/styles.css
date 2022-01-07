@@ -223,6 +223,7 @@ footer a {
     white-space: nowrap;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    
 }
 
 .horizontal-scrollable > .row::-webkit-scrollbar {
@@ -305,8 +306,9 @@ input {
     transition: .5s ease;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54));
   }
-.row_image:hover .overlay {
+.row-image:hover .overlay {
     opacity: 1;
+
 }
 .text1 {
     color: white;

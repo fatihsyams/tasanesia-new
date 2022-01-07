@@ -4,8 +4,8 @@
 
 @extends('layouts.default')  
 
-@section('content')
-<div class="container-fluid hero p-2 pb-5"  style="margin-bottom: 100px; background-color: #f1f2f6;">
+@section('product')
+<!-- <div class="container-fluid hero p-2 pb-5"  style="margin-bottom: 100px; background-color: #f1f2f6;">
         <div class="container mt-3 px-5 pb-4">
           <div class="row no-gutters">
           <h2
@@ -43,5 +43,17 @@
          @endforeach
           </div>
         </div>
-      </div>
-      @include('layouts.footer')
+      </div> -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="semua">
+                <img class="image" src="{{asset($product->images)}}">
+                <div class="info">
+                    <div class="over">
+                        <p style="font-size: 34px">{{$product->name}}</p>
+                        <p>Rp. {{$product->price}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+@endsection
+@include('layouts.footer')

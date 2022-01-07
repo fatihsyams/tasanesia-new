@@ -184,17 +184,17 @@
               <div class="row mx-2 justify-content-center">
               @foreach($category as $item)
                 <div class="col-lg-4 col-md-6 p-3">
-                  <div class="shadow pb-3" style="width: 17rem; max-height: 380px; min-height: 380px; width: 325px; background-color: #315343;">
-                  <a href="/detail-category/{{ $item->id }}" style="text-decoration: none; color: white;">
+                  <div class="shadow pb-3" style="width: 17rem; max-height: 400px; min-height: 339px; width: 320px; background-color: #315343;">
+                  <a href="/detail-category/{{ $item->id }}" style="text-decoration: none; color: white; font-weight: 300">
                   <img
                     src="{{$item['images']}}"
                     alt=""
                     style="max-width: 100%"
                   />
-                  <h4 class="text-wrap mt-4 mb-3 px-3 pl-4" style="text-align: left">
+                  <h4 class="text-wrap mt-4 mb-3" style="text-align: left; padding: 0 100px">
                    {{$item->name}}
                   </h4>
-                  <p class="hide-scrollbar text-wrap p-text px-3 pl-4" style="text-decoration: none;font-size: 1.1rem; color: white; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;">
+                  <p class="hide-scrollbar text-wrap p-text px-3 pl-4" style="margin-bottom: 10px; letter-spacing: 0.3px text-decoration: none;font-size: 1.1rem; color: white; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;">
                     {{ $item->description}}
                   </p>
                   <span class="px-3 pl-4">Read more <i class="fas fa-angle-right"></i> </span>
@@ -329,7 +329,7 @@
             @foreach($data as $product)
             @if($loop->index < 12)
             <div class="col-lg-4 col-xl-3 col-md-6 col-12 col mt-md-3 mt-sm-3 mt-3">
-              <a href="detail-product/{{$product->id}}" style="text-decoration: none">
+              <a href="detail-product/{{$product->id}}" style="text-decoration: none;">
                   <div class="shadow card" style="width: 18rem; border: 2px solid #28a745; min-height: 280px">
                     <img
                     src="{{$product->images}}"

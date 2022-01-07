@@ -11,7 +11,7 @@
           <h2 class="">{{ $data->title }}</h2>
           <div class="d-flex mb-3 p-2 align-items-center">
             <img
-              src="/assets/img/profile-pic.jpg"
+              src="{{$data->user['img_profile']}}"
               alt=""
               style="
                 /* border-radius: ; */
@@ -21,7 +21,7 @@
               "
               class="img-penulis"
             />
-            <p class="nama-penulis">{{ $data->author }}</p>
+            <p class="nama-penulis">{{ $data->user['name'] }}</p>
           </div>
           <div class="container">
             <img
