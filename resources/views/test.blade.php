@@ -25,7 +25,7 @@
     <div class="row">
             @foreach ($sub_category as $item)
                 <h1 class="mt-5">{{ $item->name }}</h1>
-                <h6 class="mb-3">{{ $item->description }}</h4>
+                <h6 class="mb-3" style="font-weight: 300">{{ $item->description }}</h4>
                     @foreach ($item->product as $prd)
                     @if($loop->index < 4)
                     <div class="shadow card col-lg-2 col-md-3 col-sm-6 py-3 mx-1 mt-2 text-center">    

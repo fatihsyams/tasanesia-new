@@ -9,7 +9,9 @@
 <div class="main">
         <nav class="">
             <div class="container-fluid">
-              <h1 class="logo">Tasanesia</h1>
+              <a href="/" style="text-decoration: none">
+                <h1 class="logo">Tasanesia</h1>
+              </a>
             </div>
         </nav>
         <div class="content">
@@ -23,7 +25,7 @@
                     @csrf
                     <div class="row">
                             <div class="col-md-12">
-                                <h4 class="text1">Create An Account</h4>
+                                <h4>Create An Account</h4>
                             </div>
                             <div class="col1">
                                 <p class="text2">Already an user? <a href="/login" style="border: none; color: #28a745;">Sign in</a> </p>

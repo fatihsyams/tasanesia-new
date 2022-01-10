@@ -25,7 +25,7 @@
               <a class="nav-link p-teks" href="/about-us">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-teks" href="/menu-products">Product</a>
+              <a class="nav-link p-teks" href="/menu-products/category/1">Product</a>
             </li>
             <li class="nav-item">
               <a class="nav-link p-teks" href="/menu-campaign">Our Campaign</a>

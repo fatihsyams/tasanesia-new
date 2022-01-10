@@ -118,12 +118,14 @@ class ProductController extends Controller
     public function getDetailProduct ($id)
     {
         $user = Auth::user();
+        $allProduct = Product::all();
         $product = Product::where('id', $id)->first();
         $category = Category::where('id', $product->category_id)->first();
         $subCategory = CategorySubs::where('id', $product->category_subs_id)->first();
         
         $data = [
             'user' => $user,
+            'allProduct' => $allProduct,
             'category' => $category,
             'subCategory' => $subCategory,
             'product' => $product,

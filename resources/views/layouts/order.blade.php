@@ -1,3 +1,4 @@
+
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -12,16 +13,24 @@
     <div class="card">
         <div class="card-body">
             <div class="col m-3">
-                <label for="" class="">Name</label>
+            <label for="" class="">Name</label>
+                @if(blank($user))
+                <input type="text" name="name" id="name" class="form-control" placeholder="">
+                @else
                 <input type="text" name="name" id="name" class="form-control" value="{{ $user->name }}">
+                @endif
 
                 <label for="" class="">email</label>
                 <div class="col-md-6">
-                    <input type="email" name="email" id="email" class="form-control" value="{{ $user->email }}">
+                @if(blank($user))
+                <input type="email" name="email" id="email" class="form-control" placeholder="">
+                @else
+                <input type="email" name="email" id="email" class="form-control" value="{{ $user->email }}">
+                @endif
                 </div>
 
                 <label for="" class="">No Handphone</label>
-                <input type="text" name="no_handphone" id="no_handphone" class="form-control">
+                <input type="text" name="no_handphone" id="no_handphone" class="form-control" value="{{ $user->phone }}">
 
                  <label for="" class="">Name Product</label>
                 <input type="text" name="name_product" id="name_product" class="form-control" value="{{ $product->name }}">

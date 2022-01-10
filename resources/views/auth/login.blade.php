@@ -10,7 +10,9 @@
 <div class="main">
         <nav class="">
             <div class="container-fluid">
-              <h1 class="logo">Tasanesia</h1>
+              <a href="/" style="text-decoration: none">
+                <h1 class="logo">Tasanesia</h1>
+              </a>
             </div>
         </nav>
         <div class="content">
@@ -23,8 +25,8 @@
                     <form method="POST" action="{{ route('login') }}">
                     @csrf
                     <div class="row">
-                            <div class="col-md-12">
-                                <h4 class="text1">Sign In</h4>
+                            <div class="col-12">
+                                <h4>Sign In</h4>
                             </div>
                             <div class="col1">
                                 <p class="text2">New user? <a href="/register" style="border: none; color: #28a745;">Create an account</a> </p>

@@ -8,6 +8,10 @@
 
 @section('content')
 
+<?php 
+use RealRashid\SweetAlert\Facades\Alert;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,152 +20,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test Page</title>
 
-
-<!-- style untuk lightbox -->
-    <style>
-* {
-  box-sizing: border-box;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-img {
-  margin-bottom: -4px;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-</style>
-
 </head>
 <body>
     <div class="container hero">
         <div class="row">
           <div class="col-lg-6" style="padding:30px">
-            <img src="ssets/img/plants.jpg" alt="" srcset="">
-            <div class="row">
+            <img src="/{{ $product->images }}" alt="" srcset="" style="max-width: 500px; min-width: 500px">
+            <!-- <div class="row">
               <div class="column">
                 <img src="img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
               </div>
@@ -174,106 +39,58 @@ img.hover-shadow {
               <div class="column">
                 <img src="img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
               </div>
-            </div>
+            </div> -->
             <!-- <img
-              src="/{{ $product->images }}" alt="" style="width: 100%; border-radius: 10px"
+              src="" alt="" style="width: 100%; border-radius: 10px"
             /> -->
           </div>
           <div class="col-lg-6 mt-5">
-            <h1>Menstiora Deliciola</h1>
-            <p>Rp. 350.000</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis vestibulum amet quam lectus bibendum id cras. Tincidunt id urna, enim sapien. Mauris ultricies justo, pretium odio. In quam facilisis egestas amet, orci odio. Viverra placerat amet sed risus risus, purus. </p>
+            <h1>{{  $product->name }}</h1>
+            <p style="color: #444444; font-size: 20px">Rp. {{ $product->price }}</p>
+            <p class="mt-3" style="color: #444444; font-weight: 100; font-size: 14px">{{ $product->description }}</p>
 
-            <div class="row">
-              <p>Quantity:</p>
+            <div class="row my-5">
+              <!-- <p>Quantity:</p>
               <div class="quantity buttons_added">
 	              <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
              </div>
-             <a href="" class="btn">Order Now</a>
+             <a href="" class="btn">Order Now</a> -->
+            @if (Auth::check())
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn" style="background-color: #315343; color:white" >Order Now</a>
+            @endif
+
+            @if (!Auth::check())
+            <a href="/login" class="btn" style="background-color: #315343; color:white" >Order Now</a>
+            @endif
             </div>
 
             <hr>
-            <p>Product Type : <span> Plants</span></p>
-            <p>Rarity : <span> Rare</span></p>
+            
+            <p class="my-2 mt-5" style="color: #444444; font-weight: 100">Product Type : <span style="color: black">{{ $category->name }} | {{ $subCategory->name }}</span></p>
+            <p class="my-2" style="color: #444444; font-weight: 100">Rarity : <span style="color: black">{{ $product->status }}</span></p>
             <!-- <h2 style="color: #28a745">{{  $product->name }}</h2> -->
-            <p class="mt-4" style="margin-bottom: 10px">Stock : {{  $product->quantity }}</p>
-            <p style="margin-bottom: 10px; margin-top: 10px">Price : Rp. {{  $product->price }}</p>
-            <p style="margin-bottom: 10px; margin-top: 10px">Category : {{ $product->status }}</p>
-
-            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn" style="background-color: #28a745; color:white" >Order Now</a>
           </div>
-          <h2 style="color: #28a745" class="mt-4">Description</h2>
-          <hr style="width: 13%;" class="ms-3">
-          <p class="mt-2">{{ $product->description }}</p>
         </div>
-        <div class="row" style="position: relative">
-          <h3>Other products Recommendations</h3>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="semua">
-                            <img class="image" src="assets/img/plants.jpg">
-                            <div class="info">
-                                <div class="over">
-                                    <p style="font-size: 34px">Monstera Deliciosa</p>
-                                    <p>Rp350.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 ">
-                        <div class="semua">
-                            <img class="image" src="assets/img/plants.jpg">
-                            <div class="info">
-                                <div class="over">
-                                    <p style="font-size: 34px">Monstera Deliciosa</p>
-                                    <p>Rp350.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="semua">
-                            <img class="image" src="assets/img/plants.jpg">
-                            <div class="info">
-                                <div class="over">
-                                    <p style="font-size: 34px">Monstera Deliciosa</p>
-                                    <p>Rp350.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="semua">
-                            <img class="image" src="assets/img/plants.jpg">
-                            <div class="info">
-                                <div class="over">
-                                    <p style="font-size: 34px">Monstera Deliciosa</p>
-                                    <p>Rp350.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="semua">
-                            <img class="image" src="assets/img/plants.jpg">
-                            <div class="info">
-                                <div class="over">
-                                    <p style="font-size: 34px">Monstera Deliciosa</p>
-                                    <p>Rp350.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="semua">
-                            <img class="image" src="assets/img/plants.jpg">
-                            <div class="info">
-                                <div class="over">
-                                    <p style="font-size: 34px">Monstera Deliciosa</p>
-                                    <p>Rp350.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+        <div class="row mb-5" style="position: relative; margin-top: 100px">
+          <h3 class="mb-4" style="font-weight: 500">Other products Recommendations</h3>
+          @foreach ($allProduct as $product)
+          @if($loop->index < 3)
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <a href="/detail-product/{{$product->id}}" style="text-decoration: none;">
+                  <div class="semua">
+                      <img class="image" src="/{{ $product->images }}">
+                      <div class="info">
+                          <div class="over">
+                              <p style="font-size: 34px">{{ $product->name }}</p>
+                              <p>Rp. {{ $product->price }}</p>
+                          </div>
+                      </div>
+                  </div>
+                </a>
+            </div>
+            @endif
+            @endforeach
         </div>
       </div>
 

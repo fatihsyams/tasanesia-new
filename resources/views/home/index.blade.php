@@ -40,24 +40,24 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" style="height: 100%">
-                <img src="assets/img/daun.png" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill; filter: brightness(50%)" alt="...">
+                <img src="assets/img/bg-ornamental-plants.jpeg" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
                 <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 50%">
                   <span style="font-size: 5vw">Ornamental Plants</span>
-                  <p class="px-4 py-3" style="border: 2px solid white; display: table; cursor: pointer">Start shopping now</p>
+                  <a href="/menu-products/category/1" class="px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
               <div class="carousel-item" style="height: 100%">
-                <img src="assets/img/halal-food.jpeg" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill; filter: brightness(50%)" alt="...">
+                <img src="assets/img/bg-halal-food.jpeg" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
                 <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 50%">
                   <span style="font-size: 5vw">Halal Food</span>
-                  <p class="px-4 py-3" style="border: 2px solid white; display: table; cursor: pointer">Start shopping now</p>
+                  <a href="/menu-products/category/1" class="px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
               <div class="carousel-item" style="height: 100%">
-                <img src="assets/img/daun.png" class="d-block " style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill; filter: brightness(50%)" alt="...">
+                <img src="assets/img/bg-fresh-fruit.jpeg" class="d-block " style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
                 <div class="carousel-caption d-md-block pt-0" style="text-align: left; responsive-font-size: 10px; margin-left : -100px; top: 50%">
                   <span style="font-size: 5vw">Fresh Fruits</span>
-                  <p class="px-4 py-3" style="border: 2px solid white; display: table; cursor: pointer">Start shopping now</p>
+                  <a href="/menu-products/category/1" class="px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
             </div>
@@ -191,13 +191,13 @@
                     alt=""
                     style="max-width: 100%"
                   />
-                  <h4 class="text-wrap mt-4 mb-3" style="text-align: left; padding: 0 100px">
+                  <h4 class="text-wrap mt-4 mb-3" style="text-align: left; padding: 0 20px">
                    {{$item->name}}
                   </h4>
-                  <p class="hide-scrollbar text-wrap p-text px-3 pl-4" style="margin-bottom: 10px; letter-spacing: 0.3px text-decoration: none;font-size: 1.1rem; color: white; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;">
+                  <p class="hide-scrollbar text-wrap p-text px-3 pl-4" style="padding: 0 20px; margin-bottom: 10px; letter-spacing: 0.3px text-decoration: none;font-size: 1.1rem; color: white; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;">
                     {{ $item->description}}
                   </p>
-                  <span class="px-3 pl-4">Read more <i class="fas fa-angle-right"></i> </span>
+                  <span class="px-3 pl-4 " style="padding: 0 20px">Read more <i class="fas fa-angle-right"></i> </span>
                   </a>
                 </div>
               </div>
@@ -221,140 +221,27 @@
               Our Products
             </h2>
             <div class="row justify-content-center" style="position: relative; margin-top:60px">
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="semua">
-                  <img class="image" src="assets/img/plants.jpg">
-                  <div class="info">
-                    <div class="over">
-                      <p style="font-size: 34px">Monstera Deliciosa</p>
-                      <p>Rp350.000</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 ">
-                <div class="semua">
-                  <img class="image" src="assets/img/plants.jpg">
-                  <div class="info">
-                    <div class="over">
-                      <p style="font-size: 34px">Monstera Deliciosa</p>
-                      <p>Rp350.000</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 ">
-                <div class="semua">
-                  <img class="image" src="assets/img/plants.jpg">
-                  <div class="info">
-                    <div class="over">
-                      <p style="font-size: 34px">Monstera Deliciosa</p>
-                      <p>Rp350.000</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 ">
-                <div class="semua">
-                  <img class="image" src="assets/img/plants.jpg">
-                  <div class="info">
-                    <div class="over">
-                      <p style="font-size: 34px">Monstera Deliciosa</p>
-                      <p>Rp350.000</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 ">
-                <div class="semua">
-                  <img class="image" src="assets/img/plants.jpg">
-                  <div class="info">
-                    <div class="over">
-                      <p style="font-size: 34px">Monstera Deliciosa</p>
-                      <p>Rp350.000</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 ">
-                <div class="semua">
-                  <img class="image" src="assets/img/plants.jpg">
-                  <div class="info">
-                    <div class="over">
-                      <p style="font-size: 34px">Monstera Deliciosa</p>
-                      <p>Rp350.000</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 ">
-                <div class="semua">
-                  <img class="image" src="assets/img/plants.jpg">
-                  <div class="info">
-                    <div class="over">
-                      <p style="font-size: 34px">Monstera Deliciosa</p>
-                      <p>Rp350.000</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 ">
-                <div class="semua">
-                  <img class="image" src="assets/img/plants.jpg">
-                  <div class="info">
-                    <div class="over">
-                      <p style="font-size: 34px">Monstera Deliciosa</p>
-                      <p>Rp350.000</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="semua">
-                  <img class="image" src="assets/img/plants.jpg">
-                  <div class="info">
-                    <div class="over">
-                     <p style="font-size: 34px">Monstera Deliciosa</p>
-                     <p>Rp350.000</p>
-                    </div>
-                  </div>
-                </div>
-              </div> 
-
-              <div class="row d-flex justify-content-center mx-auto" style="margin-top:60px">
-                <button class="btn " type="button" style="color:#315343; font-size: 15px; border: 2px solid #315343; width: 200px">See Other Products</button>
-              </div>  
-            </div>
-
             @foreach($data as $product)
-            @if($loop->index < 12)
-            <div class="col-lg-4 col-xl-3 col-md-6 col-12 col mt-md-3 mt-sm-3 mt-3">
+            @if($loop->index < 9)
+            <div class="col-lg-4 col-md-6 col-sm-12">
               <a href="detail-product/{{$product->id}}" style="text-decoration: none;">
-                  <div class="shadow card" style="width: 18rem; border: 2px solid #28a745; min-height: 280px">
-                    <img
-                    src="{{$product->images}}"
-                    class=" img-fluid card-img-top p-3"
-                    alt="..."
-                    style="width: 100%; max-height: 188px; min-height: 188px; border-radius: 1.25rem"
-                    />
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                            <h5 style="color: #28a745">{{$product->name}}</h5>
-                          </div>
-                          <div class="col-12 text-center">
-                            <p style="color: #28a745">Rp. {{$product->price}}</p>
-                          </div>
-                          <div class="col-12 text-center">
-                            <p style="color: #28a745">{{$product->status}}</p>
-                          </div>
-                        </div>
+                <div class="semua">
+                  <img class="image" src="{{$product->images}}">
+                  <div class="info">
+                    <div class="over">
+                      <p style="font-size: 34px">{{$product->name}}</p>
+                      <p>Rp. {{ number_format($product->price) }}</p>
                     </div>
                   </div>
+                </div>
               </a>
-        </div>    
+            </div>
             @endif
-         @endforeach
+            @endforeach 
+              <div class="row d-flex justify-content-center mx-auto" style="margin-top:60px">
+                <a class="btn account-auth-login" href="/menu-products/category/1" type="button" style="color:#315343; font-size: 15px; border: 2px solid #315343; width: 200px">See Other Products</a>
+              </div>  
+            </div> 
           </div>
         </div>
       </div>
@@ -469,33 +356,20 @@
             >
               Our Campaign
             </h2>
+            @foreach($campaign as $data)
           <div class="col-lg-4 col-md-4 col-sm-6">
             <div class="card" style="width: 25rem;border: none">
-              <img src="assets/img/daun.png" class="card-img-top" alt="...">
+              <img src="{{$data->images}}" class="card-img-top img-fluid" alt="..." style="max-height: 267px; min-height: 267px">
               <div class="card-body">
-                <p class="card-caption">By Admin |  03 March 2019</p>
-               <p class="card-text" >Lorem Ipsum is simply dummy text of the printing and typeset...</p>
+                <p class="card-caption">By {{$data->author}} |  {{date('d-m-Y', strtotime($data->created_at))}}</p>
+               <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; line-clamp: 4; -webkit-box-orient: vertical;" >{{$data->description}}</p>
+               <a href="detail-campaign/{{$data->id}}" style="text-decoration: none; color: black">
+                <p class="pt-4">Read more <i class="fas fa-angle-right"></i> </p>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="card" style="width: 25rem;border: none">
-              <img src="assets/img/daun.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-caption">By Admin |  03 March 2019</p>
-               <p class="card-text" >Lorem Ipsum is simply dummy text of the printing and typeset...</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="card" style="width: 25rem;border: none">
-              <img src="assets/img/daun.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-caption">By Admin |  03 March 2019</p>
-               <p class="card-text" >Lorem Ipsum is simply dummy text of the printing and typeset...</p>
-              </div>
-            </div>
-          </div>
+          @endforeach
           <!-- <div class="col-lg-10">
             <div class="row">
             @foreach($campaign as $dataCampaign)

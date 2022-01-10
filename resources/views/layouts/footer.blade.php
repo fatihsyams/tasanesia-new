@@ -4,12 +4,12 @@
       color:#28a745
     }
   </style>
-      <div class="line" style="width:100%; border: 1px solid #315343; background-color: #315343">
+      <div class="line container" style="width:100%; border: 1px solid #315343; background-color: #315343">
       </div>
       <div class="container pb-3">
           <div class="row ms-auto me-auto mt-5 pt-3">
             <div class="col-lg-12 justify-content-center d-flex">
-              <img src="assets/img/logo.png"  height="42px" alt="" style="widht:122px !important" srcset="">
+              <img src="{{asset('assets/img/logo.png')}}"  height="42px" alt="" style="widht:122px !important" srcset="">
             </div>
             <div class="row" style="margin-top: 35px">
                      <ul class="nav justify-content-center">
