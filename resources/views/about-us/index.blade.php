@@ -13,13 +13,13 @@
         </div>
     </div>
 </div>
-    <div class="container" style="padding:100px;">
-        <div class="row">
+    <div class="container aboutus1" style="padding:100px;">
+        <div class="row flex-column-reverse flex-lg-row">
             <div class="col-lg-6 col-sm-12 col-md-6 d-flex justify-content-center">
                 <img src="/assets/img/daun.png" class="shadow about-us1" style="width: 460px; height: 500px; border-radius: 20px" alt="">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6  " style="text-align: left; padding: 20px 30px  40px 30px; ">
-                <h1 style="font-size: 50px; font-weight: 500; color: #517061">We offer Hard & Soft Landscape Solutions</h1>
+                <h1 class="aboutus2" style="font-size: 50px; font-weight: 500; color: #517061">We offer Hard & Soft Landscape Solutions</h1>
                 <p style="margin-top: 40px">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ratione eligendi dolores, nemo facilis fugit recusandae sed esse non amet quidem illo nesciunt molestiae. Minima, rerum voluptas, enim voluptatibus adipisci at tenetur voluptates</P>
                 <P style="margin-top: 30px"> quis ipsam dicta eum odio placeat necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, velit, cupiditate nobis voluptatibus ducimus vero quos perspiciatis doloribus totam mollitia, recusandae tempore rem corrupti ab. Quisquam pariatur iusto enim itaque.</p>
                
@@ -34,7 +34,7 @@
     <div class="container-fluid mt-5" style=" color: white;">
     
         <div class="row">
-            <div class="col-lg-12 col-md-6 col-sm-12" style="text-align: center; background-color: #517061; padding: 100px 100px 60px 100px; ">
+            <div class="col-lg-12 col-md-6 col-sm-12 aboutus3" style="text-align: center; background-color: #517061; padding: 100px 100px 60px 100px; ">
             
                 <h1 style=" font-size: 30px; font-weight: 500; margin-bottom: 30px ">Our Vision</h1>
                 <p style="margin: 7px 0px">
@@ -42,7 +42,7 @@
                 <p style="margin: 7px 0px"> 2. iure est fugit veniam omnis, ipsum odio culpa quasi nulla, at esse quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
                 <p style="margin: 7px 0px">3. Ex fuga consequatur aperiam facere placeat reprehenderit, eum nesciunt veniam molestiae veritatis eaque odio perspiciatis!  </p> 
             </div>
-            <div class="col-lg-12 col-md-6 col-sm-12" style="text-align: center; padding: 20px 100px 60px 100px; background-color:#517061">
+            <div class="col-lg-12 col-md-6 col-sm-12 aboutus3" style="text-align: center; padding: 20px 100px 60px 100px; background-color:#517061">
             
                 <h1 style=" font-size: 30px; font-weight: 500; margin-bottom: 30px 
                 ">Our Purpose</h1>

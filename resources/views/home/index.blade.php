@@ -173,7 +173,7 @@
           <div class="row no-gutters">
             <h2
               class="text-center mt-3 mb-4"
-              style="font-weight: 500; color: black; "
+              style="font-weight: 500; color: black; text-align: center "
             >
               Our Product Category
             </h2>
@@ -219,8 +219,8 @@
               style="font-weight: 500; color: black;font-family: poppins; font-size: 2rem "
             >
               Our Products
-            </h2>
-            <div class="row justify-content-center" style="position: relative; margin-top:60px">
+          </h2>
+            <!-- <div class="row justify-content-center" style="position: relative; margin-top:60px"> -->
             @foreach($data as $product)
             @if($loop->index < 9)
             <div class="col-lg-4 col-md-6 col-sm-12">
@@ -235,11 +235,11 @@
                   </div>
                 </div>
               </a>
-            </div>
+            <!-- </div> -->
             @endif
             @endforeach 
-              <div class="row d-flex justify-content-center mx-auto" style="margin-top:60px">
-                <a class="btn account-auth-login" href="/menu-products/category/1" type="button" style="color:#315343; font-size: 15px; border: 2px solid #315343; width: 200px">See Other Products</a>
+            <div class="row d-flex justify-content-center mx-auto" style="margin-top:60px">
+              <a class="btn account-auth-login" href="/menu-products/category/1" type="button" style="color:#315343; font-size: 15px; border: 2px solid #315343; width: 200px">See Other Products</a>
               </div>  
             </div> 
           </div>
@@ -254,7 +254,7 @@
         <div class="row no-gutters">
         <h2
               class="text-center mt-3 mb-4"
-              style="font-weight: 500; color: black;font-family: poppins; font-size: 40px "
+              style="font-weight: 500; color: black;font-family: poppins; font-size: 2rem "
             >
               Our Partners
             </h2>
@@ -358,8 +358,8 @@
             </h2>
             @foreach($campaign as $data)
           <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="card" style="width: 25rem;border: none">
-              <img src="{{$data->images}}" class="card-img-top img-fluid" alt="..." style="max-height: 267px; min-height: 267px">
+            <div class="card" style="width: 23rem;border: none">
+              <img src="{{$data->images}}" class="card-img-top" alt="..." style="max-height: 267px; min-height: 267px">
               <div class="card-body">
                 <p class="card-caption">By {{$data->author}} |  {{date('d-m-Y', strtotime($data->created_at))}}</p>
                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; line-clamp: 4; -webkit-box-orient: vertical;" >{{$data->description}}</p>

@@ -8,7 +8,7 @@
 
 <section class="ftco-section" >
       <div class="container hero" >
-        <div class="row justify-content-center" style="padding-top: 80px; padding-bottom: 280px">
+        <div class="row justify-content-center contact_us" style="padding-top: 80px; padding-bottom: 280px">
           <div class="col-lg-6 col-md-6 col-sm-12" >
             <div class="row" >
               <p class="heading" >Contact details</p>
@@ -16,26 +16,26 @@
               <p class="heading2">1-800-700-600</p>
             </div>
             <div class="row"  style="margin-top: 55px">
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6 contact_details">
                 <a href="" class="button icon1"
                 ><i class="fas fa-map-marker-alt"></i></a>
                 <h3 class="heading4">Location</h3>
                 <p class="heading3">Jl. Rambutan No. 1D Depok</p>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6 contact_details">
                 <a href="" class="button icon1"
                 ><i class=""><i class="fas fa-mobile-alt"></i></i></a>
                 <h3 class="heading4">Call Us</h3>
                 <p class="heading3">081908078212</p>
               </div>
-              <div class="col-md-6" style=" margin-top: 60px;">
+              <div class="col-md-6 col-sm-6 contact_details" style=" margin-top: 60px;">
                 <a href="" class="button icon1"
                 ><i class="far fa-envelope"></i></i></a>
                 <h3 class="heading4">Write to Us</h3>
-                <p class="heading3">info@tasanesia.comffice@gardena.com
+                <p class="heading3">info@tasanesia.com
                </p>
               </div>
-              <div class="col-md-6" style=" margin-top: 60px;">
+              <div class="col-md-6 col-sm-6 contact_details" style=" margin-top: 60px;">
                 <a href="" class="button icon1"
                 ><i class="far fa-clock"></i></a>
                 <h3 class="heading4">Working Hours</h3>
@@ -45,7 +45,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 c0l-sm-12">
+          <div class="col-lg-6 col-md-6 col-sm-12 have">
             <div class="row">
               <h1 class="heading" style="color: black">Have a question?</h1>
             </div>

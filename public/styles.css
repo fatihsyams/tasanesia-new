@@ -456,11 +456,42 @@ input {
     
 
 @media (max-width: 767.98px) { 
+    .contact_details{
+        width: 50%;
+    }
+    .heading2{
+        font-size: 2.75rem;
+    }
+    .contact_us{
+        padding-bottom: 0px !important;
+    }
+    .have{
+        margin-top: 90px;
+    }
+    .image_row .display-4 {
+        text-align: center;
+        margin-top: 195px;
+        text-shadow: 1px rgba(0, 0, 0, 0.6);
+    }
+    .aboutus3{
+        padding: 20px !important;
+    }
+    .aboutus2{
+        font-size: 36px !important;
+        padding-top: 30px;
+    }
+
+    .aboutus1{
+        padding: 0px !important;
+    }
+    .image_row{
+        height: 335px;
+    }
     .logo {
         width: 10%;
     }
     .d-block {
-        height: 280px !important;
+        height: 335px !important;
     }
     .carousel-caption {
         font-size: 11px;
@@ -479,12 +510,12 @@ input {
         color: #28a745;
     }
     #our-campaign {
-        width: 95%;
+        width: 93%;
         margin: 10px;
     }
     .our-product {
         margin: 10px !important;
-        width: 95%;
+        width: 10%;
     }
     .lazismu {
         width: 50%;
