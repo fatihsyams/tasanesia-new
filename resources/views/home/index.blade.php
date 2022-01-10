@@ -166,7 +166,7 @@
     <!-- start section 2 -->
     <section>
       <div
-        class="container p-2 mt-4 mb-0 pb-5 " id="our-campaign"
+        class="container  mt-4 mb-0 pb-5 " id="our-campaign"
         style="margin-bottom: 100px"
       >
         <div class="container mt-3">
@@ -211,12 +211,12 @@
     <!-- end section 2 -->
     <!-- section 3 -->
     <section>
-      <div class="container p-2 my-0 pb-5 our-product"  style="margin-bottom: 100px; ">
+      <div class="container my-0 pb-5 our-product"  style="margin-bottom: 100px; ">
         <div class="container mt-3 px-5 pb-4 ">
           <div class="row no-gutters">
           <h2
               class="text-center mt-3 mb-4"
-              style="font-weight: 500; color: black;font-family: poppins; font-size: 40px "
+              style="font-weight: 500; color: black;font-family: poppins; font-size: 2rem "
             >
               Our Products
             </h2>
@@ -460,12 +460,12 @@
     </section>
     <!-- section 5 -->
     <section>
-      <div class="container-fluid pb-5" style="margin-top:100px; margin-bottom:151px">
-      <div class="container  p-2" >
+      <div class="container pb-5" style="margin-top:100px; margin-bottom:151px">
+      <div class="container  " >
         <div class="row no-gutters">
         <h2
               class="text-center mt-3"
-              style="font-weight: 500; color: black;font-family: poppins; font-size: 40px; margin-bottom: 69px "
+              style="font-weight: 500; color: black;font-family: poppins; font-size: 2rem; margin-bottom: 69px "
             >
               Our Campaign
             </h2>
