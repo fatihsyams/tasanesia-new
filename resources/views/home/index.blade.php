@@ -6,15 +6,7 @@
 
 @section('content')
 
-<!-- <div class="card">
-    <div class="card-body">
-        @foreach ($category as $item)
-        <img src="{{ $item->images }}" alt="">
-        <a href="{{ route('home.show', $item->id) }}">{{ $item->name }}</a>
-        <p>{{ $item->description }}</p>
-        @endforeach
-    </div>
-</div> -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -61,103 +53,9 @@
                 </div>
               </div>
             </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button> -->
+            
           </div>
-            <!-- <div
-              id="carouselExampleIndicators"
-              class="carousel slide carousel-custom"
-              data-bs-ride="carousel"
-             >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div id="home-carrousel-responsive" class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="/assets/img/daun.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                  <div class="carousel-content">
-                    <h1 style="color:white;">Ornamental Plants</h1>
-                    <h6 style="color: white; text-align: start; margin-left: 7px">Deskripsi ornamental plants</h3>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/img/halal-food.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                  <div class="carousel-content">
-                    <h1 style="color:white">Halal Foods</h1>
-                    <h6 style="color: white; text-align: start; margin-left: 7px">Deskripsi halal foods</h6>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/img/nanas-carrousel.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                    style="filter:brightness(140%)"
-                  />
-                  <div class="carousel-content">
-                    <h1 style="color:white">Fresh Fruits</p>
-                    <h6 style="color: white; text-align: start; margin-left: 7px">Deskripsi fresh fruits</p>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div> -->
+            
           </div>
         </div>
       </div>
@@ -166,7 +64,7 @@
     <!-- start section 2 -->
     <section>
       <div
-        class="container  mt-4 mb-0 pb-5 " id="our-campaign"
+        class="container mt-4 mb-0 pb-5 " id="our-campaign"
         style="margin-bottom: 100px"
       >
         <div class="container mt-3">
@@ -181,7 +79,7 @@
               class="col-lg-12 horizontal-scrollable"
               style="max-height: 1000px"
             >
-              <div class="row mx-2 justify-content-center">
+              <div class="row justify-content-center">
               @foreach($category as $item)
                 <div class="col-lg-4 col-md-6 p-3">
                   <div class="shadow pb-3" style="width: 17rem; max-height: 400px; min-height: 339px; width: 320px; background-color: #315343;">
@@ -209,10 +107,11 @@
       </div>
     </section>
     <!-- end section 2 -->
+
     <!-- section 3 -->
     <section>
-      <div class="container my-0 pb-5 our-product"  style="margin-bottom: 100px; ">
-        <div class="container mt-3 pe-5 pb-4 ">
+      <div class="container pb-5"  style="margin-bottom: 100px; ">
+        <div class="container mt-3 pb-4 ">
           <div class="row no-gutters">
           <h2
               class="text-center mt-3 mb-4"
@@ -223,14 +122,20 @@
             <!-- <div class="row justify-content-center" style="position: relative; margin-top:60px"> -->
             @foreach($data as $product)
             @if($loop->index < 9)
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
               <a href="detail-product/{{$product->id}}" style="text-decoration: none;">
                 <div class="semua">
                   <img class="image" src="{{$product->images}}">
                   <div class="info">
                     <div class="over">
-                      <p style="font-size: 34px">{{$product->name}}</p>
+                      <div class="row">
+                      <div class="col-md-12 col-sm-12">
+                      <p style="font-size: 2rem">{{$product->name}}</p>
+                      </div>
+                      <div class="col-md-12 col-sm-12">
                       <p>Rp{{ number_format($product->price) }}</p>
+                      </div>
+                      </div> 
                     </div>
                   </div>
                 </div>

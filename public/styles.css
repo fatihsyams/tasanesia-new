@@ -366,10 +366,14 @@ input {
       
 .info {height: 448px; width: 340px; background: black; opacity: 0.6; color: #fff; font-weight: normal; transition: transform 0.5s; position: relative;padding: 20px; padding-top: 130px;}
 .over {position: absolute; margin-top:100px; text-align: left; display: none;}
-.semua {padding-top: 20px; overflow: hidden; float: right; margin-right: 20px; height: 448px; width: 340px;}
+.semua {padding-top: 20px; overflow: hidden; height: 448px; width: 340px;}
 .semua .image { width: 340px; height: 448px}
 .semua:hover .info {transform: translateY(-448px);}
 .semua:hover .over {display: flex;}
+.image{
+    max-width: 340px !important;
+    min-height: 340px !important;
+}
 
 .card-text {
     font-size: 24px;
@@ -442,6 +446,9 @@ input {
     margin-top: 355px;
     text-shadow: 1px rgba(0, 0, 0, 0.6);
 }
+.product_page{
+    height: 100%;
+}
 .image_row::after{
 
 }
@@ -450,6 +457,9 @@ input {
 }
 
 @media (max-width: 767.98px) { 
+    .product_page{
+        height: 335px !important;
+    }
     .contact_details{
         width: 50%;
     }
@@ -490,7 +500,8 @@ input {
     .carousel-caption {
         font-size: 11px;
         margin-left: -30px !important;
-        top: 50% !important;
+        top: 17% !important;
+        height: 40px;
     }
     .our-partners {
         margin-left: 0 !important;

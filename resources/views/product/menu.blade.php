@@ -3,7 +3,7 @@
 @section('title', 'Our Product')
 
 @extends('layouts.default')
-<div class="container-fluid px-0" style="height: 100%">
+<div class="container-fluid px-0 product_page" style="">
 <img src=" {{asset('img/bg-ornamental-plants.jpeg')}}" class="d-block " style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
     <div class="carousel-caption d-md-block pt-0" style="text-align: center; responsive-font-size: 10px; top: 50%">
         <span style="font-size: 5vw">Ornamental Plants</span>
