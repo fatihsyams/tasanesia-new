@@ -8,9 +8,6 @@
 
 @section('content')
 
-<?php 
-use RealRashid\SweetAlert\Facades\Alert;
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +43,7 @@ use RealRashid\SweetAlert\Facades\Alert;
           </div>
           <div class="col-lg-6 mt-5">
             <h1>{{  $product->name }}</h1>
-            <p style="color: #444444; font-size: 20px">Rp. {{ $product->price }}</p>
+            <p style="color: #444444; font-size: 20px">Rp{{ number_format($product->price) }}</p>
             <p class="mt-3" style="color: #444444; font-weight: 100; font-size: 14px">{{ $product->description }}</p>
 
             <div class="row my-5">
@@ -83,7 +80,7 @@ use RealRashid\SweetAlert\Facades\Alert;
                       <div class="info">
                           <div class="over">
                               <p style="font-size: 34px">{{ $product->name }}</p>
-                              <p>Rp. {{ $product->price }}</p>
+                              <p>Rp{{ number_format($product->price) }}</p>
                           </div>
                       </div>
                   </div>

@@ -19,7 +19,7 @@
                           <div class="info">
                               <div class="over">
                                   <p style="font-size: 34px">{{$product->name}}</p>
-                                  <p>Rp. {{$product->price}}</p>
+                                  <p>Rp{{number_format($product->price)}}</p>
                               </div>
                           </div>
                       </div>

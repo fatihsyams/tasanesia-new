@@ -30,7 +30,11 @@
                 </div>
 
                 <label for="" class="">No Handphone</label>
+                @if(blank($user))
+                <input type="text" name="no_handphone" id="no_handphone" class="form-control" placeholder="">
+                @else
                 <input type="text" name="no_handphone" id="no_handphone" class="form-control" value="{{ $user->phone }}">
+                @endif
 
                  <label for="" class="">Name Product</label>
                 <input type="text" name="name_product" id="name_product" class="form-control" value="{{ $product->name }}">

@@ -16,12 +16,13 @@
 </head>
 <body>
 
-<div class="container-fluid text-center py-5" style="margin-top: 80px; background-color: #28a745">
-    <img class="img-fluid" src="/{{ $category->images }}" alt="" style="border-radius: 20px; filter:brightness(70%); max-height: 400px">
+<div class="container-fluid text-center py-5 px-0" style="height: 100%;">
+    <img src="/{{ $category->images }}" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
     <h1 class="centered text-light" style="font-size: 5vw">{{ $category->name }}</h1>
+    <h6 class="centered text-light" style="font-size: 1.1vw; top: 67%">{{ $category->description }}</h1>
 </div>
 
-<div class="container">
+<div class="container pb-5">
     <div class="row">
             @foreach ($sub_category as $item)
                 <h1 class="mt-5">{{ $item->name }}</h1>
@@ -39,7 +40,7 @@
                     <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
                         {{ $prd->name }}
                     </h4>
-                        <h6 class="p-text">Price : Rp. {{ $prd->price }}</h6>
+                        <h6 class="p-text">Price : Rp{{ number_format(($prd->price), 2, '.', '') }}</h6>
                         <h6 class="p-text">Stock : {{ $prd->quantity }}</h6>
                         <h6 class="p-text">{{ $prd->descriptions }}</h6>
                         <h6 class="p-text">{{ $prd->status }} typed products</h6>
@@ -48,7 +49,7 @@
                     @endif
                     @endforeach
                     <div class="shadow card col-lg-2 col-md-3 col-sm-6 py-3 mx-1 mt-2 text-center" style="padding-top: 100px !important">    
-                    <a href="/all-products/category/{{ $item->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
+                    <a href="/menu-products/category/{{ $item->id }}" style="text-decoration: none; color: black; font-family: 'Signika Negative', sans-serif;">
                     <i
                         class="fas fa-arrow-circle-right">
                     </i>
