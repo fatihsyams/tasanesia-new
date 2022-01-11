@@ -12,7 +12,7 @@
 
 
 
-<div class="row" style="position: relative">
+<div class="row no-gutters" style="position: relative">
      @foreach ($data as $product)
         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
             <a href="detail-product/{{$product->id}}" style="text-decoration: none;">

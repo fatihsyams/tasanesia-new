@@ -10,10 +10,10 @@
         <h6 class="mb-3" style="text-align: center; font-size: 1.5vw; font-weight: 300; margin-top: 15px" >Ornamental plants or garden plants are plants that are grown for decorative purposes in gardens and landscape design projects.</h6>
     </div>
 </div>
-<div class="container pb-5">
-    <div class="row">
+<div class="container px-0 pb-5">
+    <!-- <div class="row no-gutters"> -->
             @foreach ($category as $item)
-                <div class="row" style="margin-top: 35px">
+                <div class="row justify-content-center d-flex" style="margin-top: 35px">
                      <ul class="nav justify-content-center">
                      @foreach ($item->category_subs as $category)
                         <li class="nav-item">
@@ -21,8 +21,9 @@
                         </li>
                      @endforeach
                     </ul>
-                    @yield('product')
+                    
                 </div>
+                @yield('product')
             @endforeach
     </div>
 </div>
