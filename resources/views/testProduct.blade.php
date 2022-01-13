@@ -69,10 +69,15 @@
           </div>
         </div>
 
+      <div
+        class="col-lg-12 horizontal-scrollable"
+        style="max-height: 1000px"
+        >
         <div class="row mb-5" style="position: relative; margin-top: 100px">
           <h3 class="mb-4" style="font-weight: 500">Other products Recommendations</h3>
           @foreach ($allProduct as $product)
           @if($loop->index < 3)
+          
             <div class="col-lg-4 col-md-6 col-sm-12">
               <a href="/detail-product/{{$product->id}}" style="text-decoration: none;">
                   <div class="semua">
@@ -89,6 +94,7 @@
             @endif
             @endforeach
         </div>
+      </div>
       </div>
 
       <!-- modal lightbox -->
