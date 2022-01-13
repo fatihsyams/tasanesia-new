@@ -42,7 +42,7 @@
     
 
     <!-- Page Wrapper -->
-    <div id="wrapper" style="margin-top:75px">
+    <div id="wrapper" style="margin-top:68px">
 
         <!-- Sidebar -->
         <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #28a745;">

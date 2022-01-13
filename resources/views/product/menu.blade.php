@@ -21,7 +21,6 @@
                         </li>
                      @endforeach
                     </ul>
-                    
                 </div>
                 @yield('product')
             @endforeach

@@ -1,5 +1,7 @@
 @extends('admin.index')
 
+@extends('layouts.editProduct')
+
 @section('title', 'Categories')
 
 @section('content')
@@ -28,16 +30,22 @@
       <tbody>
         @foreach ($product as $item)
         <tr>
-          <td> {{ $loop->iteration }} </td>
+          <td>{{ $loop->iteration }}</td>
           <td><img src="{{$item['images']}}" class="card-img-top ms-auto" alt="..." style="width: 80px; height: 30%;" /></td>
-          <td> {{ $item->name }} </td>
-
+          <td>{{ $item->name }}</td>
           <td>{{ $item->category->name }} </td>
           <td>{{ $item->sub_category->name }} </td>
           <td>{{ $item->price }}</td>
           <td>{{ $item->quantity }}</td>
           <td>{{ $item->status }}</td>
           <td>{{ $item->description }}</td>
+          <td>
+          <form action="{{ route('product.edit', $item->id) }}" method="GET">
+          <button type="submit" class="btn btn-sm btn-primary">
+          EDIT
+          </button>
+          </form>
+          </td>
           <td>
           <form action="{{ route('product.destroy', $item->id) }}" method="POST">
               @csrf

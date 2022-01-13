@@ -84,9 +84,9 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $product)
+    public function edit(Product $item)
     {
-        //
+        return view('layouts.editProduct',compact('item'));
     }
 
     /**
@@ -98,7 +98,9 @@ class ProductController extends Controller
      */
     public function update(UpdateProductRequest $request, Product $product)
     {
-        //
+        $product->update($request->all());
+        Alert::success('Success', 'Data Product berhasil diperbaharui');
+        return redirect()->route('product.index');
     }
 
     /**

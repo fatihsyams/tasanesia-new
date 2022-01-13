@@ -43,7 +43,7 @@
           </div>
           <div class="col-lg-6 mt-5">
             <h1>{{  $product->name }}</h1>
-            <p style="color: #444444; font-size: 20px">Rp{{ number_format($product->price) }}</p>
+            <p style="color: #444444; font-size: 20px">Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
             <p class="mt-3" style="color: #444444; font-weight: 100; font-size: 14px">{{ $product->description }}</p>
 
             <div class="row my-5">
@@ -63,7 +63,7 @@
 
             <hr>
             
-            <p class="my-2 mt-5" style="color: #444444; font-weight: 100">Product Type : <span style="color: black">{{ $category->name }} | {{ $subCategory->name }}</span></p>
+            <p class="my-2 mt-5" style="color: #444444; font-weight: 100"> <a style="text-decoration: none; color: #444444" href="/menu-products/category/{{ $subCategory->id }}">Product Type : <span style="color: black">{{ $category->name }} | {{ $subCategory->name }}</span></a></p>
             <p class="my-2" style="color: #444444; font-weight: 100">Rarity : <span style="color: black">{{ $product->status }}</span></p>
             <!-- <h2 style="color: #28a745">{{  $product->name }}</h2> -->
           </div>
@@ -80,7 +80,7 @@
                       <div class="info">
                           <div class="over">
                               <p style="font-size: 34px">{{ $product->name }}</p>
-                              <p>Rp{{ number_format($product->price) }}</p>
+                              <p>Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
                           </div>
                       </div>
                   </div>

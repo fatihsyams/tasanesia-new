@@ -33,22 +33,25 @@
             <div class="carousel-inner">
               <div class="carousel-item active" style="height: 100%">
                 <img src="assets/img/bg-ornamental-plants.jpeg" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
-                <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 50%">
-                  <span style="font-size: 5vw">Ornamental Plants</span>
+                <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 35%">
+                  <span style="font-size: 5vw">Exotic Tropical <br>Ornamental plants</br></span>
+                  <p style="font-size: 1.4vw">bla1 bla1 bla1 bla1 bla1 bla1 bla1 bla1 bla1 bla1 </span>
                   <a href="/menu-products/category/1" class="px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
               <div class="carousel-item" style="height: 100%">
                 <img src="assets/img/bg-halal-food.jpeg" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
                 <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 50%">
-                  <span style="font-size: 5vw">Ornamental Plants</span>
+                  <span style="font-size: 5vw">Rare Item from Aroid Family</span>
+                  <p style="font-size: 1.4vw">bla2 bla2 bla2 bla2 bla2 bla2 bla2 bla2 bla2 bla2 </p>
                   <a href="/menu-products/category/1" class="px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
               <div class="carousel-item" style="height: 100%">
                 <img src="assets/img/bg-fresh-fruit.jpeg" class="d-block " style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
                 <div class="carousel-caption d-md-block pt-0" style="text-align: left; responsive-font-size: 10px; margin-left : -100px; top: 50%">
-                  <span style="font-size: 5vw">Ornamental Plants</span>
+                  <span style="font-size: 5vw">Exotic Caladium ready stock</span>
+                  <p style="font-size: 1vw">bla3 bla3 bla3 bla3 bla3 bla3 bla3 bla3 bla3 bla3 </p>
                   <a href="/menu-products/category/1" class="px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
@@ -133,7 +136,7 @@
                       <p style="font-size: 2rem">{{$product->name}}</p>
                       </div>
                       <div class="col-md-12 col-sm-12">
-                      <p>Rp{{ number_format($product->price) }}</p>
+                      <p>Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
                       </div>
                       </div> 
                     </div>

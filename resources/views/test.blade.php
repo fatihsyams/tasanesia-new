@@ -40,7 +40,7 @@
                     <h4 class="text-wrap mt-2 mb-3" style="text-align: center">
                         {{ $prd->name }}
                     </h4>
-                        <h6 class="p-text">Price : Rp{{ number_format(($prd->price), 2, '.', '') }}</h6>
+                        <h6 class="p-text">Price : Rp{{ number_format(($prd->price), 0, '.', '.') }}</h6>
                         <h6 class="p-text">Stock : {{ $prd->quantity }}</h6>
                         <h6 class="p-text">{{ $prd->descriptions }}</h6>
                         <h6 class="p-text">{{ $prd->status }} typed products</h6>

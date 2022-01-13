@@ -4,7 +4,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Order product</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -21,13 +21,11 @@
                 @endif
 
                 <label for="" class="">email</label>
-                <div class="col-md-6">
                 @if(blank($user))
                 <input type="email" name="email" id="email" class="form-control" placeholder="">
                 @else
                 <input type="email" name="email" id="email" class="form-control" value="{{ $user->email }}">
                 @endif
-                </div>
 
                 <label for="" class="">No Handphone</label>
                 @if(blank($user))

@@ -58,7 +58,8 @@ Route::get('getCourse/{id}', function ($id) {
 Route::get('menu-products/category/{id}', function ($id) {
   $data = Product::where('category_subs_id',$id)->get();
   $category = Category::where('id','1')->get();
-  return view('product.all-product', compact('data', 'category'));
+  $data_category = Product::where('category_subs_id',$id)->get();
+  return view('product.all-product', compact('data', 'category', 'data_category'));
 });
 
 Route::get('all-products/{id}', function ($id) {
@@ -83,10 +84,12 @@ Route::group(['middleware' => ['admin']], function () {
   Route::resource('categories', CategoryController::class);
   Route::resource('categories_subs', CategorySubsController::class);
   Route::resource('product', ProductController::class);
+  Route::get('/product/{id}/edit', 'ProductController@edit');
+  Route::post('/product/{id}/update', 'ProductController@update');
 });
 
 Route::group(['middleware' => ['member']], function () {
-  // Route::get('/detail-product/{id}', [ProductController::class, 'getDetailProduct']);
+  Route::get('/detail-product/{id}', [ProductController::class, 'getDetailProduct']);
 });
 
 Route::get('/detail-category/{id}', [CategoryController::class, 'getDetailCategory']);
