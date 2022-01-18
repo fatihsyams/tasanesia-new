@@ -18,11 +18,10 @@
             <div class="col-lg-6 col-sm-12 col-md-6 d-flex justify-content-center">
                 <img src="/assets/img/daun.png" class="shadow about-us1" style="width: 460px; height: 500px; border-radius: 20px" alt="">
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6  " style="text-align: left; padding: 20px 30px  40px 30px; ">
-                <h1 class="aboutus2" style="font-size: 50px; font-weight: 500; color: #517061">We offer Hard & Soft Landscape Solutions</h1>
-                <p style="margin-top: 40px"> We are a nursery that produces various kinds of tropical ornamental plants by involving the community in the production process, using the concept of community development.</P>
-                <P style="margin-top: 30px"> Our head office is located at Jl. Rambutan Raya, no. 1D, Depok Jaya, Pancoran Mas, Depok City, West Java Province, Indonesia. With several production locations in Jonggol - Bogor Regency - West Java, Ciapus - Bogor - West Java, Lembang - Bandung - West Java, Sidoarjo Regency - East Java, and Kotabumi - Lampung.</p>
-               
+            <div class="col-lg-6 col-md-6 col-sm-6  " style="text-align: ; padding: 20px 30px  40px 30px; ">
+                <h1 class="aboutus2" style="font-size: 50px; font-weight: 500; color: #517061;text-align: left;">We offer Hard & Soft Landscape Solutions</h1>
+                <p style="margin-top: 40px; text-align: justify"> We are a nursery that produces various kinds of tropical ornamental plants by involving the community in the production process, using the concept of community development.</P>
+                <P style="margin-top: 30px; text-align: justify"> Our head office is located at Jl. Rambutan Raya, no. 1D, Depok Jaya, Pancoran Mas, Depok City, West Java Province, Indonesia. With several production locations in Jonggol - Bogor Regency - West Java, Ciapus - Bogor - West Java, Lembang - Bandung - West Java, Sidoarjo Regency - East Java, and Kotabumi - Lampung.</p>
             </div>
         </div>
     </div>

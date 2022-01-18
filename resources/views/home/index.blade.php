@@ -34,24 +34,24 @@
               <div class="carousel-item active" style="height: 100%">
                 <img src="assets/img/bg-ornamental-plants.jpeg" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
                 <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 35%">
-                  <span style="font-size: 5vw">Exotic Tropical <br>Ornamental plants</br></span>
-                  <p style="font-size: 1.4vw; font-weight: 300; margin-bottom: 20px">we produce exotic tropical ornamental plants, with leaves whose colors and patterns are very attractive </p>
+                  <span class="carouselheader" >Exotic Tropical <br>Ornamental plants</br></span>
+                  <p class="carouselparagraph" style=" font-weight: 300; margin-bottom: 20px">we produce exotic tropical ornamental plants, with leaves whose colors and patterns are very attractive </p>
                   <a href="/menu-products/category/1" class="button-responsif px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
               <div class="carousel-item" style="height: 100%">
                 <img src="assets/img/bg-halal-food.jpeg" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
                 <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 31%">
-                  <span style="font-size: 5vw">Rare Item from <br>Aroid Family</br> </span>
-                  <p style="font-size: 1.4vw; font-weight: 300; margin-bottom: 20px">Aroid ornamental plants are currently very popular around the world. We collect, cultivate and distribute them worldwide. Some of the plants we cultivate are very rare species</p>
+                  <span class="carouselheader" >Rare Item from <br>Aroid Family</br> </span>
+                  <p class="carouselparagraph" style=" font-weight: 300; margin-bottom: 20px">Aroid ornamental plants are currently very popular around the world. We collect, cultivate and distribute them worldwide. Some of the plants we cultivate are very rare species</p>
                   <a href="/menu-products/category/1" class="button-responsif px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
               <div class="carousel-item" style="height: 100%">
                 <img src="assets/img/bg-fresh-fruit.jpeg" class="d-block " style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
                 <div class="carousel-caption d-md-block pt-0" style="text-align: left; responsive-font-size: 10px; margin-left : -100px; top: 31%">
-                  <span style="font-size: 5vw">Exotic Caladium <br>ready stock</br></span>
-                  <p style="font-size: 1.4vw; font-weight: 300; margin-bottom: 20px">the caladium that we are currently producing, is the result of a new cross breeding, which is really very rare. you can order now</p>
+                  <span class="carouselheader">Exotic Caladium <br>ready stock</br></span>
+                  <p class="carouselparagraph" style="font-weight: 300; margin-bottom: 20px">the caladium that we are currently producing, is the result of a new cross breeding, which is really very rare. you can order now</p>
                   <a href="/menu-products/category/1" class="button-responsif px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
@@ -186,12 +186,12 @@
                   <div class="info">
                     <div class="over">
                       <div class="row">
-                      <div class="col-md-12 col-sm-12">
-                      <p style="font-size: 2rem">{{$product->name}}</p>
-                      </div>
-                      <div class="col-md-12 col-sm-12">
-                      <p>Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
-                      </div>
+                        <div class="col-md-12 col-sm-12">
+                          <p style="font-size: 2rem">{{$product->name}}</p>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                          <p>Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
+                        </div>
                       </div> 
                     </div>
                   </div>

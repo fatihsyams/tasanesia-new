@@ -17,7 +17,7 @@
                 Our Campaign
               </h2> -->
 
-              <div class="row" style="padding: 30px ">
+              <div class="row no-gutters" style="margin-bottom: 30px">
                 @foreach($data as $dataCampaign)
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="card" style="width: 25rem;border: none">

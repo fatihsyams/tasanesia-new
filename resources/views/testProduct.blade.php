@@ -21,8 +21,8 @@
 <body>
     <div class="container hero">
         <div class="row">
-          <div class="col-lg-6" style="padding:30px">
-            <img src="/{{ $product->images }}" alt="" srcset="" style="max-width: 500px; min-width: 500px">
+          <div class="col-lg-6" style="padding:30px; height: 100%" >
+            <img src="/{{ $product->images }}" alt="" srcset="" style="width: 100%;">
             <!-- <div class="row">
               <div class="column">
                 <img src="img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
@@ -41,23 +41,23 @@
               src="" alt="" style="width: 100%; border-radius: 10px"
             /> -->
           </div>
-          <div class="col-lg-6 mt-5">
+          <div class="col-lg-6 mt-5" >
             <h1>{{  $product->name }}</h1>
             <p style="color: #444444; font-size: 20px">Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
-            <p class="mt-3" style="color: #444444; font-weight: 100; font-size: 14px">{{ $product->description }}</p>
+            <p class="mt-3" style="color: #444444; font-weight: 100; font-size: 19px">{{ $product->description }}</p>
 
-            <div class="row my-5">
+            <div class="row my-5 justify-content-center">
               <!-- <p>Quantity:</p>
               <div class="quantity buttons_added">
 	              <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
              </div>
              <a href="" class="btn">Order Now</a> -->
             @if (Auth::check())
-            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn" style="background-color: #315343; color:white" >Order Now</a>
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn order_btn" style="background-color: #315343; color:white" >Order Now</a>
             @endif
 
             @if (!Auth::check())
-            <a href="/login" class="btn" style="background-color: #315343; color:white" >Order Now</a>
+            <a href="/login" class="btn " style="background-color: #315343; color:white" >Order Now</a>
             @endif
             </div>
 
@@ -68,24 +68,29 @@
             <!-- <h2 style="color: #28a745">{{  $product->name }}</h2> -->
           </div>
         </div>
-
-      <div
-        class="col-lg-12 horizontal-scrollable"
-        style="max-height: 1000px"
-        >
-        <div class="row mb-5" style="position: relative; margin-top: 100px">
-          <h3 class="mb-4" style="font-weight: 500">Other products Recommendations</h3>
-          @foreach ($allProduct as $product)
-          @if($loop->index < 3)
+      <div class="container">
+        <div class="row no-gutters">
+        <h3 class="mb-4" style="font-weight: 500; margin-top: 100px">Other products Recommendations</h3>
+          <div class="col-lg-12 horizontal-scrollable" style="max-height: 1000px">
           
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <a href="/detail-product/{{$product->id}}" style="text-decoration: none;">
+            <div class="row mb-5" style="position: relative; ">
+            
+            @foreach ($allProduct as $product)
+            @if($loop->index < 3)
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="/detail-product/{{$product->id}}" style="text-decoration: none;">
                   <div class="semua">
                       <img class="image" src="/{{ $product->images }}">
                       <div class="info">
                           <div class="over">
-                              <p style="font-size: 34px">{{ $product->name }}</p>
-                              <p>Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12">
+                                <p style="font-size: 1.5rem">{{$product->name}}</p>
+                              </div>
+                              <div class="col-md-12 col-sm-12">
+                                <p>Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
+                              </div>
+                            </div> 
                           </div>
                       </div>
                   </div>
@@ -93,8 +98,12 @@
             </div>
             @endif
             @endforeach
+          </div>
         </div>
       </div>
+        
+      </div>
+      
       </div>
 
       <!-- modal lightbox -->
