@@ -32,18 +32,12 @@
           <td>{{ $category->name }}</td>
           <td>{{ $category->description }}</td>
           <td>
-            <a href="{{ route('categories.show', $category->id) }}" class="btn btn-sm btn-info">
-              DETAIL
-            </a>
-            <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-sm btn-warning">
-              EDIT
-            </a>
-            <form action="{{ route('categories.destroy', $category->id) }}" method="POST" class="d-inline">
+            <form action="{{ route('categories.edit', $category->id) }}" method="POST">
               @csrf
-              @method('DELETE')
-              <button type="submit" class="btn btn-sm btn-danger">
-                DELETE
-              </button>
+              @method('GET')
+                <button type="submit" class="btn btn-sm btn-primary">
+                  EDIT
+                </button>
             </form>
           </td>
         </tr>

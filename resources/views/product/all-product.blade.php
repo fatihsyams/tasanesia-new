@@ -9,7 +9,9 @@
 @foreach ($category as $item)
 
 <div class="row no-gutters" style="position: relative">
-<p>{{$data_category}}</p>
+<hr>
+  <h6 class="text-tengah" style="font-weight: 300; text-align: center; font-size: 2rem; margin-top: 25px" >{{$data_category->sub_category->name}}</h6>
+  <p class="text-tengah" style="font-size: 1.3vw; font-weight: 300; text-align: center; margin-top: 10px" >{{$data_category->sub_category->description}}</p>
      @foreach ($data as $product)
         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
             <a href="/detail-product/{{$product->id}}" style="text-decoration: none;">
@@ -30,9 +32,9 @@
                 </div>
             </a>
         </div>
-                @endforeach
+    @endforeach
         <div class="row d-flex justify-content-center mx-auto" style="margin-top:60px">
-          <a class="btn account-auth-login" href="/menu-products/category/3" type="button" style="color:#315343; font-size: 15px; border: 2px solid #315343; width: 200px">See next product</a>
+          <a class="btn account-auth-login" href="/menu-products/category/{{$data_category_increment}}" type="button" style="color:#315343; font-size: 15px; border: 2px solid #315343; width: 200px">See next product</a>
         </div>  
 </div>
 

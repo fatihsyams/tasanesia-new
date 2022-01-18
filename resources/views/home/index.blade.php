@@ -35,24 +35,24 @@
                 <img src="assets/img/bg-ornamental-plants.jpeg" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
                 <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 35%">
                   <span style="font-size: 5vw">Exotic Tropical <br>Ornamental plants</br></span>
-                  <p style="font-size: 1.4vw">bla1 bla1 bla1 bla1 bla1 bla1 bla1 bla1 bla1 bla1 </span>
-                  <a href="/menu-products/category/1" class="px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
+                  <p style="font-size: 1.4vw; font-weight: 300; margin-bottom: 20px">we produce exotic tropical ornamental plants, with leaves whose colors and patterns are very attractive </p>
+                  <a href="/menu-products/category/1" class="button-responsif px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
               <div class="carousel-item" style="height: 100%">
                 <img src="assets/img/bg-halal-food.jpeg" class="d-block" style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
-                <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 50%">
-                  <span style="font-size: 5vw">Rare Item from Aroid Family</span>
-                  <p style="font-size: 1.4vw">bla2 bla2 bla2 bla2 bla2 bla2 bla2 bla2 bla2 bla2 </p>
-                  <a href="/menu-products/category/1" class="px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
+                <div class="carousel-caption d-md-block pt-0" style="text-align: left; margin-left : -100px; top: 31%">
+                  <span style="font-size: 5vw">Rare Item from <br>Aroid Family</br> </span>
+                  <p style="font-size: 1.4vw; font-weight: 300; margin-bottom: 20px">Aroid ornamental plants are currently very popular around the world. We collect, cultivate and distribute them worldwide. Some of the plants we cultivate are very rare species</p>
+                  <a href="/menu-products/category/1" class="button-responsif px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
               <div class="carousel-item" style="height: 100%">
                 <img src="assets/img/bg-fresh-fruit.jpeg" class="d-block " style="width:100%; max-width: 100%; max-height: 100vh; object-fit: fill" alt="...">
-                <div class="carousel-caption d-md-block pt-0" style="text-align: left; responsive-font-size: 10px; margin-left : -100px; top: 50%">
-                  <span style="font-size: 5vw">Exotic Caladium ready stock</span>
-                  <p style="font-size: 1vw">bla3 bla3 bla3 bla3 bla3 bla3 bla3 bla3 bla3 bla3 </p>
-                  <a href="/menu-products/category/1" class="px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
+                <div class="carousel-caption d-md-block pt-0" style="text-align: left; responsive-font-size: 10px; margin-left : -100px; top: 31%">
+                  <span style="font-size: 5vw">Exotic Caladium <br>ready stock</br></span>
+                  <p style="font-size: 1.4vw; font-weight: 300; margin-bottom: 20px">the caladium that we are currently producing, is the result of a new cross breeding, which is really very rare. you can order now</p>
+                  <a href="/menu-products/category/1" class="button-responsif px-4 py-3 btn account-auth-login-white" style="border: 2px solid white; display: table; cursor: pointer; color: white; text-decoration: none">Start shopping now</a>
                 </div>
               </div>
             </div>
@@ -83,13 +83,13 @@
               style="max-height: 1000px"
             >
               <div class="row justify-content-center">
-              @foreach($category as $item)
+              <!-- @foreach($category as $item)
                 <div class="col-lg-4 col-md-6 p-3">
                   <div class="shadow pb-3" style="width: 17rem; max-height: 400px; min-height: 339px; width: 320px; background-color: #315343;">
                   <a href="/detail-category/{{ $item->id }}" style="text-decoration: none; color: white; font-weight: 300">
                   <img
-                    src="{{$item['images']}}"
-                    alt=""
+                    src="{{ asset('img/WhatsApp Image 2022-01-13 at 5.38.27 PM.jpeg') }}"
+                    alt="aaa"
                     style="max-width: 100%"
                   />
                   <h4 class="text-wrap mt-4 mb-3" style="text-align: left; padding: 0 20px">
@@ -102,7 +102,61 @@
                   </a>
                 </div>
               </div>
-              @endforeach
+              @endforeach -->
+              <div class="col-lg-4 col-md-6 p-3">
+                  <div class="shadow pb-3" style="width: 17rem; max-height: 400px; min-height: 339px; width: 320px; background-color: #315343;">
+                  <a href="/menu-products/category/1" style="text-decoration: none; color: white; font-weight: 300">
+                  <img
+                    src="{{ asset('img/earth-leaf-caladium-green-wallpaper-preview.jpg') }}"
+                    alt="aaa"
+                    style="width: 320px; max-height: 215px"
+                  />
+                  <h4 class="text-wrap mt-4 mb-3" style="text-align: left; padding: 0 20px">
+                   Caladium
+                  </h4>
+                  <p class="hide-scrollbar text-wrap p-text px-3 pl-4" style="padding: 0 20px; margin-bottom: 10px; letter-spacing: 0.3px text-decoration: none;font-size: 1.1rem; color: white; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;">
+                  Caladiums are known for their large, heart-shaped leaves that feature stunning color combinations of white, pink, red and green. It is a plant that thrives in hot and humid weather and usually grows best in full to partial shade. Although caladiums rarely flower, their beautiful foliage guarantees a colorful show wherever they are planted under trees, among bushes, in perennial borders and in containers.
+                  </p>
+                  <span class="px-3 pl-4 " style="padding: 0 20px">Read more <i class="fas fa-angle-right"></i> </span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 p-3">
+                  <div class="shadow pb-3" style="width: 17rem; max-height: 400px; min-height: 339px; width: 320px; background-color: #315343;">
+                  <a href="/menu-products/category/1" style="text-decoration: none; color: white; font-weight: 300">
+                  <img
+                    src="{{ asset('img/WhatsApp Image 2022-01-13 at 5.38.27 PM.jpeg') }}"
+                    alt="aaa"
+                    style="max-width: 320px; max-height: 215px"
+                  />
+                  <h4 class="text-wrap mt-4 mb-3" style="text-align: left; padding: 0 20px">
+                   Aglaonema
+                  </h4>
+                  <p class="hide-scrollbar text-wrap p-text px-3 pl-4" style="padding: 0 20px; margin-bottom: 10px; letter-spacing: 0.3px text-decoration: none;font-size: 1.1rem; color: white; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;">
+                  Aglaonema (Sri Rezeki) is a popular ornamental plant from the taro tribe or Araceae. The genus Aglaonema has about 30 species. Aglaonema grows wild in the subtropical rainforests of Indonesia, Thailand and Malaysia, where it delights in the leaf canopy of larger trees and shrubs that ensure that almost no sun can reach Aglaonema. This plant has fibrous roots and stems that are not cambium (woody). The leaves are pinnate and have transport vessels in the form of xylem and phloem which are arranged randomly. Now a wide variety of Aglaonema hybrids have been developed with very attractive plant appearances with a variety of colors, shapes and sizes of leaves so that they are far different from natural species. Aglaonema also has variegated leaves and generally remains quite small. Aside from the fantastic foliage, this plant's greatest strength is that it is very easy to care for compared to other foliage plants. Aglaonema can take a hit, tolerates forgetful waterers and doesn't disappoint quickly. That makes it a real boon for plant lovers just starting out. As an attractive foliage plant, Aglaonema also purifies the air, creating a healthier indoor climate.
+                  </p>
+                  <span class="px-3 pl-4 " style="padding: 0 20px">Read more <i class="fas fa-angle-right"></i> </span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 p-3">
+                  <div class="shadow pb-3" style="width: 17rem; max-height: 400px; min-height: 339px; width: 320px; background-color: #315343;">
+                  <a href="/menu-products/category/1" style="text-decoration: none; color: white; font-weight: 300">
+                  <img
+                    src="{{ asset('img/148bf632228aedf5d7226bcd1328f6b1.jpeg') }}"
+                    alt="aaa"
+                    style="width: 320px; max-height: 215px"
+                  />
+                  <h4 class="text-wrap mt-4 mb-3" style="text-align: left; padding: 0 20px">
+                   Philodendron
+                  </h4>
+                  <p class="hide-scrollbar text-wrap p-text px-3 pl-4" style="padding: 0 20px; margin-bottom: 10px; letter-spacing: 0.3px text-decoration: none;font-size: 1.1rem; color: white; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical;">
+                  Philodendron is a classic houseplant, which is easy to care for. The name 'philodendron' comes from the Greek words- 'Philo' means love and 'Dendron' means tree. These are the types of flowering plants that look great and add appeal to indoor spaces which is why they are used for homes and offices. The origin of the philodendron plant lies in the rainforests of South America. It has several species and cultivars in various sizes, shapes, and colors. This philodendron indoor plant does not require much care and can grow even in harsh conditions as well. It thrives indoors all year round without complaint and also enjoys the occasional stay outdoors in the shade when the weather is favourable. Philodendron plants can remove pollutants such as formaldehyde and clean the air. The leaves of the plant are large enough to absorb moisture and release it as clean oxygen into the room.
+                  </p>
+                  <span class="px-3 pl-4 " style="padding: 0 20px">Read more <i class="fas fa-angle-right"></i> </span>
+                  </a>
+                </div>
+              </div>
               </div>
             </div>
           </div>

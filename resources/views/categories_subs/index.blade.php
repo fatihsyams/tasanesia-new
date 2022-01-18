@@ -38,6 +38,13 @@
           <td> {{ $sub->name }} </td>
           <td> {{ $sub->description }} </td>
           <td>
+            <form action="{{ route('categories_subs.edit', $sub->id) }}" method="POST">
+              @csrf
+              @method('GET')
+                <button type="submit" class="btn btn-sm btn-primary">
+                  EDIT
+                </button>
+            </form>
           </td>
         </tr>
         @endforeach

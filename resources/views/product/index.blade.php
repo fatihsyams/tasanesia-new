@@ -40,11 +40,13 @@
           <td>{{ $item->status }}</td>
           <td>{{ $item->description }}</td>
           <td>
-          <form action="{{ route('product.edit', $item->id) }}" method="GET">
-          <button type="submit" class="btn btn-sm btn-primary">
-          EDIT
-          </button>
-          </form>
+            <form action="{{ route('product.edit', $item->id) }}" method="POST">
+              @csrf
+              @method('GET')
+                <button type="submit" class="btn btn-sm btn-primary">
+                  EDIT
+                </button>
+            </form>
           </td>
           <td>
           <form action="{{ route('product.destroy', $item->id) }}" method="POST">
@@ -58,7 +60,6 @@
         </tr>
         @endforeach
       </tbody>
-
     </table>
   </div>
 </div>

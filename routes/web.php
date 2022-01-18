@@ -56,10 +56,12 @@ Route::get('getCourse/{id}', function ($id) {
 });
 
 Route::get('menu-products/category/{id}', function ($id) {
-  $data = Product::where('category_subs_id',$id)->get();
+  $data = Product::where('category_subs_id', $id)->get();
   $category = Category::where('id','1')->get();
-  $data_category = Product::where('category_subs_id',$id)->get();
-  return view('product.all-product', compact('data', 'category', 'data_category'));
+  $data_category = Product::where('category_subs_id',$id)->first();
+  $data_category_increment = intval($data_category->sub_category->id) + 1;
+  // $apaaja = DB::table('products')->orderBy('category_subs_id', 'asc')->orderBy('id', 'asc')->get();
+  return view('product.all-product', compact('data', 'category', 'data_category', 'data_category_increment'));
 });
 
 Route::get('all-products/{id}', function ($id) {
@@ -82,10 +84,14 @@ Route::group(['middleware' => ['admin']], function () {
     return view('admin.index');
   });
   Route::resource('categories', CategoryController::class);
+  Route::get('/categories/{id}/edit', 'App\Http\Controllers\CategoryController@edit');
+  Route::post('/categories/{id}/update', 'App\Http\Controllers\CategoryController@update');
   Route::resource('categories_subs', CategorySubsController::class);
+  Route::get('/categories_subs/{id}/edit', 'App\Http\Controllers\CategorySubsController@edit');
+  Route::post('/categories_subs/{id}/update', 'App\Http\Controllers\CategorySubsController@update');
   Route::resource('product', ProductController::class);
-  Route::get('/product/{id}/edit', 'ProductController@edit');
-  Route::post('/product/{id}/update', 'ProductController@update');
+  Route::get('/product/{id}/edit', 'App\Http\Controllers\ProductController@edit');
+  Route::post('/product/{id}/update', 'App\Http\Controllers\ProductController@update');
 });
 
 Route::group(['middleware' => ['member']], function () {

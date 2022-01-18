@@ -78,9 +78,10 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category)
+    public function edit($id)
     {
-        //
+        $data = Category::find($id);
+        return view('categories.edit', ['data' => $data]);
     }
 
     /**
@@ -90,9 +91,26 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCategoryRequest $request, Category $category)
+    public function update(UpdateCategoryRequest $request, $id)
     {
-        //
+        $categories = Category::find($id);
+
+        if ($request->hasFile('images')) {
+            $file_name = $request->images->getClientOriginalName();
+            $image = $request->images->move('img', $file_name);
+            
+            $categories->name = $request->input('name');
+            $categories->description = $request->input('description');
+            $categories->images = $image;
+        } else {
+            $categories->name = $request->input('name');
+            $categories->description = $request->input('description');    
+        }
+
+        $categories->save();
+
+        Alert::success('Success', 'Data Category berhasil diperbaharui');
+        return redirect()->route('categories.index');
     }
 
     /**

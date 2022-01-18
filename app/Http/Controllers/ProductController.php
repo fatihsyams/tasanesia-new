@@ -84,9 +84,10 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $item)
+    public function edit($id)
     {
-        return view('layouts.editProduct',compact('item'));
+        $data = Product::find($id);
+        return view('product.edit', ['data' => $data]);
     }
 
     /**
@@ -96,11 +97,32 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateProductRequest $request, Product $product)
+    public function update(UpdateProductRequest $request, $id)
     {
-        $product->update($request->all());
+        $product = Product::find($id);
+
+        if ($request->hasFile('images')) {
+            $file_name = $request->images->getClientOriginalName();
+            $image = $request->images->move('img', $file_name);
+
+            $product->name = $request->input('name');
+            $product->price = $request->input('price');
+            $product->quantity = $request->input('quantity');
+            $product->description = $request->input('description');
+            $product->status = $request->input('status');
+            $product->images = $image;
+        } else {
+            $product->name = $request->input('name');
+            $product->price = $request->input('price');
+            $product->quantity = $request->input('quantity');
+            $product->description = $request->input('description');
+            $product->status = $request->input('status');
+        }
+
+        $product->save();
+
         Alert::success('Success', 'Data Product berhasil diperbaharui');
-        return redirect()->route('product.index');
+        return redirect()->route('product.index');    
     }
 
     /**

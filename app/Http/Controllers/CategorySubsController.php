@@ -6,6 +6,8 @@ use App\Models\CategorySubs;
 use App\Http\Requests\StoreCategorySubsRequest;
 use App\Http\Requests\UpdateCategorySubsRequest;
 use App\Models\Category;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class CategorySubsController extends Controller
 {
@@ -73,9 +75,10 @@ class CategorySubsController extends Controller
      * @param  \App\Models\CategorySubs  $categorySubs
      * @return \Illuminate\Http\Response
      */
-    public function edit(CategorySubs $categorySubs)
+    public function edit($id)
     {
-        //
+        $data = CategorySubs::find($id);
+        return view('categories_subs.edit', ['data' => $data]);
     }
 
     /**
@@ -85,9 +88,26 @@ class CategorySubsController extends Controller
      * @param  \App\Models\CategorySubs  $categorySubs
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCategorySubsRequest $request, CategorySubs $categorySubs)
+    public function update(UpdateCategorySubsRequest $request, $id)
     {
-        //
+        $categories_subs = CategorySubs::find($id);
+
+        if ($request->hasFile('images')) {
+            $file_name = $request->images->getClientOriginalName();
+            $image = $request->images->move('img', $file_name);
+            
+            $categories_subs->name = $request->input('name');
+            $categories_subs->description = $request->input('description');
+            $categories_subs->images = $image;
+        } else {
+            $categories_subs->name = $request->input('name');
+            $categories_subs->description = $request->input('description');    
+        }
+
+        $categories_subs->save();
+
+        Alert::success('Success', 'Data Category Subs berhasil diperbaharui');
+        return redirect()->route('categories_subs.index');  
     }
 
     /**
