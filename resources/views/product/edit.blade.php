@@ -3,8 +3,24 @@
 @section('title', 'Update Product')
 
 @section('content')
+<style>
+    .btn{
+        background-color:#315343;
+        color:white
+        
+    }
+    @media (max-width: 767.98px) { 
+        .edit_product{
+            font-size: 30px;
+            margin: 20px
+        }
+        .card-body{
+            padding:0px
+        }
+    }
+</style>
 
-<h1 style="color:green">Edit product data</h1>
+<h1 class="edit_product" style="color:#315343;">Edit product data</h1>
 
 <form action="/product/{{ $data->id }}/update" method="POST" enctype="multipart/form-data">
     @csrf
@@ -61,7 +77,7 @@
             </div>
         </div>
         <div class="card-footer">
-            <button type="submit">
+            <button type="submit" class="btn">
                 SUBMIT
             </button>
         </div>
