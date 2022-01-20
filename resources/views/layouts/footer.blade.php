@@ -20,7 +20,7 @@
                   <li class="nav-item">
                     <a class="nav-link nav-link2" href="#" style="">Contact Us</a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link nav-link2" href="#">Help</a>
                   </li>
                   <li class="nav-item">
@@ -28,7 +28,7 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link nav-link2">Privacy Policy</a>
-                  </li>
+                  </li> -->
                 </ul>  
               </div>
             </div>

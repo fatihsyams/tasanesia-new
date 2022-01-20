@@ -3,8 +3,9 @@
 @section('title', 'Subs')
 
 @section('content')
+.container
 
-<div class="card">
+<div class="card" style="width: 90%"> 
     <div class="card-body">
         <form action="{{ route('categories_subs.store') }} " method="POST"  enctype="multipart/form-data">
             {{ csrf_field()}}
@@ -41,7 +42,7 @@
                 </label>
                 <input type="text" name="description" class="col-md form-control">
             </div>
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn" style="background-color: #315343; color: white ">
                 Submit
             </button>
         </form>

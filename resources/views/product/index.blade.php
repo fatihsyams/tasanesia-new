@@ -6,9 +6,37 @@
 
 @section('content')
 
+<style>
+  .btn{
+    background-color: #315343;
+    color: white;
+  }
+  @media (max-width: 767.98px) { 
+    .table {
+      display: block;
+      overflow: scroll;
+     
+    }
+    .table-striped{
+      table-layout: fixed;
+      width: 100%;
+    }
+    .card-body{
+      padding: 0px
+    }
+    .navbar-nav{
+      margin-top: 0px !important
+    
+  }
+  .btn {
+    margin:20px
+  }
+   }
+</style>
+
 <div class="card">
   <div class="card-body">
-    <a href="{{ route('product.create') }}" class="btn btn-primary">
+    <a href="{{ route('product.create') }}" class="btn">
       ADD DATA
     </a>
     <table class="table table-striped">
@@ -52,7 +80,7 @@
           <form action="{{ route('product.destroy', $item->id) }}" method="POST">
               @csrf
             @method('DELETE')
-            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure for delete this data?')">
+            <button type="submit" class="btn btn-sm btn-danger" style="background-color: red;"onclick="return confirm('Are you sure for delete this data?')">
             DELETE
             </button>
           </form>

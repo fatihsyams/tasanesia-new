@@ -3,6 +3,18 @@
 @section('title', 'Campaign')
 
 @section('content')
+<style>
+     .btn{
+            background-color: #315343;
+            color: white
+        }
+    @media (max-width: 767.98px) { 
+        .card-body{
+            padding:10px
+        }
+       
+     }
+</style>
 
 <div class="card">
     <div class="card-body">
@@ -41,7 +53,7 @@
             </div>
 
             
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn ">
                 Submit
             </button>
         </form>

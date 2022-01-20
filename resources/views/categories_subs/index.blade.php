@@ -3,6 +3,36 @@
 @section('title', 'Subs')
 
 @section('content')
+<style>
+  .btn{
+    background-color: #315343;
+    color: white;
+  }
+  @media (max-width: 767.98px) { 
+    .table {
+      display: block;
+      overflow: scroll;
+     
+    }
+    .table-striped{
+      table-layout: fixed;
+      width: 100%;
+    }
+    .card-body{
+      padding: 0px
+    }
+    .navbar-nav{
+      margin-top: 0px !important
+    }
+    #sidebar{
+      height: 100% !important;
+      width: 100%
+    }
+    .btn {
+    margin:20px
+  }
+   }
+</style>
 
 <div class="card">
 
@@ -12,7 +42,7 @@
     </a>
   </div>
 
-  <div class="card-body">
+  <div class="card-body" style="">
     <table class="table table-bordered">
       <thead>
         <tr>

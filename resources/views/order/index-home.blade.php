@@ -4,12 +4,19 @@
 
 @section('content')
 
+<style>
+    @media (max-width: 767.98px) { 
+        .card-body{
+            padding:0px
+        }
+     }
+</style>
 
 <form action="{{ route('order.store') }}" method="POST" enctype="multipart/form-data">
       {{ csrf_field()}}
     <div class="card">
         <div class="card-body">
-            <div class="col m-3">
+            <div class="col col-sm-12">
                 <label for="" class="">Name</label>
                 <input type="text" name="name" id="name" class="form-control" value="{{ $user->name }}">
 

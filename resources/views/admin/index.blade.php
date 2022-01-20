@@ -32,6 +32,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
 
     <!-- Custom styles for this template-->
     <link href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
@@ -45,53 +46,53 @@
     <div id="wrapper" style="margin-top:68px">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #28a745;">
+        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #315343;">
 
             <!-- Sidebar - Brand -->
             <p class="sidebar-brand d-flex align-items-center justify-content-center mb-0">Admin Tasanesia</p>
 
             <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+            
 
-            <li class="nav-item active" style="background-color: #1c7531;">
+            <li class="nav-item active" style="background-color: #315343;">
                 <a class="nav-link" href="{{ route('product.index') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Products</span></a>
+                    <span> Manajemen Products</span></a>
             </li>
 
-            <hr class="sidebar-divider">
+            
 
-            <li class="nav-item active" style="background-color: #1c7531;">
+            <li class="nav-item active" style="background-color: #315343;">
                 <a class="nav-link" href="{{ route('categories.index') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Categories</span></a>
+                    <span>Manajemen Categories</span></a>
             </li>
 
-            <hr class="sidebar-divider">
+            
 
-            <li class="nav-item active" style="background-color: #1c7531;">
+            <li class="nav-item active" style="background-color: #315343;">
                 <a class="nav-link" href="{{ route('categories_subs.index') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Subcategories</span></a>
+                    <span>Manajemen Subcategories</span></a>
             </li>
 
-            <hr class="sidebar-divider">
+           
 
-            <li class="nav-item active" style="background-color: #1c7531;">
+            <li class="nav-item active" style="background-color: #315343;">
                 <a class="nav-link" href="{{ route('campaign.index') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Campaign</span></a>
+                    <span>Manajemen Campaign</span></a>
             </li>
 
-            <hr class="sidebar-divider">
+           
 
-            <li class="nav-item active" style="background-color: #1c7531;">
+            <li class="nav-item active" style="background-color: #315343;">
                 <a class="nav-link" href="{{ route('order.index') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Orders</span></a>
+                    <span>Manajemen Orders</span></a>
             </li>
 
-            <hr class="sidebar-divider">
+           
 
         </ul>
         <!-- End of Sidebar -->

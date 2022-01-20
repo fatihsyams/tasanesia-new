@@ -10,7 +10,7 @@
     {{ csrf_field() }}
     <div class="card">
         <div class="card-body">
-            <div class="col m-3">
+            <div class="col">
                 <label for="" class="">Name</label>
                 <input type="text" name="name" id="name" class="form-control" value="{{ $order->name }}">
 
