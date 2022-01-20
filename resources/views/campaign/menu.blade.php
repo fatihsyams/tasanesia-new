@@ -20,7 +20,7 @@
               <div class="row no-gutters" style="margin-bottom: 30px">
                 @foreach($data as $dataCampaign)
                 <div class="col-lg-4 col-md-4 col-sm-6">
-                  <div class="card" style="width: 25rem;border: none">
+                  <div class="card" style="width: 22rem;border: none">
                     <img src="{{$dataCampaign->images}}" class="card-img-top img-fluid" alt="..." style="max-height: 267px; min-height: 267px">
                     <div class="card-body">
                       <p class="card-caption">By {{$dataCampaign->author}} |  {{date('d-m-Y', strtotime($dataCampaign->created_at))}}</p>

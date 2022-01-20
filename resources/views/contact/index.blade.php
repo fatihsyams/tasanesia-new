@@ -47,7 +47,7 @@
 
           <div class="col-lg-6 col-md-6 col-sm-12 have">
             <div class="row">
-              <h1 class="heading" style="color: black">Have a question?</h1>
+              <h1 class="heading" style="color: #517061">Have a question?</h1>
             </div>
             <div class="row heading1">
               <div class="mb-3">

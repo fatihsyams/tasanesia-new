@@ -42,9 +42,9 @@
             /> -->
           </div>
           <div class="col-lg-6 mt-5" >
-            <h1>{{  $product->name }}</h1>
+            <h1 style="font-size: 40px">{{  $product->name }}</h1>
             <p style="color: #444444; font-size: 20px">Rp{{ number_format(($product->price), 0, '.', '.') }}</p>
-            <p class="mt-3" style="color: #444444; font-weight: 100; font-size: 19px">{{ $product->description }}</p>
+            <p class="mt-3" style="color: #444444; font-weight: 100; font-size: 19px; text-align: justify">{{ $product->description }}</p>
 
             <div class="row my-5 justify-content-center">
               <!-- <p>Quantity:</p>
@@ -70,7 +70,7 @@
         </div>
       <div class="container">
         <div class="row no-gutters">
-        <h3 class="mb-4" style="font-weight: 500; margin-top: 100px">Other products Recommendations</h3>
+        <h3 class="mb-4" style="font-weight: 500; margin-top: 100px; text-align: center">Other products Recommendations</h3>
           <div class="col-lg-12 horizontal-scrollable" style="max-height: 1000px">
           
             <div class="row mb-5" style="position: relative; ">

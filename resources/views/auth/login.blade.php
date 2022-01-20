@@ -29,7 +29,7 @@
                                 <h4>Sign In</h4>
                             </div>
                             <div class="col1">
-                                <p class="text2">New user? <a href="/register" style="border: none; color: #28a745;">Create an account</a> </p>
+                                <p class="text2">New user? <a href="/register" style="border: none; color: #315343;">Create an account</a> </p>
                             </div>
                         </div>
                           <div class="mb-1">
@@ -60,7 +60,7 @@
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
-                        <button type="submit" class="btn btn-primary" style=" color: white; background-color: #28a745; font-size: 15px; width: 100%;">{{ __('Login') }}</button>
+                        <button type="submit" class="btn btn-primary" style=" color: white; background-color: #315343; font-size: 15px; width: 100%;">{{ __('Login') }}</button>
                     </div>
                   </div>
                 </form>

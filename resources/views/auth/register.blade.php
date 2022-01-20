@@ -28,7 +28,7 @@
                                 <h4>Create An Account</h4>
                             </div>
                             <div class="col1">
-                                <p class="text2">Already an user? <a href="/login" style="border: none; color: #28a745;">Sign in</a> </p>
+                                <p class="text2">Already an user? <a href="/login" style="border: none; color: #315343;">Sign in</a> </p>
                             </div>
                         </div>
                         <div class="row">
@@ -84,7 +84,7 @@
                           <label for="exampleFormControlInput1" class="form-label"></label>
                           <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm password" required autocomplete="new-password">
                         </div>
-                        <button type="submit" class="btn" href="home-page.html" style=" color: white; background-color: #28a745; font-size: 15px; width: 100%;">{{ __('Register') }}</button>
+                        <button type="submit" class="btn" href="home-page.html" style=" color: white; background-color: #315343; font-size: 15px; width: 100%;">{{ __('Register') }}</button>
                       </div>
                     </div>
                     </form>
