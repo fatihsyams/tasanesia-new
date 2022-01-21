@@ -14,6 +14,7 @@
   }
   .search-container {
   float: right;
+  padding-top: 14px
   }
 
   .search-container button {
@@ -109,6 +110,7 @@
           <th>Description</th>
 
           <th>Action</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>

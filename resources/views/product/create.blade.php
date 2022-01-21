@@ -3,6 +3,12 @@
 @section('title', 'Product')
 
 @section('content')
+<style>
+  .btn{
+    background-color: #315343;
+    color: white;
+  }
+</style>
 
 <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
   {{ csrf_field()}}
@@ -52,7 +58,7 @@
         <input type="text" name="status" id="status" class="form-control">
       </div>
       <div class="card-footer">
-        <button type="submit">
+        <button type="submit" class="btn"> 
           SUBMIT
         </button>
       </div>

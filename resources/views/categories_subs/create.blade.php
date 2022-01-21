@@ -4,7 +4,12 @@
 
 @section('content')
 .container
-
+<style>
+  .btn{
+    background-color: #315343;
+    color: white;
+  }
+</style>
 <div class="card" style="width: 90%"> 
     <div class="card-body">
         <form action="{{ route('categories_subs.store') }} " method="POST"  enctype="multipart/form-data">

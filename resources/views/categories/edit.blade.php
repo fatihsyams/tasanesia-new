@@ -5,6 +5,9 @@
 @section('content')
 
 <style>
+    .edit_product{
+        margin: 20px
+    }
     .btn{
         background-color:#315343;
         color:white
@@ -13,14 +16,14 @@
     @media (max-width: 767.98px) { 
         .edit_product{
             font-size: 30px;
-            margin: 20px
+            
         }
         .card-body{
             padding:0px
         }
     }
 </style>
-<h1 style="color:#315343" class="edit_product">Edit category data</h1>
+<h1 style="color:#315343; margin: 20px" class="edit_product" >Edit category data</h1>
 
 <form action="/categories/{{ $data->id }}/update" method="POST" enctype="multipart/form-data">
     @csrf

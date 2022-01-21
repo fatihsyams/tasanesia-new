@@ -25,14 +25,15 @@
       margin-top: 0px !important
     }
     .btn {
-    margin:20px
-  }
+    margin:20px;
+    width:30% !important
+    }
    }
 </style>
 
 <div class="card">
 
-    <a href="{{ route('campaign.create') }}" class="btn" style="width: 40%">Create</a>
+    <a href="{{ route('campaign.create') }}" class="btn" style="width: 7%; margin: 20px">Create</a>
     <div class="card-body">
         <table class="table table-bordered">
             <thead>
