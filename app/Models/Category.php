@@ -21,6 +21,6 @@ class Category extends Model
 
   public function category_subs()
   {
-    return $this->hasMany(CategorySubs::class, 'category_id');
+    return $this->hasMany(CategorySubs::class, 'category_id')->orderBy('name', 'asc');
   }
 }

@@ -87,7 +87,7 @@
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="search-container">
-          <form action="/search" type="GET">
+          <form action="/product/search" type="GET">
             <input type="text" placeholder="Search.." name="query">
             <button type="submit" class="btn_search"><i class="fa fa-search"></i></button>
           </form>

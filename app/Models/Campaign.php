@@ -14,7 +14,12 @@ class Campaign extends Model
         'title',
         'author',
         'images',
-        'description',    
+        'description',
+        'description_2',    
+        'description_3',    
+        'description_4',    
+        'description_5',    
+
     ];
 
      public function user()

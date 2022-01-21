@@ -52,6 +52,25 @@
                 <textarea class="form-control" name="description" rows="3"></textarea>
             </div>
 
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Paragraph 2</label>
+                <textarea class="form-control" name="description_2" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Paragraph 3</label>
+                <textarea class="form-control" name="description_3" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Paragraph 4</label>
+                <textarea class="form-control" name="description_4" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Paragraph 5</label>
+                <textarea class="form-control" name="description_5" rows="3"></textarea>
+            </div>
             
             <button type="submit" class="btn ">
                 Submit

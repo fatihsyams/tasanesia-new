@@ -2,16 +2,19 @@
 
 @section('title', 'Our Product')
 
-@extends('product.menu')  
+@extends('product.menu')
+
+@section('sub_category')
+  <h6 class="text-tengah" style="font-weight: 500;color: #315343; text-align: center; font-size: 2.5rem !important; margin-top: 25px" >{{$data_category->sub_category->name}}</h6>
+  <p class="text-tengah" style="font-size: 1.3vw; font-weight: 300; text-align: center; margin-top: 10px; margin-bottom: 30px" >{{$data_category->sub_category->description}}</p>
+  <hr>
+@endsection
 
 @section('product')
 
 @foreach ($category as $item)
 
-<div class="row no-gutters" style="position: relative">
-<hr>
-  <h6 class="text-tengah" style="font-weight: 500;color: #315343; text-align: center; font-size: 2.5rem !important; margin-top: 25px" >{{$data_category->sub_category->name}}</h6>
-  <p class="text-tengah" style="font-size: 1.3vw; font-weight: 300; text-align: center; margin-top: 10px" >{{$data_category->sub_category->description}}</p>
+<div class="row no-gutters" style="position: relative; margin-top: 30px">
      @foreach ($data as $product)
         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
             <a href="/detail-product/{{$product->id}}" style="text-decoration: none;">
