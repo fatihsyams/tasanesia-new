@@ -7,6 +7,7 @@
   .btn{
     background-color: #315343;
     color: white;
+    margin: 20px
   }
   @media (max-width: 767.98px) { 
     .table {
