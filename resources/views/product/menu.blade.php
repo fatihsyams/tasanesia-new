@@ -3,10 +3,11 @@
 @section('title', 'Our Product')
 
 @extends('layouts.default')
-<div class="container px-0 pb-5" style="margin-top: 80px !important">
+<div class="container px-0 pb-5" style="margin-top: 110px !important">
     <!-- <div class="row no-gutters"> -->
+    @yield('sub_category')
             @foreach ($category as $item)
-                <div class="row justify-content-center d-flex" style="margin-top: 35px">
+                <div class="row justify-content-center d-flex" style="margin-top: 12px">
                      <ul class="nav justify-content-center">
                      @foreach ($item->category_subs as $category)
                         <li class="nav-item">

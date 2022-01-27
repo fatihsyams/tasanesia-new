@@ -55,9 +55,12 @@ class CampaignController extends Controller
             'author' => $request->author,
             'images' => $image,
             'description' => $request->description,
-
+            'description_2' => $request->description_2,
+            'description_3' => $request->description_3,
+            'description_4' => $request->description_4,
+            'description_5' => $request->description_5,
         ]);
-         Alert::success('Success', 'Data Campaign sudah di tambahkan');
+        Alert::success('Success', 'Data Campaign sudah di tambahkan');
         return redirect()->route('campaign.index');
     }
 

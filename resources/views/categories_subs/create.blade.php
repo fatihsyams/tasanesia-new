@@ -20,7 +20,7 @@
                 </label>
                 <select name="category_id" id="" class="col-md form-select">
                     @foreach ($categories as $category)
-                    <option value="{{ $category->id }}">
+                    <option value="{{ $category->id }}"> 
                         {{ $category->name }}
                     </option>
                     @endforeach

@@ -8,6 +8,8 @@ use App\Http\Requests\UpdateProductRequest;
 use App\Models\Category;
 use App\Models\CategorySubs;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
 
@@ -156,5 +158,13 @@ class ProductController extends Controller
         ];
 
         return view('testProduct', $data);
+    }
+
+    public function search() 
+    {
+        $search_text = $_GET['query'];
+        $product = Product::where('name', 'LIKE', '%'.$search_text.'%')->get();  
+        // $product = Product::all();
+        return view('product.index', compact('product'));
     }
 }

@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', function() {
   $category = Category::all();
-  $data = Product::all();
+  $data = Product::orderBy('name', 'asc')->get();
   $campaign = Campaign::all();
   return view('home.index', compact('category', 'data', 'campaign'));
 });
@@ -52,12 +52,12 @@ Route::get('detail-campaign/{id}', function ($id) {
 });
 
 Route::get('getCourse/{id}', function ($id) {
-  $category_sub = CategorySubs::where('category_id',$id)->get();
+  $category_sub = CategorySubs::where('category_id', $id)->get();
   return response()->json($category_sub);
 });
 
 Route::get('menu-products/category/{id}', function ($id) {
-  $data = Product::where('category_subs_id', $id)->get();
+  $data = Product::where('category_subs_id', $id)->orderBy('name', 'asc')->get();
   $category = Category::where('id','1')->get();
   $data_category = Product::where('category_subs_id',$id)->first();
   $data_category_increment = intval($data_category->sub_category->id) + 1;
@@ -73,7 +73,6 @@ Route::get('all-products/{id}', function ($id) {
 Route::get('/contact', function () {
   return view('contact.index');
 });
-Route::resource('campaign', CampaignController::class);
 Route::resource('home', HomeController::class);
 Route::resource('order', OrderController::class);
 Route::resource('product', ProductController::class);
@@ -94,6 +93,8 @@ Route::group(['middleware' => ['admin']], function () {
   Route::resource('product', ProductController::class);
   Route::get('/product/{id}/edit', 'App\Http\Controllers\ProductController@edit');
   Route::post('/product/{id}/update', 'App\Http\Controllers\ProductController@update');
+  Route::get('/search ', 'App\Http\Controllers\ProductController@search');
+  Route::resource('campaign', CampaignController::class);
 });
 
 Route::group(['middleware' => ['member']], function () {
