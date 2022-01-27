@@ -49,27 +49,30 @@
             <div class="row">
               <h1 class="heading" style="color: #517061">Have a question?</h1>
             </div>
+            <form action="{{ route('feedback.store') }}" method="POST">
+            {{ csrf_field()}}
             <div class="row heading1">
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Your name</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Name">
+                <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Name">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Your email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Subject</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Subject">
+                <input type="text" name="subject" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Subject">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your Message"></textarea>
+                <textarea type="text" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your Message"></textarea>
               </div>
               <div class="mb-3">
-              <button type="button" class="btn btn-success" style="background-color:#517061">Submit Message</button>
+              <button type="submit" class="btn btn-success" style="background-color:#517061">Submit Message</button>
               </div>
             </div>
+            </form>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@
       style="background-color: white"
     >
       <div class="container">
-        <img class="logo" src="{{ asset('/assets/logos/permata-desa-indonesia.jpeg') }}" width="3.5%" alt="">
+        <img class="logo" src="{{asset('assets/img/logo.png')}}" width="10.5%" alt="">
         <button
           class="navbar-toggler"
           type="button"

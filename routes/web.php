@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CampaignController;
+use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CategorySubsController;
 use App\Http\Controllers\HomeController;
@@ -76,6 +77,7 @@ Route::resource('campaign', CampaignController::class);
 Route::resource('home', HomeController::class);
 Route::resource('order', OrderController::class);
 Route::resource('product', ProductController::class);
+Route::resource('feedback', FeedbackController::class);
 
 Auth::routes();
 
